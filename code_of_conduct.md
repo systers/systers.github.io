@@ -60,8 +60,7 @@ Additionally, community organizers are available to help community members engag
 
 ## 7. Addressing Grievances
 
-If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify Systers with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
-
+Only permanent resolutions (such as bans) may be appealed. To appeal a decision of the working group, contact the Systers' Open Source Board at os-board@anitab.org with your appeal and the board will review the case.
 
 
 ## 8. Scope
