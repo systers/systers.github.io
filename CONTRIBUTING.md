@@ -1,6 +1,7 @@
 # Contributing Guidelines
-* Subscribe to our systers-dev mailing list and send out an introductory email.
-* You can join our slack channel.  Each active repo has its own channel to direct questions to (for example #powerup or #portal).  Remember that this is an inclusive community, committed to creating a safe, positive environment.  See the full [Code of Conduct](https://github.com/systers/systers.github.io/blob/master/code_of_conduct.md).
+* Subscribe to our [systers-dev](http://systers.org/mailman/listinfo/systers-dev) mailing list and send out an introductory email.
+* You can join our [slack channel](http://systers.io/slack-systers-opensource/).  
+Each active repo has its own channel to direct questions to (for example #powerup or #portal).  Remember that this is an inclusive community, committed to creating a safe, positive environment.  See the full [Code of Conduct](https://github.com/systers/systers.github.io/blob/master/code_of_conduct.md).
 
 [General Guidelines](#general-guidelines)  
 [Opening a New Issue](#opening-a-new-issue)  
@@ -27,7 +28,7 @@
 * Check the open and closed issues before you report an issue, to avoid duplication.
 * Use the slack channel to suggest completely new developments, not in the issue list. Use issue list to suggest bugs/features in the already implemented sections.
 ## Communicate
-The best way to connect with the maintainers is through GitHub comments. Feel free to discuss more about an issue by commenting on it or asking questions. We also have Systers Slack channel, you can request an invite here. If there is something you want to discuss privately with the maintainer and you are being hesitant to discuss it on above mediums, then drop an email.
+The best way to connect with the maintainers is through GitHub comments. Feel free to discuss more about an issue by commenting on it or asking questions. We also have Systers Slack channel, you can request an invite [here](http://systers.io/slack-systers-opensource/). If there is something you want to discuss privately with the maintainer and you are being hesitant to discuss it on above mediums, then drop an email.
 
 ## Don’t Know Code?
 We need your help too!  Look for these labels in the issues:
