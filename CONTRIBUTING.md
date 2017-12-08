@@ -4,7 +4,7 @@
 
 [General Guidelines](#general-guidelines)  
 [Opening a New Issue](#opening-a-new-issue)  
-[Avoid the Following Mistakes](#avoid-the-following-mistakes)  
+[Important Reminders](#important-reminders)  
 [Communicate](#communicate)  
 [Don’t Know Code?](#dont-know-code)  
 ## General Guidelines
@@ -15,13 +15,14 @@
 * All the PR’s need to be sent to the develop branch.
 ## Opening a New Issue
 * If you’d like to create a new issue, please go through our issue list first (open as well as closed) and make sure the issues you are reporting do not replicate the existing issues. 
+* If you’ve determined that this issue doesn’t exist anywhere else.  Use the [issue template](https://github.com/systers/systers.github.io/issues/new) to open a new issue.
 * If you have issues on multiple pages, report them separately. Do not combine them into a single issue.
 * Be sure to include a title and clear description, as much relevant information as possible.
-## Avoid the following mistakes
-* Only fix a new issue and submit a PR after you’ve reported and gotten it approved first.
-* Only work on issues assigned to you.  You can ask to take over an issue assigned to someone else if there are no comments in the last 3 days.
-* Only report issues which haven’t been previously reported by others. (Please check the closed issues too before you report an issue).
-* Only suggest completely new developments to the slack channel, not in the issue list. Use issue list to suggest bugs/features in the already implemented sections.
+## Important Reminders
+* First, ask for approval.  Then, submit a Pull Request.  Once it’s approved, begin work on it.
+* Only work on issues assigned to you.  You can ask to take over an issue if there are no comments in the last 3 days.
+* Check the open and closed issues before you report an issue, to avoid duplication.
+* Use the slack channel to suggest completely new developments, not in the issue list. Use issue list to suggest bugs/features in the already implemented sections.
 ## Communicate
 The best way to connect with the maintainers is through GitHub comments. Feel free to discuss more about an issue by commenting on it or asking questions. We also have Systers Slack channel, you can request an invite here. If there is something you want to discuss privately with the maintainer and you are being hesitant to discuss it on above mediums, then drop an email.
 
