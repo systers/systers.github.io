@@ -416,3 +416,7 @@ footer {
 p {
     font-family: "Calibri",sans-serif;
 }
+
+.gsoc a {
+  margin: 2em;
+}

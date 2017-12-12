@@ -1,0 +1,36 @@
+body {
+  background-color: rgba(68, 68, 68, .05)
+}
+
+h1 {
+  font-family: Arvo, Monaco, serif;
+  font-size: 3em;
+  font-weight: normal;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 95%;
+  table-layout: fixed;
+  margin: 2em;
+  border-spacing: .25em;
+  /*border-collapse: collapse;*/
+}
+
+th, td {
+  /*border: 1px solid #111111;*/
+  background-color:  rgba(248, 151, 40, .15);
+  padding: .5em;
+  font-family: Tahoma, serif;
+}
+
+th {
+  background-color: rgba(248, 151, 40, .5);
+}
+
+td {
+  
+}
