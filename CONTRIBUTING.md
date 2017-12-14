@@ -12,7 +12,10 @@
 * After approval you must make continuous notes on your progress in the issue while working.  If there is not at least one comment every 3 days, the maintainer can reassign the issue.  
 * If you have any questions, you can post them as a comment in your issue or in the project specific slack channel.
 * Once you’ve fixed the issue, send us a pull request.
-* All the PR’s need to be sent to the develop branch.
+* Send all pull requests to the correct branch:  
+  * Send Code pull requests to the develop branch.
+  * Send Quality Assurance pull requests to the testing branch.
+  * Send User Interface, Outreach, and Documentation pull requests to the non-coding branch.
 ## Opening a New Issue
 * If you’d like to create a new issue, please go through our issue list first (open as well as closed) and make sure the issues you are reporting do not replicate the existing issues. 
 * If you’ve determined that this issue doesn’t exist anywhere else.  Use the [issue template](https://github.com/systers/systers.github.io/issues/new) to open a new issue.
