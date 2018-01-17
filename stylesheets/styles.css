@@ -4,12 +4,29 @@ body {
     color: rgb(87, 87, 87);
 }
 
+.navLogo {
+    float: left;
+    width: 100%;
+}    
+
+nav {
+    display: inline-block;
+}
+
+nav li {
+    float: right;
+    padding: 1.25em;
+    list-style: none;
+    font-size: 1.15em;
+}
+
 h1, h2, h3 {
     font-family: 'Cairo', sans-serif;
+    margin-bottom: 0; 
 }
 
 .header{
-    border-bottom: 2px solid rgb(141,33,101);
+    border-bottom: 3px solid rgb(141,33,101);
 }
 
 h1 {
@@ -17,7 +34,7 @@ h1 {
 }
 
 .subheader{
-    border-bottom: 2px solid rgb(0,98,140);
+    border-bottom: 1px solid rgb(0,98,140);
 }
 
 h2, h3 {
@@ -46,5 +63,9 @@ td {
 }
 
 .years a {
-    margin: 2em;
+    margin: 4em;
+}
+
+.footer {
+    font-size: .75em;
 }
