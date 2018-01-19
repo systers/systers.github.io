@@ -41,6 +41,15 @@ h2, h3 {
     color: rgb(0,98,140);
 }
 
+h1, h2, h3 {
+    margin-left: 1em;
+}
+
+p {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
 a, a:link {
     text-decoration: none;
     color: rgb(98,181,229);
@@ -68,4 +77,21 @@ td {
 
 .footer {
     font-size: .75em;
+}
+
+.newcomers {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.horizontal {
+    float: center;
+    padding: .5em;
+    list-style: none;
+    font-size: 1.15em;
+}
+
+.zoom li {
+    list-style: none;
+    padding: .25em;
 }
