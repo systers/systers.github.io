@@ -1,9 +1,8 @@
 body {
-    background: white;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(87, 87, 87);
+        background: white;
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(87, 87, 87);
 }
-
 .navLogo {
     float: left;
     width: 100%;
