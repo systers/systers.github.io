@@ -1,96 +1,338 @@
 body {
-        background: white;
-        font-family: 'Montserrat', sans-serif;
-        color: rgb(87, 87, 87);
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(87, 87, 87);
 }
-.navLogo {
-    float: left;
-    width: 100%;
+/*.navLogo {
+float: left;
+width: 100%;
 }    
 
 nav {
-    display: inline-block;
+display: inline-block;
 }
 
 nav li {
-    float: right;
-    padding: 1.25em;
-    list-style: none;
-    font-size: 1.15em;
+float: right;
+padding: 1.25em;
+list-style: none;
+font-size: 1.15em;
+}*/
+
+/* Screen reader only */
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0,0,0,0);
+border: 0;
 }
 
+/* Button styling */
+.menu-toggle {
+display: inline-block;
+padding: .75em 15px;
+line-height: 1em;
+font-size: 1em;
+color: #333;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+color: rgb(141,33,101);
+}
+
+/*
+Default styles + Mobile first
+Offscreen menu style
+*/
+.main-menu {
+position: absolute;
+left: -200px;
+top: 0;
+height: 100%;
+overflow-y: visible;
+overflow-x: visible;
+transition: left 0.3s ease,
+            box-shadow 0.3s ease;
+z-index: 999;
+}
+
+.main-menu ul {
+list-style: none;
+margin: 0;
+padding: 2.5em 0 0;
+/* Hide shadow w/ -8px while 'closed' */
+-webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+   -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+        box-shadow: -8px 0 8px rgba(0,0,0,.5);
+min-height: 100%;
+width: 200px;
+background: rgb(255, 255, 255);
+}
+
+.main-menu a {
+display: block;
+padding: .75em 15px;
+line-height: 1em;
+font-size: 1em;
+color: rgb(98,181,229);
+text-decoration: none;
+border-bottom: 1px solid rgb(141,33,101);
+}
+
+/*.main-menu li:first-child a {
+border-top: 1px solid #383838;
+}*/
+
+.main-menu a:hover,
+.main-menu a:focus {
+background: #333;
+text-decoration: underline;
+}
+
+.main-menu .menu-close {
+position: absolute;
+right: 0;
+top: 0;
+}
+
+/*
+On small devices, allow it to toggle...
+*/
+/*
+:target for non-JavaScript
+aria-expanded="true/false" will be for JavaScript
+*/
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+left: 0;
+outline: none;
+-moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+-webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+position: relative;
+z-index: 1000;
+}
+
+/* 
+We could use `.main-menu:target:after`, but
+it wouldn't be clickable.
+*/
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+position: absolute;
+display: block;  
+content: "";
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: 998;
+background: #000;
+background: rgba(0,0,0,.85);
+cursor: default;
+}
+
+@supports (position: fixed) {
+.main-menu,
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+  position: fixed;
+}
+}
+
+/*
+Larger screen styling
+Horizontal menu
+*/
+@media (min-width: 768px) {
+.menu-toggle,
+.main-menu .menu-close {
+  display: none;
+}
+
+/* Undo positioning of off-canvas menu */
+.main-menu {
+  position: relative;
+  left: auto;
+  top: auto;
+  height: auto;
+}
+
+.main-menu > ul {
+  display: flex;
+  position: relative;
+  
+  /* Undo off-canvas styling */
+  padding: 0;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  height: auto;
+  width: auto;
+  background: none;
+}
+
+.main-menu a {
+  color: rgb(98,181,229);
+  border: 0 !important; /* Remove borders from off-canvas styling */
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background: none; /* Remove background from off-canvas styling */
+  color: rgb(141,33,101);
+}
+}
+
+/*
+Demo purposes only
+*/
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+header {
+padding: 20px;
+display: flex;
+align-items: baseline;
+}
+
+article {
+padding: 30px;
+width: 55em;
+font-size: 16px;
+line-height: 1.5em;
+}
+
+article h2 {
+font-weight: 500;
+font-size: 28px;
+}
+
+.logo {
+width: 100%;
+}
+
+
+
+#main-menu ul ul
+{
+  display:none;
+  position:absolute;
+  top:100%;
+  right:0;
+  background:#fff;
+  padding:0;
+}
+
+#main-menu ul
+{
+list-style:none;
+position:relative;
+float:right;
+margin:0;
+padding:0;
+}
+
+#main-menu ul li{
+position: relative;
+}
+
+#main-menu ul li:hover > ul
+{
+display:block;
+}
+
+
+
 h1, h2, h3 {
-    font-family: 'Cairo', sans-serif;
-    margin-bottom: 0; 
+font-family: 'Cairo', sans-serif;
+margin-bottom: 0; 
 }
 
 .header{
-    border-bottom: 3px solid rgb(141,33,101);
+border-bottom: 3px solid rgb(141,33,101);
 }
 
 h1 {
-    color: rgb(141,33,101);
+color: rgb(141,33,101);
 }
 
 .subheader{
-    border-bottom: 1px solid rgb(0,98,140);
+border-bottom: 1px solid rgb(0,98,140);
 }
 
 h2, h3 {
-    color: rgb(0,98,140);
+color: rgb(0,98,140);
 }
 
 h1, h2, h3 {
-    margin-left: 1em;
+margin-left: 1em;
 }
 
 p {
-    margin-left: 2em;
-    margin-right: 2em;
+margin-left: 2em;
+margin-right: 2em;
 }
 
 a, a:link {
-    text-decoration: none;
-    color: rgb(98,181,229);
+text-decoration: none;
+color: rgb(98,181,229);
 }
 
 a:hover {
-    color: rgb(141,33,101);
+color: rgb(141,33,101);
 }
 
 table {
-    width: 95%;
-    table-layout: fixed;
-    margin: 2em;
-    border-spacing: .25em;
+width: 95%;
+table-layout: fixed;
+margin: 2em;
+border-spacing: .25em;
 }
 
 td {
-    overflow: auto;
-    padding: .5em;
+overflow: auto;
+padding: .5em;
 }
 
 .years a {
-    margin: 4em;
+margin: 4em;
 }
 
 .footer {
-    font-size: .75em;
+font-size: .75em;
 }
 
 .newcomers {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+margin-left: 1.5em;
+margin-right: 1.5em;
 }
 
 .horizontal {
-    float: center;
-    padding: .5em;
-    list-style: none;
-    font-size: 1.15em;
+float: center;
+padding: .5em;
+list-style: none;
+font-size: 1.15em;
 }
 
 .zoom li {
-    list-style: none;
-    padding: .25em;
+list-style: none;
+padding: .25em;
 }

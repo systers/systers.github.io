@@ -6,32 +6,65 @@
     <title>Systers Open Source Projects by Systers</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/fontawesome-all.css">
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
 
   <body>
-      <header>
-      <div id="logoNav">
-          <a href="/"><img src="images/systers-logo.png" 
-                alt="Systers - Anitab.org logo"></a>
-      </div>
-      <nav>
+    <header>
+    </div>
+    <a href="#main-menu" 
+        class="menu-toggle"
+        role="button"
+        id="main-menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars" aria-hidden="true"></span>
+    </a>
+
+    <div class="logo">
+            <a href="/"><img src="images/systers-logo.png" 
+                          alt="Systers - Anitab.org logo"></a>
+    </div>
+
+  <nav id="main-menu" 
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+    <a href="#main-menu-toggle" 
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+        <li><a href="#join-systers">Join Systers</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internship-opportunities">Internship Opportunities</a></li>
+        <li><a href="#welcome-newcomers">Welcome Newcomers</a></li>
+        <li><a href="#">About Us</a>
             <ul>
-                <li><a href="#join-systers">Join Systers</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#internship-opportunities">Internship Opportunities</a></li>
-                <li><a href="#welcome-newcomers">Welcome Newcomers</a></li>
-                <li>About Us
-                  <ul>
-                  <li><a href="/contactus.html">Contact Us</a></li>
-                  <li><a href="/code-of-conduct">Code of Conduct</a></li>
-                  <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
-                  </ul>
+              <li><a href="/contactus.html">Contact Us</a></li>
+              <li><a href="/code-of-conduct">Code of Conduct</a></li>
+              <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
             </ul>
-        </nav>
-          </div>
-      </header>
+        </li>
+    </ul>
+    </nav>
+    <a href="#main-menu-toggle" 
+    class="backdrop" 
+    tabindex="-1"
+    aria-hidden="true" 
+    hidden></a>
+  </header>
 
     <div class="header"><h1>Welcome to Systers' Open Source!</h1></div>
         <p>Systers is an international <a href="https://anitab.org/">Anita B.org</a> community encouraging the participation of all women involved in technology.</p>    
