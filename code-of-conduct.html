@@ -6,32 +6,64 @@
     <title>Systers Open Source Projects by Systers</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/fontawesome-all.css">
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
 
   <body>
-        <header>
-        <div id="logoNav">
-            <a href="/"><img src="images/systers-logo.png" 
-                  alt="Systers - Anitab.org logo"></a>
-        </div>
-        <nav>
-              <ul>
-                  <li><a href="#join-systers">Join Systers</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="#internship-opportunities">Internship Opportunities</a></li>
-                  <li><a href="#welcome-newcomers">Welcome Newcomers</a></li>
-                  <li>About Us
-                    <ul>
-                    <li><a href="/contactus.html">Contact Us</a></li>
-                    <li><a href="/code-of-conduct">Code of Conduct</a></li>
-                    <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
-                    </ul>
-              </ul>
-          </nav>
-            </div>
-        </header>
+    <header>
+    <a href="#main-menu" 
+        class="menu-toggle"
+        role="button"
+        id="main-menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars hamburger" aria-hidden="true"></span>
+    </a>
+
+    <div>
+            <a href="/"><img class="logo" src="images/systers-logo.png" 
+                          alt="Systers - Anitab.org logo"></a>
+    </div>
+
+  <nav id="main-menu" 
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+    <a href="#main-menu-toggle" 
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+        <li><a href="/index.html#join-systers">Join Systers</a></li>
+        <li><a href="/index.html#projects">Projects</a></li>
+        <li><a href="/index.html#internship-opportunities">Internship Opportunities</a></li>
+        <li><a href="/index.html#welcome-newcomers">Welcome Newcomers</a></li>
+        <li class="toggle"><a href="#main-menu">About Us <span class="fas fa-chevron-down" "arrow"></i></a>
+            <ul>
+              <li><a href="/contactus.html">Contact Us</a></li>
+              <li><a href="/code-of-conduct">Code of Conduct</a></li>
+              <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    <a href="#main-menu-toggle" 
+    class="backdrop" 
+    tabindex="-1"
+    aria-hidden="true" 
+    hidden></a>
+  </header>
 
         <div class="header"><h1>Code of Conduct</h1></div>
 
@@ -86,7 +118,7 @@
 
 <div class="subheader"><h2>6. Reporting Guidelines</h2></div>
 
-<p>If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a <a href="systers.keeper@gmail.com">community organizer</a> as soon as possible.</p>
+<p>If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a <a href="mailto:systers.keeper@gmail.com">community organizer</a> as soon as possible.</p>
 
 <p>Additionally, community organizers are available to help community members engage with local law enforcement or to otherwise help those experiencing unacceptable behavior feel safe. In the context of in-person events, organizers will also provide escorts as desired by the person experiencing distress.</p>
 
@@ -106,10 +138,10 @@
 
 <div class="subheader"><h2>10. License and attribution</h2></div>
 
-<p>This Code of Conduct is distributed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike license</a>.</p>
+<p>This Code of Conduct is distributed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">Creative Commons Attribution-ShareAlike license</a>.</p>
 
-<p>Portions of text derived from the <a href="https://www.djangoproject.com/conduct/">Django Code of Conduct</a> and the <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy"Geek Feminism Anti-Harassment Policy</a>.
+<p>Portions of text derived from the <a href="https://www.djangoproject.com/conduct/" target="_blank">Django Code of Conduct</a> and the <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy" target="_blank">Geek Feminism Anti-Harassment Policy</a>.
 
-<p>Retrieved on November 22, 2016 from <a href="http://citizencodeofconduct.org/">http://citizencodeofconduct.org/</a></p>
+<p>Retrieved on November 22, 2016 from <a href="http://citizencodeofconduct.org/" target="_blank">Citizen Code of Conduct</a>.</p>
 
 </body>

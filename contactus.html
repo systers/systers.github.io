@@ -6,45 +6,77 @@
     <title>Systers Open Source Projects by Systers</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/fontawesome-all.css">
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
 
   <body>
-      <header>
-      <div id="logoNav">
-          <a href="/"><img src="images/systers-logo.png" 
-                alt="Systers - Anitab.org logo"></a>
-      </div>
-      <nav>
+    <header>
+    <a href="#main-menu" 
+        class="menu-toggle"
+        role="button"
+        id="main-menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars hamburger" aria-hidden="true"></span>
+    </a>
+
+    <div>
+            <a href="/"><img class="logo" src="images/systers-logo.png" 
+                          alt="Systers - Anitab.org logo"></a>
+    </div>
+
+  <nav id="main-menu" 
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+    <a href="#main-menu-toggle" 
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+        <li><a href="/index.html#join-systers">Join Systers</a></li>
+        <li><a href="/index.html#projects">Projects</a></li>
+        <li><a href="/index.html#internship-opportunities">Internship Opportunities</a></li>
+        <li><a href="/index.html#welcome-newcomers">Welcome Newcomers</a></li>
+        <li class="toggle"><a href="#main-menu">About Us <span class="fas fa-chevron-down" "arrow"></i></a>
             <ul>
-                <li><a href="#join-systers">Join Systers</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#internship-opportunities">Internship Opportunities</a></li>
-                <li><a href="#welcome-newcomers">Welcome Newcomers</a></li>
-                <li>About Us
-                  <ul>
-                  <li><a href="/contactus.html">Contact Us</a></li>
-                  <li><a href="/code-of-conduct">Code of Conduct</a></li>
-                  <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
-                  </ul>
+              <li><a href="/contactus.html">Contact Us</a></li>
+              <li><a href="/code-of-conduct">Code of Conduct</a></li>
+              <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
             </ul>
-        </nav>
-          </div>
-      </header>
+        </li>
+    </ul>
+    </nav>
+    <a href="#main-menu-toggle" 
+    class="backdrop" 
+    tabindex="-1"
+    aria-hidden="true" 
+    hidden></a>
+  </header>
 
     <div class="header"><h1>Contact Systers</h1></div>
         
     <ul>
-        <li class="horizontal"><a href="http://systers.io/slack-systers-opensource/">Slack</a></li>
-        <li class="horizontal"><a href="https://github.com/systers">GitHub</a></li>
-        <li class="horizontal"><a href="https://twitter.com/systers_org">Twitter</a></li>
-        <li class="horizontal"><a href="http://systers.org/mailman/listinfo/systers-dev">Systers Mailing List</a></li>
+        <li class="horizontal"><a href="http://systers.io/slack-systers-opensource/" target="_blank">Slack</a></li>
+        <li class="horizontal"><a href="https://github.com/systers" target="_blank">GitHub</a></li>
+        <li class="horizontal"><a href="https://twitter.com/systers_org" target="_blank">Twitter</a></li>
+        <li class="horizontal"><a href="http://systers.org/mailman/listinfo/systers-dev" target="_blank">Systers Mailing List</a></li>
 
     </ul>
 
     <div class="subheader"><h2>SYSTERS WEEKLY UPDATES</h2></div>
-    <p>We meet every Thursday at 12:00 Eastern Standard Time (17:00 UTC) on Zoom. Join from PC, Mac, Linux, iOS or Android <a href="https://zoom.us/j/768783305">here</a>.</p>
+    <p>We meet every Thursday at 12:00 Eastern Standard Time (17:00 UTC) on Zoom. Join from PC, Mac, Linux, iOS or Android <a href="https://zoom.us/j/768783305" target="_blank">here</a>.</p>
     <p>Dial-in Audio-only Conference, Meeting ID: 768 783 305</p>
     <ul class="zoom">
         <li>United States <a href="tel:+16465588656">+1 646 558 8656</a></li>

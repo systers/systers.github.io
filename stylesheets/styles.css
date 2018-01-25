@@ -66,10 +66,8 @@ z-index: 999;
 list-style: none;
 margin: 0;
 padding: 2.5em 0 0;
-/* Hide shadow w/ -8px while 'closed' */
--webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-   -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-        box-shadow: -8px 0 8px rgba(0,0,0,.5);
+/* Hide shadow w/ -2px while 'closed' */
+box-shadow: -2px 0 2px rgba(0,0,0,.5);
 min-height: 100%;
 width: 200px;
 background: rgb(255, 255, 255);
@@ -100,9 +98,6 @@ position: absolute;
 right: 0;
 top: 0;
 }
-
-/*added to try getting sublist on mobile*/
-
 
 /*
 On small devices, allow it to toggle...
@@ -326,7 +321,11 @@ padding: .5em;
 }
 
 .years a {
-margin: 4em;
+margin: 2em;
+}
+
+.years {
+  line-height: 1.5em;
 }
 
 .footer {

@@ -6,32 +6,64 @@
     <title>Systers Open Source Projects by Systers</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/fontawesome-all.css">
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
 
   <body>
-      <header>
-      <div id="logoNav">
-          <a href="/"><img src="images/systers-logo.png" 
-                alt="Systers - Anitab.org logo"></a>
-      </div>
-      <nav>
+    <header>
+    <a href="#main-menu" 
+        class="menu-toggle"
+        role="button"
+        id="main-menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars hamburger" aria-hidden="true"></span>
+    </a>
+
+    <div>
+            <a href="/"><img class="logo" src="images/systers-logo.png" 
+                          alt="Systers - Anitab.org logo"></a>
+    </div>
+
+  <nav id="main-menu" 
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+    <a href="#main-menu-toggle" 
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+        <li><a href="/index.html#join-systers">Join Systers</a></li>
+        <li><a href="/index.html#projects">Projects</a></li>
+        <li><a href="/index.html#internship-opportunities">Internship Opportunities</a></li>
+        <li><a href="/index.html#welcome-newcomers">Welcome Newcomers</a></li>
+        <li class="toggle"><a href="#main-menu">About Us <span class="fas fa-chevron-down" "arrow"></i></a>
             <ul>
-                <li><a href="#join-systers">Join Systers</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#internship-opportunities">Internship Opportunities</a></li>
-                <li><a href="#welcome-newcomers">Welcome Newcomers</a></li>
-                <li>About Us
-                  <ul>
-                  <li><a href="/contactus.html">Contact Us</a></li>
-                  <li><a href="/code-of-conduct">Code of Conduct</a></li>
-                  <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
-                  </ul>
+              <li><a href="/contactus.html">Contact Us</a></li>
+              <li><a href="/code-of-conduct">Code of Conduct</a></li>
+              <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
             </ul>
-        </nav>
-          </div>
-      </header>
+        </li>
+    </ul>
+    </nav>
+    <a href="#main-menu-toggle" 
+    class="backdrop" 
+    tabindex="-1"
+    aria-hidden="true" 
+    hidden></a>
+  </header>
 
 <div class="header"><h1>Reporting Guidelines</h1></div>
 <p>If you believe someone is violating the code of conduct we ask that you report it to Systers by emailing the <a href="mailto:systers.keeper@gmail.com">Systers Keeper</a>.</p>
@@ -87,6 +119,6 @@
 <p>Only permanent resolutions (such as bans) may be appealed. To appeal a decision of the working group, contact the Systers' Open Source Board at os-board@anitab.org with your appeal and the board will review the case.</p>
 
 <p class="footer">Revision 1.0, DRAFT, proposed June 2014</p>
-<p class="footer">Reporting Guidelines derived from those of the <a href"https://www.djangoproject.com/conduct/reporting/">Django Software Foundation</a></p>
+<p class="footer">Reporting Guidelines derived from those of the <a href="https://www.djangoproject.com/conduct/reporting/" target="_blank">Django Software Foundation</a></p>
 
 </body>
