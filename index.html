@@ -22,11 +22,11 @@
         aria-controls="main-menu"
         aria-label="Open main menu">
         <span class="sr-only">Open main menu</span>
-        <span class="fa fa-bars" aria-hidden="true"></span>
+        <span class="fa fa-bars hamburger" aria-hidden="true"></span>
     </a>
 
-    <div class="logo">
-            <a href="/"><img src="images/systers-logo.png" 
+    <div>
+            <a href="/"><img class="logo" src="images/systers-logo.png" 
                           alt="Systers - Anitab.org logo"></a>
     </div>
 
@@ -50,7 +50,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#internship-opportunities">Internship Opportunities</a></li>
         <li><a href="#welcome-newcomers">Welcome Newcomers</a></li>
-        <li><a href="#">About Us</a>
+        <li class="toggle"><a href="#main-menu">About Us <span class="fas fa-chevron-down" "arrow"></i></a>
             <ul>
               <li><a href="/contactus.html">Contact Us</a></li>
               <li><a href="/code-of-conduct">Code of Conduct</a></li>
@@ -71,16 +71,16 @@
     
         <p>We are committed to providing a friendly, safe, and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, work experience, or religion (or lack thereof).</p>
 
-    <div class="subheader"><h2>JOIN SYSTERS</h2></div>
+    <div class="subheader" id="join-systers"><h2>JOIN SYSTERS</h2></div>
         <p> In order to engage with the community, you can sign up on <a href="http://systers.io/slack-systers-opensource/">Systers Open Source Slack</a> or subscribe to our <a href="http://systers.org/mailman/listinfo/systers-dev">systers-dev mailing list</a> and send out an introductory email.</p>
 
         <p>You can also attend the Systers Weekly Update meetings every Thursday at 12:00 Eastern Standard Time (17:00 UTC) on Zoom.  You'll find the meeting details on our contact page.</p>
 
-    <div class="subheader"><h2>PROJECTS</h2></div>
+    <div class="subheader" id="projects"><h2>PROJECTS</h2></div>
         <p>Our projects focus on impacting users and communities by improving their lives with technology. We use various development languages and technologies, and encourage our contributors to learn new skills and solve new challenges. We’ve created a repository on GitHub so that contributors can publish and store their code, connect with other open source communities, and learn how to store revisions of code like Git. Github tracks your personal contributions, so you can share them as part of your portfolio.</p>
 
     <h3>Peace Corps Projects</h3>
-        <p>The Peace Corps has had nearly 220,000 volunteers (PCVs) in 151 countries around the world since its creation in 1961. Many great technology projects are started for the Peace Corps, usually at hackathons, but they are rarely complete enough to deploy to the PCVs who need technology. Systers take on these projects, completes them, then works with Peace Corps administrators to get them tested and deployed in the field.</p>
+        <p>The <a href="https://www.peacecorps.gov/">Peace Corps</a> has had nearly 220,000 volunteers (PCVs) in 151 countries around the world since its creation in 1961. Many great technology projects are started for the Peace Corps, usually at hackathons, but they are rarely complete enough to deploy to the PCVs who need technology. Systers take on these projects, completes them, then works with Peace Corps administrators to get them tested and deployed in the field.</p>
 
         <p>Please note that these projects have been archived until AnitaB.org finds new contacts within Peace Corps to finish and test these projects in the field.</p>
         
@@ -108,7 +108,7 @@
                 <td><a href="https://github.com/systers/ossprojects/wiki/PowerUp/wiki">PowerUp</a></td></tr>
         </table>
 
-    <div class="subheader"><h2>INTERNSHIP OPPORTUNITIES</h2></div>
+    <div class="subheader" id="internship-opportunities"><h2>INTERNSHIP OPPORTUNITIES</h2></div>
         <p>Systers participates in several Open Source Internships, including <a href=”https://summerofcode.withgoogle.com/”>Google Summer of Code</a>, <a href=”https://www.outreachy.org/”>Outreachy</a>, and <a href=”https://railsgirlssummerofcode.org/”>Rails Girls Summer of Code</a> to encourage new people to contribute to our projects and become part of our community.</p>
 
     <h3>Google Summer of Code</h3>
@@ -133,7 +133,7 @@
             <a href="/rgsoc/2018.html">2018</a>
         </p>
 
-    <div class="subheader"><h2>WELCOME NEWCOMERS</h2></div>
+    <div class="subheader" id="welcome-newcomers"><h2>WELCOME NEWCOMERS</h2></div>
         <p>Each project has issues labeled "First Timers Only," try working on one of those for your first pull request.</p> 
         <p>Below there are tutorials and cheatsheets from Git to Glitch to Markdown. As well as information on how to help, even if you're not a developer.  If you need help reach out on the #questions Slack channel or in the channel for the specific project you have questions about (#portal for the portal repo, etc.)</p>
 
