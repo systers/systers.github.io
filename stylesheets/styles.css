@@ -158,48 +158,58 @@ Larger screen styling
 Horizontal menu
 */
 @media (min-width: 768px) {
-.menu-toggle,
-.main-menu .menu-close {
-  display: none;
-}
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
 
-/* Undo positioning of off-canvas menu */
-.main-menu {
-  position: relative;
-  left: auto;
-  top: auto;
-  height: auto;
-}
+  /* Undo positioning of off-canvas menu */
+  .main-menu {
+    position: relative;
+    left: auto;
+    top: auto;
+    height: auto;
+  }
 
-header {
-  dislplay: flex;
-  justify-content: space-between;
-}
+  header {
+    dislplay: flex;
+    justify-content: space-between;
+  }
 
-.main-menu > ul {
-  display: flex;
-  position: relative;
+  .main-menu > ul {
+    display: flex;
+    position: relative;
+    
+    /* Undo off-canvas styling */
+    padding: 0;
+    -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+            box-shadow: none;
+    height: auto;
+    width: auto;
+    background: none;
+  }
+
+  .main-menu a {
+    color: rgb(98,181,229);
+    border: 0 !important; /* Remove borders from off-canvas styling */
+  }
+
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none; /* Remove background from off-canvas styling */
+    color: rgb(141,33,101);
+  }
   
-  /* Undo off-canvas styling */
-  padding: 0;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
-  height: auto;
-  width: auto;
-  background: none;
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+  display: none;
+  }
+  .main-menu:target,
+.main-menu[aria-expanded="true"] {
+box-shadow: 0 0 0 0;
 }
-
-.main-menu a {
-  color: rgb(98,181,229);
-  border: 0 !important; /* Remove borders from off-canvas styling */
-}
-
-.main-menu a:hover,
-.main-menu a:focus {
-  background: none; /* Remove background from off-canvas styling */
-  color: rgb(141,33,101);
-}
+  
 }
 
 /*
