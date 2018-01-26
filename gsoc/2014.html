@@ -1,16 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <title>GSoC 2014</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../stylesheets/tables.css">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Google Summer of Code 2014</title>
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/fontawesome-all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
+
+  <body>
+    <header>
+    <a href="#main-menu" 
+        class="menu-toggle"
+        role="button"
+        id="main-menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars hamburger" aria-hidden="true"></span>
+    </a>
+
+    <div>
+            <a href="/"><img class="logo" src="/images/systers-logo.png" 
+                          alt="Systers - Anitab.org logo"></a>
+    </div>
+
+  <nav id="main-menu" 
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+    <a href="#main-menu-toggle" 
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+        <li><a href="/index.html#join-systers">Join Systers</a></li>
+        <li><a href="/index.html#projects">Projects</a></li>
+        <li><a href="/index.html#internship-opportunities">Internship Opportunities</a></li>
+        <li><a href="/index.html#welcome-newcomers">Welcome Newcomers</a></li>
+        <li class="toggle"><a href="/index.html#main-menu">About Us <span class="fas fa-chevron-down" "arrow"></i></a>
+            <ul>
+              <li><a href="/contactus.html">Contact Us</a></li>
+              <li><a href="/code-of-conduct">Code of Conduct</a></li>
+              <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    <a href="#main-menu-toggle" 
+    class="backdrop" 
+    tabindex="-1"
+    aria-hidden="true" 
+    hidden></a>
+  </header>
   
   <body>
-    <h1>Google Summer of Code 2014</h1>
-    <table>
+    <h1 class="table-header">Google Summer of Code 2014</h1>
+    <table class="internships">
       <tr><th colspan="4">Peace Corps Projects</th></tr>
       <tr><th>Project</th><th>Students</th><th>Project Manager & Mentor</th><th>Mentors</th></tr>
       <tr><td>PeaceTrack (Android)</td><td>Pooja Bansal(India)</td><td>Nicki Hutchen (Memphis)</td><td>Chiu-Ki Chan (Denver) <br> Neeraj Rao (Gainsville, FL)</td></tr>
@@ -21,7 +77,7 @@
       <tr><td>Mobile App Control Center</td><td>Vaibhavi Desai (India)</td><td colspan="2">Rose Robinson (Atlanta)</td></tr>
       <tr><td>Language Translation</td><td>Saumya Gurtu (India)</td><td>Ana Cutillas (Madrid)</td><td>Pamela Vickers (Atlanta) <br> Sylvain Abelard (Paris) <br> Eve Tulburt (Chicago) <br> Ala' Diab (Chicago)</td></tr>
     
-    <table>
+    <table class="internships">
       <tr><th colspan="4">Systers Projects</th></tr>
       <tr><th>Project</th><th>Students</th><th>Project Manager & Mentor</th><th>Mentors</th></tr>
       <tr><td>VMS</td><td>Irish Medina (Canada) <br> Jayesh Lahori (India)</td><td>Suzanne Mello-Stark (Kingston, RI)</td><td>Sneha Priscilla (Bangalore) <br> Stephen Turnbull (Tokyo)</td></tr>

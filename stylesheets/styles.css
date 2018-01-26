@@ -171,6 +171,11 @@ Horizontal menu
   height: auto;
 }
 
+header {
+  dislplay: flex;
+  justify-content: space-between;
+}
+
 .main-menu > ul {
   display: flex;
   position: relative;
@@ -347,4 +352,31 @@ font-size: 1.15em;
 .zoom li {
 list-style: none;
 padding: .25em;
+}
+
+.internships {
+  width: 95%;
+  table-layout: fixed;
+  margin: 2em;
+  border-spacing: .25em;
+  /*border-collapse: collapse;*/
+}
+
+.internships th, .internships td {
+  /*border: 1px solid #111111;*/
+  background-color:  rgba(238, 151, 40, .15);
+  padding: .5em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.internships th {
+  background-color: rgba(238, 151, 40, .5);
+}
+
+.table-header {
+  text-align: center;
+}
+
+.p-center {
+  text-align: center;
 }
