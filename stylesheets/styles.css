@@ -365,22 +365,32 @@ padding: .25em;
 }
 
 .internships {
-  width: 95%;
+  width: 98%;
   table-layout: fixed;
-  margin: 2em;
+  margin: 1em;
   border-spacing: .25em;
   /*border-collapse: collapse;*/
 }
 
 .internships th, .internships td {
   /*border: 1px solid #111111;*/
-  background-color:  rgba(238, 151, 40, .15);
   padding: .5em;
   font-family: 'Montserrat', sans-serif;
+  font-size: 85%;
 }
 
 .internships th {
-  background-color: rgba(238, 151, 40, .5);
+  background-color: rgb(238, 151, 40);
+  color: white;
+  text-transform: uppercase;
+}
+
+.internships tr:nth-child(odd) {
+  background-color:  rgba(238, 151, 40, .1);
+}
+
+.internships tr:nth-child(even) {
+  background-color:  rgba(238, 151, 40, .25);
 }
 
 .table-header {
