@@ -75,12 +75,13 @@ background: rgb(255, 255, 255);
 
 .main-menu a {
 display: block;
-padding: .75em 15px;
+padding: .75em;
 line-height: 1em;
 font-size: 1em;
 color: rgb(98,181,229);
 text-decoration: none;
 border-bottom: 1px solid rgb(141,33,101);
+text-align: center;
 }
 
 /*.main-menu li:first-child a {
@@ -179,6 +180,7 @@ Horizontal menu
   .main-menu > ul {
     display: flex;
     position: relative;
+    justify-content: space-between;
     
     /* Undo off-canvas styling */
     padding: 0;
