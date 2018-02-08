@@ -309,6 +309,7 @@ color: rgb(0,98,140);
 
 h1, h2, h3 {
 margin-left: 1em;
+font-weight: normal;
 }
 
 p {
