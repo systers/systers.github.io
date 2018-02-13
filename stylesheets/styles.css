@@ -192,6 +192,7 @@ Horizontal menu
   }
 }
 
+
 /*
 Demo purposes only
 */
@@ -264,7 +265,6 @@ article h2 {
 }
 
 
-
 h1, h2, h3 {
   font-family: 'Cairo', sans-serif;
   margin-bottom: 0; 
@@ -287,7 +287,7 @@ h2, h3 {
 }
 
 h1, h2, h3 {
-  margin-left: 1em;
+  margin-left: 1rem;
   font-weight: normal;
 }
 
@@ -381,4 +381,15 @@ td {
 
 .p-center {
   text-align: center;
+}
+
+@media (min-width: 1024px) {
+  p, table, .newcomers {
+    margin-right: 8rem;
+    margin-left: 8rem;
+  }
+
+  h2, h3 {
+    margin-left: 5rem;
+  }
 }
