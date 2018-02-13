@@ -1,24 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <title>GSoC 2013</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles.css">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Google Summer of Code 2013</title>
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/fontawesome-all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
+
+  <body>
+    <header>
+    <a href="#main-menu" 
+        class="menu-toggle"
+        role="button"
+        id="main-menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars hamburger" aria-hidden="true"></span>
+    </a>
+
+    <div>
+            <a href="/"><img class="logo" src="/images/systers-logo.png" 
+                          alt="Systers - Anitab.org logo"></a>
+    </div>
+
+  <nav id="main-menu" 
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+    <a href="#main-menu-toggle" 
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+        <li><a href="/index.html#join-systers">Join Systers</a></li>
+        <li><a href="/index.html#projects">Projects</a></li>
+        <li><a href="/index.html#internship-opportunities">Internship Opportunities</a></li>
+        <li><a href="/index.html#welcome-newcomers">Welcome Newcomers</a></li>
+        <li class="toggle"><a href="/index.html#main-menu">About Us <span class="fas fa-chevron-down" "arrow"></i></a>
+            <ul>
+              <li><a href="/contactus.html">Contact Us</a></li>
+              <li><a href="/code-of-conduct">Code of Conduct</a></li>
+              <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    <a href="#main-menu-toggle" 
+    class="backdrop" 
+    tabindex="-1"
+    aria-hidden="true" 
+    hidden></a>
+  </header>
   
   <body>
-    <h1>Google Summer of Code 2013</h1>
-    
-    <table>
+    <h1 class="table-header">Google Summer of Code 2013</h1>
+    <table class="internships">
       <tr><th>Project</th><th>Students</th><th>Project Manager & Mentor</th><th>Mentors</th></tr>
-      <tr><td>Admin Essay</td><td>Julia Proft (Vermont/New York)</td><td>Rose Robinson (Atlanta, GA)</td><td>Promita Bose (Atlanta, GA)</td></tr>
-      <tr><td>Admin dList Script</td><td>Ioana</td><td>Ana Cutillas (Spain)</td><td>Promita Bose (Atlanta, GA)</td></tr>
-      <tr><td>Selenium Testing</td><td>Olga</td><td>Mayank Juneja (India)</td><td>Promita Bose (Atlanta, GA)</td></tr>
-      <tr><td>RSS Feed</td><td>Joanna</td><td>Nicki Hutchens (Memphis, TN)</td><td>Richard Wackerbarth <br> Barry Warsaw (Washington, DC)</td></tr>
-      <tr><td>UI Member Area</td><td>Shanu (Dardie) Salunke (Bangalore)</td><td>Danielle Cummings (Baltimore, MD)</td><td>Aurelien Bompard (Paris) <br> Stephen Turnbull (Japan)</td></tr>
-      <tr><td>UI MM3 Design</td><td>Sneha Priscilla (Bangalore)</td><td>Lynn Root (San Francisco)</td><td>Florian Fluchs (Berlin) <br> Terri Oda (Portland, OR)</td></tr>
+      <tr><td>Admin Essay</td><td>Julia (USA)</td><td>Rose (USA)</td><td>Promita (USA)</td></tr>
+      <tr><td>Admin dList Script</td><td>Ioana</td><td>Ana (Spain)</td><td>Promita (USA)</td></tr>
+      <tr><td>Selenium Testing</td><td>Olga</td><td>Mayank (India)</td><td>Promita (USA)</td></tr>
+      <tr><td>RSS Feed</td><td>Joanna</td><td>Nicki (USA)</td><td>Richard Wackerbarth <br> Barry (USA)</td></tr>
+      <tr><td>UI Member Area</td><td>Shanu (India)</td><td>Danielle (USA)</td><td>Aurelien (France) <br> Stephen (Japan)</td></tr>
+      <tr><td>UI MM3 Design</td><td>Sneha (India)</td><td>Lynn (USA)</td><td>Florian (Germany) <br> Terri (USA)</td></tr>
     </table>
     
   </body>

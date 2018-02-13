@@ -1,24 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <title>GSoC 2010</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles.css">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Google Summer of Code 2010</title>
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/fontawesome-all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
+
+  <body>
+    <header>
+    <a href="#main-menu" 
+        class="menu-toggle"
+        role="button"
+        id="main-menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars hamburger" aria-hidden="true"></span>
+    </a>
+
+    <div>
+            <a href="/"><img class="logo" src="/images/systers-logo.png" 
+                          alt="Systers - Anitab.org logo"></a>
+    </div>
+
+  <nav id="main-menu" 
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+    <a href="#main-menu-toggle" 
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+        <li><a href="/index.html#join-systers">Join Systers</a></li>
+        <li><a href="/index.html#projects">Projects</a></li>
+        <li><a href="/index.html#internship-opportunities">Internship Opportunities</a></li>
+        <li><a href="/index.html#welcome-newcomers">Welcome Newcomers</a></li>
+        <li class="toggle"><a href="/index.html#main-menu">About Us <span class="fas fa-chevron-down" "arrow"></i></a>
+            <ul>
+              <li><a href="/contactus.html">Contact Us</a></li>
+              <li><a href="/code-of-conduct">Code of Conduct</a></li>
+              <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    <a href="#main-menu-toggle" 
+    class="backdrop" 
+    tabindex="-1"
+    aria-hidden="true" 
+    hidden></a>
+  </header>
   
   <body>
-    <h1>Google Summer of Code 2010</h1>
-    
-    <table>
+    <h1 class="table-header">Google Summer of Code 2010</h1>
+    <table class="internships">
       <tr><th>Project</th><th>Students</th><th>Project Manager & Mentor</th><th>Mentors</th></tr>
-      <tr><td>Mailman Authentication</td><td>Jaideep Khandelwal</td><td>Malveeka Tewari</td><td>Radhika Srivastava</td></tr>
-      <tr><td>Mailman Archives UI</td><td>Yian Shang</td><td>Robin Jeffries</td><td>Terri Oda (Portland, OR)</td></tr>
-      <tr><td>Mailman Archives Search</td><td>Priya Kuber</td><td>Robin Jeffries</td><td></td></tr>
-      <tr><td>Patches, Release, & Testing Automation</td><td>Vid</td><td>Jason Cox</td><td>Kathy Richardson</td></tr>
-      <tr><td>Mailman 3.0 UI</td><td>Anna</td><td>Florian Fuchs (Berlin)</td><td></td></tr>
-      <tr><td>Wishlist Items and Bug Fixes</td><td>Erica</td><td>Anne Gunn</td><td>Simone Wu</td></tr>
+      <tr><td>Mailman Authentication</td><td>Jaideep</td><td>Malveeka</td><td>Radhika</td></tr>
+      <tr><td>Mailman Archives UI</td><td>Yian</td><td>Robin</td><td>Terri (USA)</td></tr>
+      <tr><td>Mailman Archives Search</td><td>Priya</td><td>Robin</td><td></td></tr>
+      <tr><td>Patches, Release, & Testing Automation</td><td>Vid</td><td>Jason</td><td>Kathy</td></tr>
+      <tr><td>Mailman 3.0 UI</td><td>Anna</td><td>Florian (Germany)</td><td></td></tr>
+      <tr><td>Wishlist Items and Bug Fixes</td><td>Erica</td><td>Anne</td><td>Simone</td></tr>
     </table>
     
   </body>

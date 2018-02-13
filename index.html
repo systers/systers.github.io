@@ -6,129 +6,156 @@
     <title>Systers Open Source Projects by Systers</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/fontawesome-all.css">
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Systers Open Source Projects</h1>
-        <p class="header">Main GitHub web page for Systers</p>
+    <header>
+    <a href="#main-menu" 
+        class="menu-toggle"
+        role="button"
+        id="main-menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars hamburger" aria-hidden="true"></span>
+    </a>
 
+    <div>
+            <a href="/"><img class="logo" src="images/systers-logo.png" 
+                          alt="Systers - Anitab.org logo"></a>
+    </div>
 
+  <nav id="main-menu" 
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+    <a href="#main-menu-toggle" 
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+        <li><a href="#join-systers">Join Systers</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internship-opportunities">Internship Opportunities</a></li>
+        <li><a href="#welcome-newcomers">Welcome Newcomers</a></li>
+        <li class="toggle"><a href="#main-menu">About Us <span class="fas fa-chevron-down" "arrow"></i></a>
+            <ul>
+              <li><a href="/contactus.html">Contact Us</a></li>
+              <li><a href="/code-of-conduct">Code of Conduct</a></li>
+              <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    <a href="#main-menu-toggle" 
+    class="backdrop" 
+    tabindex="-1"
+    aria-hidden="true" 
+    hidden></a>
+  </header>
 
-        <ul>
-          <li><a class="buttons github" href="https://github.com/systers">GitHub Profile</a></li>
-        </ul>
+    <div class="header"><h1>Welcome to Systers' Open Source!</h1></div>
+        <p>Systers is an international <a href="https://anitab.org/" target="_blank">Anita B.org</a> community encouraging the participation of all women involved in technology.</p>    
+    
+        <p>We are committed to providing a friendly, safe, and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, work experience, or religion (or lack thereof).</p>
 
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to Systers GitHub Open Source Page</h3>
+    <div class="subheader" id="join-systers"><h2>JOIN SYSTERS</h2></div>
+        <p> In order to engage with the community, you can sign up on <a href="http://systers.io/slack-systers-opensource/" target="_blank">Systers Open Source Slack</a> or subscribe to our <a href="http://systers.org/mailman/listinfo/systers-dev" target="_blank">systers-dev mailing list</a> and send out an introductory email.</p>
 
-<p>Our goal is to have projects that impact users and communities by improving their duties/tasks with technology.
-We want to provide projects in 1)various development languages, 2) technologies, and 3) challenges.
-Systers will still maintain our current wiki for resources, however, we have created a repository here on github
-(by popular demand) so that students/mentees can publish and store their code, connect with other open source
-communities who use github, and learn how to store revisions of code like Git (<a href="https://try.github.io/levels/1/challenges/1" target="_blank">Try Git</a>!).
+        <p>You can also attend the Systers Weekly Update meetings every Thursday at 12:00 Eastern Standard Time (17:00 UTC) on Zoom.  You'll find the meeting details on our <a href="/contactus.html">contact page</a>.</p>
 
-More Github training materials >> <a href="https://training.github.com/resources/videos/" target="_blank">here</a>.
+    <div class="subheader" id="projects"><h2>PROJECTS</h2></div>
+        <p>Our projects focus on impacting users and communities by improving their lives with technology. We use various development languages and technologies, and encourage our contributors to learn new skills and solve new challenges. We’ve created a repository on GitHub so that contributors can publish and store their code, connect with other open source communities, and learn how to store revisions of code like Git. Github tracks your personal contributions, so you can share them as part of your portfolio.</p>
 
-Some of the projects below are for <a href="http://www.peacecorps.gov/" target="_blank">Peace Corps</a> volunteers (PCVs) and administrators. It is important that PCVs
-have tools that can help collect data and report back to PC headquarters on progress and status of their assignments.
-It's just as important for PC administrators/managers to track their PCVs activities and assignments. Additionally,
-our organization, <a href="http://anitaborg.org/" target="_blank">Anita Borg Institute</a> and Systers community have open source projects that will help our staff manage
-our volunteers and help our members collaborate better.
-</p>
+    <h3>Peace Corps Projects</h3>
+        <p>The <a href="https://www.peacecorps.gov/" target="_blank">Peace Corps</a> has had nearly 220,000 volunteers (PCVs) in 151 countries around the world since its creation in 1961. Many great technology projects are started for the Peace Corps, usually at hackathons, but they are rarely complete enough to deploy to the PCVs who need technology. Systers take on these projects, completes them, then works with Peace Corps administrators to get them tested and deployed in the field.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+        <p>Please note that these projects have been archived until AnitaB.org finds new contacts within Peace Corps to finish and test these projects in the field.</p>
+        
+        <table>
+            <tr><td><a href="https://github.com/systers/peacetrack-android/wiki" target="_blank">PeaceTrack Android</a></td> 
+                <td><a href="https://github.com/systers/peacetrack-ios/wiki" target="_blank">PeaceTrack iOS</a></td></tr>
+            <tr><td><a href="https://github.com/systers/malaria-app-android/wiki" target="_blank">Malaria Prevention Android</a></td>
+                <td><a href="https://github.com/systers/malaria-app-ios/wiki" target="_blank">Malaria Prevention iOS</a></td></tr>
+            <tr><td><a href="https://github.com/systers/macc/wiki" target="_blank">Mobile App Control Center (Python w/Django)</a></td>
+                <td><a href="https://github.com/systers/crowdmap/wiki" target="_blank">CrowdMap</a></td></tr>
+            <tr><td><a href="https://github.com/systers/language-translation/wiki" target="_blank">Photo Language Translation (Ruby on Rails)</a></td> 
+                <td><a href="https://github.com/systers/ossprojects/wiki/Crowdsourcing%20for%20Guyana%20Deaf%20Community" target="_blank">Crowdsourcing for Guyana Deaf Community</a></td></tr>
+            <tr><td colspan="2"><a href="https://github.com/systers/PCSA/wiki" target="_blank">PCSA Office of Victim Advocacy</a></td></tr>
+        </table>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+    <h3>Systers Projects</h3>
+        <p>Systers, an Anita Borg Institute (ABI) Community, has very specific needs with managing volunteers. We have the Volunteer Management System and Systers Portal to help Systers and volunteers to make an engaged connection. We also maintain the Systers GNU Mailman and apply our customized features to the latest release. Our customized version, is very complex and has a higher difficulty level for developers. We’re also working on a new project to help manage our community's meetups.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Our Projects</h3>
+        <table>
+            <tr><td><a href="https://github.com/systers/vms/wiki" target="_blank">Volunteer Management System (Python w/Django)</a></td>
+                <td><a href="https://github.com/systers/portal/wiki" target="_blank">Systers Portal(Python w/Django)</a></td></tr>
+            <tr><td><a href="https://github.com/systers/automated-testing/wiki" target="_blank">Automated Testing (Selenium using Java & Python)</a></td>
+                <td><a href="https://github.com/systers/ossprojects/wiki/Meetup%20Features" target="_blank">Meetup Features for Portal</a></td></tr>
+            <tr><td><a href="https://github.com/systers/ossprojects/wiki/Systers%20Features%20for%20Mailman%203" target="_blank">Systers Features for Mailman 3</a></td>
+                <td><a href="https://github.com/systers/ossprojects/wiki/PowerUp" target="_blank">PowerUp</a></td></tr>
+        </table>
 
+    <div class="subheader" id="internship-opportunities"><h2>INTERNSHIP OPPORTUNITIES</h2></div>
+        <p>Systers participates in several Open Source Internships, including <a href="https://summerofcode.withgoogle.com/" target="_blank">Google Summer of Code</a>, <a href="https://www.outreachy.org/" target="_blank">Outreachy</a>, and <a href="https://railsgirlssummerofcode.org/" target="_blank">Rails Girls Summer of Code</a> to encourage new people to contribute to our projects and become part of our community.</p>
 
-<h4>Peace Corps Projects</h4>
-
-<p>The Peace Corps has many volunteers (PCVs) out in the field assigned in various countries around the world.
-They get a lot of great technology projects started, usually at hackathons, but they never get any of them complete
-so that they can deploy the applications to the PCVs who really need technology to help their assignments in many ways.
-Systers will be working on 4 main Peace Corp projects that we hope to have deployed by the end of this program.</p>
-
-<p>[1] PeaceTrack - (<a href="https://github.com/systers/peacetrack-android/wiki">Android</a> and <a href="https://github.com/systers/peacetrack-ios/wiki">iOS</a> versions)
-        >> <a href="https://github.com/systers/peacetrack-readme/wiki">Read Me</a></p>
-
-<p>[2] Malaria Prevention (<a href="https://github.com/systers/malaria-app-android/wiki">Android</a> and <a href="https://github.com/systers/malaria-app-ios/wiki">iOS</a> versions)
-        >> <a href="https://github.com/systers/malaria-app-readme/wiki">Read Me</a></p>
-
-<p>[3] <a href="https://github.com/systers/macc/wiki">Mobile App Control Center</a> (Python w/Django)</p>
-
-<p>[4] <a href="https://github.com/systers/crowdmap/wiki">CrowdMap</a> (Ushahidi)</p>
-
-<p>[5] <a href="https://github.com/systers/language-translation/wiki">Photo Language Translation</a> (Ruby on Rails)</p>
-
-<p>[6] <a href="https://github.com/systers/ossprojects/wiki/Crowdsourcing%20for%20Guyana%20Deaf%20Community">Crowdsourcing for Guyana Deaf Community</a> (Forked <a href="https://github.com/systers/crowdmap/wiki">Repo</a> from Peace Corps)</p>
-
-<p>[7] <a href="https://github.com/systers/PCSA/wiki">PCSA Office of Victim Advocacy</a></p>
-
-<h4>Systers Projects</h4>
-<p>Systers, an Anita Borg Institute (ABI) Community, has very specific needs to help them internally and externally with managing volunteers and having a Systers (and sub groups) portal. The Volunteer Management System and Systers Portal will hope to help Systers and volunteers to make an engaged connection.
-
-Systers will also also be upgrading to the latest Systers GNU Mailman and applying our customized Systers features
-to the latest release. Because we have a customized version, it is a very complex and has a higher difficulty level for
-programmers.
-
-Additionally, we have a new project this year to help manage our community's meetups.
-</p>
-
-<p>[1] <a href="https://github.com/systers/vms/wiki">Volunteer Management System</a> (Python w/Django)</p>
-
-<p>[2] <a href="https://github.com/systers/portal/wiki">Systers Portal</a> (Python w/Django)</p>
-
-<p>[3] <a href="https://github.com/systers/automated-testing/wiki">Automated Testing</a> (Selenium using both Java and Python)</p>
-
-<p>[4] <a href="https://github.com/systers/ossprojects/wiki/Meetup%20Features">Meetup Features for Portal</a></p>
-
-<p>[5] <a href="https://github.com/systers/ossprojects/wiki/Systers%20Features%20for%20Mailman%203">Systers Features for Mailman 3</a></p>
-
-<p>[6] <a href="https://github.com/systers/ossprojects/wiki/PowerUp/wiki">PowerUp</a></p>
-
-<h4>
-  Google Summer of Code
-        </h4>
-<p class="gsoc">
-  <a href="/gsoc/2016.html">2016</a>
-  <a href="/gsoc/2015.html">2015</a>
-  <a href="/gsoc/2014.html">2014</a>
-  <a href="/gsoc/2013.html">2013</a>
-  <a href="/gsoc/2012.html">2012</a>
-  <a href="/gsoc/2010.html">2010</a>
-  <a href="/gsoc/2009.html">2009</a>
+    <h3>Google Summer of Code</h3>
+        <p class="years">
+            <a href="/gsoc/2017.html">2017</a>
+            <a href="/gsoc/2016.html">2016</a>
+            <a href="/gsoc/2015.html">2015</a>
+            <a href="/gsoc/2014.html">2014</a>
+            <a href="/gsoc/2013.html">2013</a>
+            <a href="/gsoc/2012.html">2012</a>
+            <a href="/gsoc/2010.html">2010</a>
+            <a href="/gsoc/2009.html">2009</a>
         </p>
 
-<!--<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+    <h3>Outreachy (winter rounds only)</h3>
+        <p class="years">
+            <a href="/outreachy/2017.html">2017</a>
+        </p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>-->
+    <h3>Ruby Girls Summer of Code</h3>
+        <p class="years">
+            <a href="/rgsoc/2018.html">2018</a>
+        </p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+    <div class="subheader" id="welcome-newcomers"><h2>WELCOME NEWCOMERS</h2></div>
+        <p>Each project has issues labeled "First Timers Only," try working on one of those for your first pull request.</p> 
+        <p>Below there are tutorials and cheatsheets from Git to Glitch to Markdown. As well as information on how to help, even if you're not a developer.  If you need help reach out on the #questions Slack channel or in the channel for the specific project you have questions about (#portal for the portal repo, etc.)</p>
 
-<p>If you want to contribute or have questions about our projects, please send questions to  <a href="mailto:systers-keeper@systers.org?Subject=Questions%20about%20Systers%20Open%20Source%20Projects">systers-keeper@systers.org</a>. </p>
-      </section>
-      <footer>
-        <p><small><a href="http://anitaborg.org/get-involved/systers/">Systers</a>, an <a href="http://anitaborg.org">Anita Borg Institute </a> Community.</small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <h3>Tutorials and Other Helpful Places</h3>
+    <ul class="newcomers">
+        <li>Here’s a 15 minute tutorial from GitHub to learn <a href="https://try.github.io/levels/1/challenges/1" target="_blank">Git</a> or use this <a href="https://github.com/jlord/git-it-electron" target="_blank">awesome tutorial</a>.</li>
+        <li>After you’ve got a basic understanding of Git, work through some <a href="https://guides.github.com/" target="_blank">Github Tutorials</a></li>
+        <li><a href="https://glitch.com/about/" target="_blank">Glitch</a> gives you a way to start coding without having to set up a development environment. Just sign up, click create a new website, and choose import from Github from the advanced options. Then you can start coding!</li>
+        <li>Documentation on GitHub is written in markdown. It’s used in comments for pull requests and issues, gists, and many files. Here’s a great <a href="https://www.markdowntutorial.com/" target="_blank">tutorial</a> and here’s a quick <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">cheat sheet</a></li>
+    </ul>
+
+    <h3>Don’t Know Code?</h3>
+    <p>We need your help too! Look for these labels in the issues:</p>
+    <ul class="newcomers">
+        <li><strong>Documentation</strong>: Documentation is a huge part of a successful open source project. Organizations need documentation to help attract users and new contributors.</li>
+        <li><strong>Research</strong>: An organization may need help crunching numbers or analyzing feedback to better understand what the users want or need.</li>
+        <li><strong>Outreach</strong> Outreach is how open source projects attract new users and developers. This includes writing blog posts or making videos, organizing meetups, or helping others learn about the project.</li>
+        <li><strong>Training</strong>: Teach others how to use the project. This is a specialized form of outreach or documentation.</li>
+        <li><strong>User Interface</strong>: User interface can include many types of tasks including designing new visual aspects of a webpage or creating a new logo for the project. It may also include various accessibility opportunities to help make the project easier for people who are visually impaired.</li>
+        <li><strong>Quality Assurance</strong>: Finding and verifying bugs is an important part of software development.</li>
+        <li><strong>Other</strong>: If you have an idea that may help an organization, reach out to them and let them know! Sometimes the best task is one that the organization hasn’t even considered yet.</li>
+    </ul>
+    
+    <p class="footer">Wording from <a href="https://developers.google.com/open-source/gci/resources/getting-started" target="_blank">Google Code In</a></p>
 
   </body>
-</html>
