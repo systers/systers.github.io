@@ -6,6 +6,9 @@ so that I can [ACCOMPLISH THAT].
 ## Mocks
 [INSERT RELEVANT PNG FILE]
 
+## Difficulty level
+[INSERT DIFFICULTY]
+
 ## Acceptance Criteria
 ### Update [Required]
 - [ ] [LIST ITEMS]
