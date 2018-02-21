@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/fontawesome-all.css">
     <script src="javascripts/scale.fix.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="icon" href="/images/favicon.png">
   </head>
@@ -24,41 +27,26 @@
         <span class="sr-only">Open main menu</span>
         <span class="fa fa-bars hamburger" aria-hidden="true"></span>
     </a>
-
-    <div>
-            <a href="/"><img class="logo" src="images/systers-logo.png" 
-                          alt="Systers - Anitab.org logo"></a>
-    </div>
-
-  <nav id="main-menu" 
-        class="main-menu"
-        role="navigation"
-        aria-expanded="false"
-        aria-label="Main menu">
-    <a href="#main-menu-toggle" 
-        class="menu-close"
-        role="button"
-        id="main-menu-close"
-        aria-expanded="false"
-        aria-controls="main-menu"
-        aria-label="Close main menu">
-        <span class="sr-only">Close main menu</span>
-        <span class="fa fa-close" aria-hidden="true"></span>
-    </a>
-    <ul>
-        <li><a href="#join-systers">Join Systers</a></li>
+      
+ <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a style="background-image: url(&quot;images/systers-logo.png&quot;); width: 320px; height: 68px;" class="navbar-brand" href="/"></a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#join-systers">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#library">Library</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#fqa">FAQ</a></li>
         <li><a href="#internship-opportunities">Internship Opportunities</a></li>
-        <li><a href="#welcome-newcomers">Welcome Newcomers</a></li>
-        <li class="toggle"><a href="#main-menu">About Us <span class="fas fa-chevron-down" "arrow"></i></a>
-            <ul>
-              <li><a href="/contactus.html">Contact Us</a></li>
-              <li><a href="/code-of-conduct">Code of Conduct</a></li>
-              <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
-            </ul>
-        </li>
-    </ul>
-    </nav>
+        <li><a href="#welcome-newcomers">Become a Syster</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+      
     <a href="#main-menu-toggle" 
     class="backdrop" 
     tabindex="-1"
