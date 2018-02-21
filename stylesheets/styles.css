@@ -347,11 +347,10 @@ td {
 }
 
 .internships {
-  width: 98%;
+  width: 96%;
   table-layout: fixed;
   margin: 1em;
   border-spacing: .25em;
-  /*border-collapse: collapse;*/
 }
 
 .internships th, .internships td {
@@ -383,8 +382,41 @@ td {
   text-align: center;
 }
 
+.codeSample {
+  background-color: rgba(83, 79, 79, 0.2);
+}
+
+code {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.inlineCode {
+  background-color: rgba(83, 79, 79, 0.2);
+}
+
+.withBullets li {
+  margin-bottom: .5rem;
+}
+
+blockquote {
+  max-width: 80%;
+  margin: auto;
+}
+
+.sampleProfile {
+  max-width: 100%;
+}
+
+.bolded {
+  color: rgb(0,98,140);
+  font-weight: 500;
+}
+
 @media (min-width: 1024px) {
-  p, table, .newcomers {
+  p, table, .newcomers, ol, .withBullets {
     margin-right: 8rem;
     margin-left: 8rem;
   }

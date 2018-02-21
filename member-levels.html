@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Systers Open Source Projects by Systers</title>
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/fontawesome-all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="icon" href="/images/favicon.png">
+  </head>
+
+  <body>
+    <header>
+    <a href="#main-menu" 
+        class="menu-toggle"
+        role="button"
+        id="main-menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars hamburger" aria-hidden="true"></span>
+    </a>
+
+    <div>
+            <a href="/"><img class="logo" src="/images/systers-logo.png" 
+                          alt="Systers - Anitab.org logo"></a>
+    </div>
+
+  <nav id="main-menu" 
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+    <a href="#main-menu-toggle" 
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+        <li><a href="/index.html#join-systers">Join Systers</a></li>
+        <li><a href="/index.html#projects">Projects</a></li>
+        <li><a href="/index.html#programs">Programs</a></li>
+        <li class="toggle"><a href="#main-menu">Contribute<span class="fas fa-chevron-down"></span></a>
+            <ul>
+              <li><a href="/newcomers">Newcomers</a></li>
+              <li><a href="/open-source-workflow">Open Source Workflow</a></li>
+              <li><a href="/member-levels">Member Levels</a></li>
+            </ul>
+        </li>
+            <li class="toggle"><a href="#main-menu">About Us <span class="fas fa-chevron-down"></span></a>
+            <ul>
+              <li><a href="/contactus.html">Contact Us</a></li>
+              <li><a href="/code-of-conduct">Code of Conduct</a></li>
+              <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    <a href="#main-menu-toggle" 
+    class="backdrop" 
+    tabindex="-1"
+    aria-hidden="true" 
+    hidden></a>
+  </header>
+
+      <div class="header"><h1>Member Levels</h1></div>
+      <p>We encourage everyone to contribute to Systers’ Open Source Community!  There are varying levels of participation, depending on how much time and responsibility you’d like to put in.</p>
+    
+      <div class="subheader"><h2>Newcomer</h2></div>
+      <p>Very new to the community. Every Beginner needs to update their profile within 30 days of joining Systers Open Source Slack or they will be removed.</p>
+
+      <h3>Required Fields:</h3>
+
+      <ul class="withBullets">
+            <li><strong class="bolded">Profile Image</strong> - Use an approved Systers OS Icon [May Action Item: Include link to a Google Drive folder] or a picture of your face.</li>
+            <li><strong class="bolded">First & Last Name</strong> - Alternatively use first name and last initial: May B, Janice N, etc.</li>
+            <li><strong class="bolded">What I Do</strong> - This could be information about your job, your education, or your membership tier status (Examples: Google Developer, Junior at University, GSoC Aspirant, GSoC17 Student, Outreachy17 Intern, or GCI17 Mentor)</li>
+            <li><strong class="bolded">GitHub</strong> - Include your username to help mentors and GitHub maintainers associate your Slack account to your GitHub account.</li>
+      </ul>
+      
+      <h3>Banned Fields</h3>
+      <ul class="withBullets">
+          <li><strong class="bolded">Phone Number</strong> - Any communication regarding the open source product development is done strictly in Slack and GitHub. <strong>Never share your phone number</strong>.</li></ul>
+
+        <table class="internships">
+            <tr><th colspan="2">Good Example</th><th colspan="2">Bad Example</th></tr>
+            <tr><td><img class="sampleProfile" src="/images/prachi-profile.png" alt="Good profile example"/></td><td><img class="sampleProfile" src="/images/aditya-profile.png" alt="Good profile example"/></td><td><img class="sampleProfile" src="/images/may-profile-phone.png" alt="Bad profile example, includes phone number"/></td><td><img class="sampleProfile" src="/images/janice-profile-missing-data.png" alt="Bad profile, missing data"/></td></tr>
+        </table>
+
+        <div class="subheader"><h2>Contributor</h2></div>
+        <p>Contributors have submitted at least 4 Pull Requests (with 2 having been reviewed)  and have completed all Newcomer requirements.</p>
+
+        <div class="subheader"><h2>Welcome Committee</h2></div>
+        <p>Welcome Committee Members have been active (logging into slack at least every 3 days) for at least 90 days.  They are chosen on a rolling basis, by invitation.  Members at this level are added to: @welcome-members Slack group.</p>
+        <h3>Benefits:</h3>
+        <ul class="withBullets">
+            <li>Name added to the Members Appreciation page</li>
+        </ul>
+
+        <div class="subheader"><h2>Improver</h2></div>
+        <p>Improvers have been continuously involved on Slack and Github (contributing or reviewing at least 3 PRs a month) for at least 3 months.</p>
+        <h3>Benefits:</h3>
+        <ul class="withBullets">
+            <li>Systers’ customized Slack Icon</li>
+            <li>Name added to the Members Appreciation page</li>
+        </ul>
+
+
+        <div class="subheader"><h2>Maintainer</h2></div>
+        <p>Maintainers are chosen by invitation only and must know the codebase for the repository they are assigned to. They have been continuously involved on Slack and Github (reviewing at least 4 PRs a month) for at least 6 months.</p>
+        <h3>Benefits:</h3>
+        <ul class="withBullets">
+            <li>Write access on Github</li>
+            <li>Name added to the Members Appreciation page</li>
+        </ul>
+
+
+        <div class="subheader"><h2>Mentor</h2></div>
+        <p>Mentors volunteer their time to assist contributors in the various <a href="http://localhost:8001/index.html/#programs">programs</a> Systers participates in.  People are more likely to be chosen as a mentor if they meet at least Intermediate requirements.</p>
+        <h3>Benefits:</h3>
+        <ul class="withBullets">
+            <li>Name added to the Members Appreciation page</li>
+        </ul>
+
+        <div class="subheader"><h2>Committer</h2></div>
+        <p>Committers act as quality control for the community.  Instead of focusing on a specific repository, they focus on overarching decisions that affect our Github and Slack processes, and our OSS programs.  Committers are chosen by invitation only.</p>
+        <h3>Benefits:</h3>
+        <ul class="withBullets">
+            <li>Grace Hopper Celebration US Registration Ticket (Volunteer hours required at Open Source Day)</li>
+            <li>Letter of Recommendation (for Committers who have participated in at least 4 open source programs - GCI, Hacktoberfest, Outreachy, GSoC, RGSoC, Qualcomm )</li>
+            <li>Name added to the Members Appreciation page</li>
+        </ul>
+
+
+        <div class="subheader"><h2>Organizational Admin</h2></div>
+        <p>This position is not open to the public.  Organizational Admin have final approval on all matters, including member status.</p>
+    
+  </body>
+  </html>
