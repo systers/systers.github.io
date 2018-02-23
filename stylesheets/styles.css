@@ -267,7 +267,8 @@ article h2 {
 
 h1, h2, h3 {
   font-family: 'Cairo', sans-serif;
-  margin-bottom: 0; 
+  margin-bottom: 0;
+  margin-top: 2em; 
 }
 
 .header{
@@ -347,11 +348,10 @@ td {
 }
 
 .internships {
-  width: 98%;
+  width: 96%;
   table-layout: fixed;
   margin: 1em;
   border-spacing: .25em;
-  /*border-collapse: collapse;*/
 }
 
 .internships th, .internships td {
@@ -383,8 +383,105 @@ td {
   text-align: center;
 }
 
+.codeSample {
+  background-color: rgba(0, 98, 140, 0.2);
+  max-width: 95%;
+}
+
+code {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  padding: .1em .5em;
+}
+
+.inlineCode {
+  background-color: rgba(0, 98, 140, 0.2);
+}
+
+.withBullets li {
+  margin-bottom: .5rem;
+}
+
+blockquote {
+  max-width: 80%;
+  margin: auto;
+}
+
+.sampleProfile {
+  max-width: 100%;
+}
+
+.bolded {
+  color: rgb(0,98,140);
+  font-weight: 500;
+}
+
+.workflowCircle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.workflowChart {
+  display: block;
+  width: 75%;
+  margin: .25em auto;
+  padding: .25em;
+}
+
+.workflowChart * {
+  color: rgb(17, 25, 33);
+}
+
+.workflowBlush1 {
+  background-color: #fce7f0;
+}
+
+.workflowBlush2 {
+  background-color: #fad8e7;
+}
+
+.workflowBlush3 {
+  background-color: #f7c1d8;
+}
+
+.workflowBlush4 {
+  background-color: #f6b2cf;
+}
+
+.workflowBlush5 {
+  background-color: #dda0ba;
+}
+
+footer {
+  padding-top: 2em;
+}
+
+.footerLine {
+  padding-top: 2rem;
+  border-top: 1px solid rgb(0,98,140);
+}
+
+.socialMedia {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-bottom: 2em;
+  list-style: none;
+}
+
+.squareLogo {
+  width: 50px;
+  height: 50px;
+}
+
+.footerBars {
+  width: 100%;
+}
+
 @media (min-width: 1024px) {
-  p, table, .newcomers {
+  p, table, .newcomers, ol, .withBullets {
     margin-right: 8rem;
     margin-left: 8rem;
   }
