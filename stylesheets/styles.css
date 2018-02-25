@@ -336,10 +336,14 @@ td {
 }
 
 .horizontal {
-  float: center;
-  padding: .5em;
+padding: .5em;
   list-style: none;
   font-size: 1.15em;
+   
+
+   margin: auto;
+    width: 50%;
+   text-align: center;
 }
 
 .zoom li {
