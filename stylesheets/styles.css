@@ -335,15 +335,13 @@ td {
   margin-right: 1.5em;
 }
 
-.horizontal {
+.horizontal {/* replaced float:center with appropriate values*/
 padding: .5em;
-  list-style: none;
-  font-size: 1.15em;
-   
-
-   margin: auto;
-    width: 50%;
-   text-align: center;
+list-style: none;
+font-size: 1.15em;
+margin: auto;/*center the div*/
+width: 50%;
+text-align: center;/*center the text*/
 }
 
 .zoom li {
