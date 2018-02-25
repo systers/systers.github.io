@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Systers Open Source Projects by Systers</title>
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/fontawesome-all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="icon" href="/images/favicon.png">
+  </head>
+
+  <body>
+    <header>
+    <a href="#main-menu" 
+        class="menu-toggle"
+        role="button"
+        id="main-menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars hamburger" aria-hidden="true"></span>
+    </a>
+
+    <div>
+            <a href="/"><img class="logo" src="/images/systers-logo.png" 
+                          alt="Systers - Anitab.org logo"></a>
+    </div>
+
+  <nav id="main-menu" 
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+    <a href="#main-menu-toggle" 
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+        <li><a href="/index.html#join-systers">Join Systers</a></li>
+        <li><a href="/index.html#projects">Projects</a></li>
+        <li><a href="/index.html#programs">Programs</a></li>
+        <li class="toggle"><a href="#main-menu">Contribute<span class="fas fa-chevron-down"></span></a>
+            <ul>
+              <li><a href="/newcomers">Newcomers</a></li>
+              <li><a href="/open-source-workflow">Open Source Workflow</a></li>
+              <li><a href="/member-levels">Member Levels</a></li>
+            </ul>
+        </li>
+            <li class="toggle"><a href="#main-menu">About Us <span class="fas fa-chevron-down"></span></a>
+            <ul>
+              <li><a href="/contactus.html">Contact Us</a></li>
+              <li><a href="/code-of-conduct">Code of Conduct</a></li>
+              <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    <a href="#main-menu-toggle" 
+    class="backdrop" 
+    tabindex="-1"
+    aria-hidden="true" 
+    hidden></a>
+  </header>
+
+<div class="header"><h1>Open Source Workflow</h1></div>
+<p>Below is the process that Systers uses to plan, create, test, and deploy our various projects within GitHub.  These are the steps that should be taken whenever contributing to any of our repositories.</p>
+<div class="subheader"><h2>Software Development Life Cycle</h2></div>
+
+  <img src="/images/workflow.png" class="workflowCircle">
+
+  <div class="workflowBlush1 workflowChart">
+  <h4 class="requirements">Requirements Analysis</h4>
+  <p>Project Requirements Doc <i class="fas fa-long-arrow-alt-right"></i> Create Issues <i class="fas fa-long-arrow-alt-right"></i> Approved by Mentor/Maintainer</p>
+  </div>
+
+  <div class="workflowBlush2 workflowChart">
+  <h4 class="requirements">Design</h4>
+  <p>Create Mock-Ups for the Issue <i class="fas fa-long-arrow-alt-right"></i> Reviewed by Mentor/Maintainer <i class="fas fa-long-arrow-alt-right"></i> Adjust Mock-Up Based on Feedback <i class="fas fa-long-arrow-alt-right"></i> Approved by Mentor/Maintainer</p>
+  </div>
+
+  <div class="workflowBlush3 workflowChart">
+  <h4 class="requirements">Development & Testing (TDD)</h4>
+  <p>Code/PR/Test to Complete the Issue <i class="fas fa-long-arrow-alt-right"></i> Reviewed by Mentor/Maintainer <i class="fas fa-long-arrow-alt-right"></i> Adjust Code/PR/Test Based on Feedback <i class="fas fa-long-arrow-alt-right"></i> Approved by Mentor/Maintainer</p>
+  </div>
+
+  <div class="workflowBlush4 workflowChart">
+    <h4 class="requirements">Testing</h4>
+    <p>Create Issues that Test the Applications in Production (i.e. User Tests, Feature Tests, etc.) <i class="fas fa-long-arrow-alt-right"></i> Reviewed by Committer <i class="fas fa-long-arrow-alt-right"></i> Submit PRs that Contain Documentation on Tests to Suggest Improvements for Next Release <i class="fas fa-long-arrow-alt-right"></i> Approved by Committer</p>
+  </div>
+
+  <div class="workflowBlush5 workflowChart">
+        <h4 class="requirements">Maintenance</h4>
+        <p>Create Issues that Fix Errors/Improve Impelentation/Upgrade the Current Language <i class="fas fa-long-arrow-alt-right"></i> Approved by Mentor/Maintainer/Committer</p>
+      </div>
+
+
+  <div class="subheader"><h2>Before Merging a Pull Request</h2></div>
+<ol>
+    <li>Check whether the PR was sent to the correct branch.</li>
+    <li>Check whether the PR has unnecessary merge commits. If it does squash and merge, or ask the student to do it again by rebasing (removing the merge commit). My recommendation is for a first timer tell him/her that the recommended way is rebasing and do a squash and merge. So that they won’t get discouraged and go away. For a regular if they keep doing this do not merge until they send a PR with merge commits removed.</li>
+    <li>Even if the student started with a rebased branch, they may encounter merge conflicts. In that case ask the student to fix the merge conflict. When they are fixing this again the merge is the easiest way at that point so merge commits can be visible. In that case ask the student to squash them or you can squash them when merging as instructed.</li>
+</ol>
+
+<div class="subheader"><h2>Squash Commits</h2></div>
+<p>Squash Commits means when you have a list of commit and you want to make it one commit or you may get asked from any mentor to squash the commits, so here are the steps you can follow:</p>
+
+<blockquote>When you select the Squash and merge option on a pull request on GitHub, the pull request's commits are squashed into a single commit. Instead of seeing all of a contributor's individual commits from a topic branch, the commits are combined into one commit and merged into the default branch. (from <a href="https://help.github.com/articles/about-pull-request-merges/">Github Documentation</a>)</blockquote>
+<ol>
+<li><code class="inlineCode">git log</code></li>
+You get the log of last commits on the branch, which you are working!
+<li><code class="inlineCode">git branch</code></li>
+You can check, on which branch you are!
+<li><code class="inlineCode">git rebase -i master</code></li>
+This command will show up a list of all commits
+<li>leave the commit as pick only which you want to be the main commit, and change other Commits as squash which you want to include in the main commit</li>
+<li>It will look something like this:</li>
+    <div class="codeSample">
+        <code>pick fb554f5 commit 1</code><br>
+        <code>squash 2bd1903 commit 2</code><br>
+        <code>squash d987ebf commit 3</code>
+    </div>
+</ol>
+
+<p>Run this command and then you can force push if you already submitted a pull request by
+<code class="inlineCode">git push -f</code></p>
+
+<footer>
+        <div class="footerLine">
+        <p>Find us at:</p>
+        <ul class="socialMedia">
+            <li><a href="https://twitter.com/systers_org"><img src="/images/twitter.png" class="squareLogo"></a></li>
+            <li><a href="https://www.facebook.com/AnitaB.0rg/"><img src="/images/facebook.png" class="squareLogo"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCUvti1DEKYUZBtQqQAtCK6g/videos"><img src="/images/youtube.png" class="squareLogo"></a></li>
+            <li><a href="https://medium.com/@systers_org"><img src="/images/medium.png" class="squareLogo"></a></li>
+            <li><a href="https://systers-opensource.blogspot.com/"><img src="/images/blogger.png" class="squareLogo"></a></li>
+        </ul>
+        <img src="/images/footer-bars.png" class="footerBars">
+        </div>
+    </footer>
+
+</body>
+</html>
