@@ -14,4 +14,5 @@ To preview, run these commands in your terminal (as long as you’ve previously 
 
 Then open http://localhost:8050 in your browser, you should see a current version of the website!
 
+## Contact Information
 If you have any questions or want to discuss something about this repo, please sign up for the [Systers Slack Channel](http://systers.io/slack-systers-opensource/) and join the the #gh-pages channel.
