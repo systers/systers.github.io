@@ -172,7 +172,6 @@ Horizontal menu
   }
 
   .main-menu a {
-    color: rgb(98,181,229);
     border: 0 !important; /* Remove borders from off-canvas styling */
   }
 
