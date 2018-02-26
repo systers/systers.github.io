@@ -1,3 +1,9 @@
+html, body {/* added this code to prevent horizontal scrolling which is not needed*/
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 body {
   background: white;
   font-family: 'Montserrat', sans-serif;
