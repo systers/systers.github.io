@@ -52,8 +52,7 @@ Anyone asked to stop unacceptable behavior is expected to comply immediately.
 If a community member engages in unacceptable behavior, the community organizers may take any action they deem appropriate, up to and including a temporary ban or permanent expulsion from the community without warning (and without refund in the case of a paid event).
 
 ## 6. Reporting Guidelines
-
-If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible. systers.keeper@gmail.com.
+If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible by emailing systers.keeper@gmail.com. Please read [Reporting Guidelines](reporting_guidelines.md) for details.
 
 
 
@@ -61,8 +60,7 @@ Additionally, community organizers are available to help community members engag
 
 ## 7. Addressing Grievances
 
-If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify Systers with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
-
+Only permanent resolutions (such as bans) may be appealed. To appeal a decision of the working group, contact the Systers' Open Source Board at os-board@anitab.org with your appeal and the board will review the case.
 
 
 ## 8. Scope
