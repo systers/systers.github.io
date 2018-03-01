@@ -1,0 +1,24 @@
+{
+  "name": "systers.github.io",
+  "version": "1.0.0",
+  "description": "[![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=plastic)](https://github.com/systers/systers.github.io)",
+  "main": "index.js",
+  "scripts": {
+    "start": "ecstatic --port=8050 .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/systers/systers.github.io.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/systers/systers.github.io/issues"
+  },
+  "homepage": "https://github.com/systers/systers.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ecstatic": "^3.2.0"
+  }
+}
