@@ -19,9 +19,9 @@ body {
 /* Button styling */
 .menu-toggle {
   display: inline-block;
-  padding: .75em 15px;
-  line-height: 1em;
-  font-size: 1em;
+  padding: .75rem 15px;
+  line-height: 1rem;
+  font-size: 1rem;
   color: #333;
 }
 
@@ -49,7 +49,7 @@ Offscreen menu style
 .main-menu ul {
   list-style: none;
   margin: 0;
-  padding: 2.5em 0 0;
+  padding: 2.5rem 0 0;
   /* Hide shadow w/ -2px while 'closed' */
   box-shadow: -2px 0 2px rgba(0,0,0,.5);
   min-height: 100%;
@@ -59,9 +59,9 @@ Offscreen menu style
 
 .main-menu a {
   display: block;
-  padding: .75em;
-  line-height: 1em;
-  font-size: 1em;
+  padding: .75rem;
+  line-height: 1rem;
+  font-size: 1rem;
   color: rgb(98,181,229);
   text-decoration: none;
   border-bottom: 1px solid rgb(141,33,101);
@@ -211,9 +211,9 @@ header {
 
 article {
   padding: 30px;
-  width: 55em;
+  width: 55rem;
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.5rem;
 }
 
 article h2 {
@@ -223,13 +223,13 @@ article h2 {
 
 .logo {
   width: 95%;
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 
 
 .hamburger {
-  margin: -1.5em;
+  margin: -1.5rem;
   color: rgb(141,33,101);
 }
 
@@ -265,36 +265,41 @@ article h2 {
 }
 
 
-h1, h2, h3 {
+h1, h2, h3, .second {
   font-family: 'Cairo', sans-serif;
+  margin-left: auto;
+  font-weight: normal;
   margin-bottom: 0;
-  margin-top: 2em; 
-}
-
-.header{
-  border-bottom: 3px solid rgb(141,33,101);
+  margin-top: 1.5rem; 
 }
 
 h1 {
   color: rgb(141,33,101);
+  margin-bottom: 0;
+  margin-top: .25rem;
+  
 }
 
-.subheader{
-  border-bottom: 1px solid rgb(0,98,140);
+h3 {
+  margin-bottom: 0;
+  margin-top: 1rem;
 }
 
 h2, h3 {
   color: rgb(0,98,140);
 }
 
-h1, h2, h3 {
-  margin-left: 1rem;
-  font-weight: normal;
+.header{
+  border-bottom: 3px solid rgb(141,33,101);
+}
+
+.subheader{
+  border-bottom: 1px solid rgb(0,98,140);
 }
 
 p {
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 a, a:link {
@@ -307,56 +312,62 @@ a:hover {
 }
 
 table {
-  width: 95%;
+  width: 90%;
   table-layout: fixed;
-  margin: 2em;
-  border-spacing: .25em;
+  margin: 2rem;
+  border-spacing: .25rem;
 }
 
 td {
   overflow: auto;
-  padding: .5em;
+  padding: .5rem;
 }
 
 .years a {
-  margin: 2em;
+  margin: 2rem;
+  line-height: 2rem;
 }
 
 .years {
-  line-height: 1.5em;
+  line-height: 1.5rem;
+}
+
+.projects td{
+  vertical-align: top;
 }
 
 .footer {
-  font-size: .75em;
+  font-size: .75rem;
 }
 
 .newcomers {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .horizontal {
   float: center;
-  padding: .5em;
+  padding: .5rem;
   list-style: none;
-  font-size: 1.15em;
+  font-size: 1.15rem;
+  margin: auto;
 }
 
 .zoom li {
   list-style: none;
-  padding: .25em;
+  padding: .25rem;
+  margin: auto;
 }
 
 .internships {
   width: 96%;
   table-layout: fixed;
-  margin: 1em;
-  border-spacing: .25em;
+  margin: 2rem auto;
+  border-spacing: .25rem;
 }
 
 .internships th, .internships td {
-  /*border: 1px solid #111111;*/
-  padding: .5em;
+  padding: .5rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 85%;
 }
@@ -389,9 +400,9 @@ td {
 }
 
 code {
-  font-size: 1.25em;
-  line-height: 1.5em;
-  padding: .1em .5em;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding: .1rem .5rem;
 }
 
 .inlineCode {
@@ -403,7 +414,7 @@ code {
 }
 
 blockquote {
-  max-width: 80%;
+  max-width: 60%;
   margin: auto;
 }
 
@@ -425,9 +436,20 @@ blockquote {
 
 .workflowChart {
   display: block;
-  width: 75%;
-  margin: .25em auto;
-  padding: .25em;
+  width: 80%;
+  margin: .25rem auto;
+  padding: .25rem;
+}
+
+.requirements {
+  margin-left: 1rem;
+  margin-bottom: .5rem;
+}
+
+.ombre {
+  margin-left: 1rem;
+  margin-right: .5rem;
+  margin-top: .5rem;
 }
 
 .workflowChart * {
@@ -455,7 +477,7 @@ blockquote {
 }
 
 footer {
-  padding-top: 2em;
+  padding-top: 2rem;
 }
 
 .footerLine {
@@ -463,17 +485,23 @@ footer {
   border-top: 1px solid rgb(0,98,140);
 }
 
+.footerLine > p {
+  color: rgb(141,33,101);
+  font-family: 'Cairo', sans-serif;
+  font-weight: bold;
+}
+
 .socialMedia {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  padding-bottom: 2em;
+  padding: 1rem 0 2rem 0;
   list-style: none;
 }
 
 .squareLogo {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .footerBars {
@@ -481,12 +509,38 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  p, table, .newcomers, ol, .withBullets {
+  p, table, .newcomers, body > ol, .withBullets {
     margin-right: 8rem;
     margin-left: 8rem;
   }
 
   h2, h3 {
     margin-left: 5rem;
+  }
+
+  h1, .second {
+    margin-left: 3rem;
+  }
+
+  .internships {
+    margin: 2rem auto;
+    width: 80%;
+  }
+
+  blockquote {
+    margin-left: 10rem;
+  }
+
+  .zoom li {
+    margin-left: 8rem;
+  }
+
+  .horizontal {
+    margin-left: 5rem;
+  }
+
+  .footerBars {
+    width: 100%;
+    height: 4rem;
   }
 }
