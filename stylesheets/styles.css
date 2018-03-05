@@ -269,6 +269,8 @@ h1, h2, h3 {
   font-family: 'Cairo', sans-serif;
   margin-bottom: 0;
   margin-top: 2em; 
+  margin-left: 1rem;
+  font-weight: normal;
 }
 
 .header{
@@ -285,12 +287,9 @@ h1 {
 
 h2, h3 {
   color: rgb(0,98,140);
+   margin-left: 5rem;
 }
 
-h1, h2, h3 {
-  margin-left: 1rem;
-  font-weight: normal;
-}
 
 p {
   margin-left: 2em;
@@ -328,6 +327,7 @@ td {
 
 .footer {
   font-size: .75em;
+  padding-top: 2em;
 }
 
 .newcomers {
@@ -454,9 +454,6 @@ blockquote {
   background-color: #dda0ba;
 }
 
-footer {
-  padding-top: 2em;
-}
 
 .footerLine {
   padding-top: 2rem;
@@ -486,7 +483,5 @@ footer {
     margin-left: 8rem;
   }
 
-  h2, h3 {
-    margin-left: 5rem;
-  }
+
 }
