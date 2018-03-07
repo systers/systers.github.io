@@ -358,7 +358,9 @@ td {
   padding: .25rem;
   margin: auto;
 }
-
+.cont{
+  overflow: auto;
+}
 .internships {
   width: 96%;
   table-layout: fixed;
@@ -507,8 +509,13 @@ footer {
 .footerBars {
   width: 100%;
 }
-
+@media (max-width: 800px){
+   .head_table{
+    font-size: 0.8em;
+  }
+}
 @media (min-width: 1024px) {
+
   p, table, .newcomers, body > ol, .withBullets {
     margin-right: 8rem;
     margin-left: 8rem;
@@ -526,7 +533,10 @@ footer {
     margin: 2rem auto;
     width: 80%;
   }
+  .cont{
+    overflow:auto;
 
+  }
   blockquote {
     margin-left: 10rem;
   }
