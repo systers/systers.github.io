@@ -2,6 +2,7 @@
   "name": "systers.github.io",
   "version": "1.0.0",
   "description": "[![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=plastic)](https://github.com/systers/systers.github.io)",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "start": "ecstatic --port=8050 .",
@@ -12,7 +13,7 @@
     "url": "git+https://github.com/systers/systers.github.io.git"
   },
   "author": "",
-  "license": "UNLICENSED",
+  "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/systers/systers.github.io/issues"
   },
