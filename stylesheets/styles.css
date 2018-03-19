@@ -319,6 +319,7 @@ table {
 }
 
 td {
+  height: 4rem;
   overflow: auto;
   padding: .5rem;
 }
