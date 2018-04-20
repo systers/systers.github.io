@@ -274,18 +274,17 @@ h1, h2, h3, .second {
 
 h1 {
   color: rgb(141,33,101);
-  margin-bottom: 0;
   margin-top: .25rem;
   
 }
 
 h3 {
-  margin-bottom: 0;
   margin-top: 1rem;
 }
 
 h2, h3 {
   color: rgb(0,98,140);
+  margin-left: 5rem;
 }
 
 .header{
@@ -338,6 +337,7 @@ td {
 
 .footer {
   font-size: .75rem;
+  padding-top: 2rem;
 }
 
 .newcomers {
@@ -386,11 +386,7 @@ td {
   background-color:  rgba(238, 151, 40, .25);
 }
 
-.table-header {
-  text-align: center;
-}
-
-.p-center {
+.table-header, .p-center {
   text-align: center;
 }
 
@@ -476,10 +472,6 @@ blockquote {
   background-color: #dda0ba;
 }
 
-footer {
-  padding-top: 2rem;
-}
-
 .footerLine {
   padding-top: 2rem;
   border-top: 1px solid rgb(0,98,140);
@@ -512,10 +504,6 @@ footer {
   p, table, .newcomers, body > ol, .withBullets {
     margin-right: 8rem;
     margin-left: 8rem;
-  }
-
-  h2, h3 {
-    margin-left: 5rem;
   }
 
   h1, .second {
