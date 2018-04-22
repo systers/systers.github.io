@@ -511,7 +511,7 @@ footer {
 @media (min-width: 1024px) {
   p, table, .newcomers, body > ol, .withBullets {
     margin-right: 8rem;
-    margin-left: 8rem;
+    margin-left: 2.7rem;
   }
 
   h2, h3 {
