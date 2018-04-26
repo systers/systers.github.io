@@ -1,3 +1,10 @@
+
+/* To solve horizontal scrolling issue*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
   background: white;
   font-family: 'Montserrat', sans-serif;
