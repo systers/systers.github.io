@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Systers Open Source Projects by Systers</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="icon" href="favicon.png">
+  </head>
+
+  <body>
+    <header>
+    <a href="#main-menu"
+        class="menu-toggle"
+        role="button"
+        id="main-menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars hamburger" aria-hidden="true"></span>
+    </a>
+
+    <div>
+            <a href="/"><img class="logo" src="/assets/img/systers-logo.png" width="50" height="50"
+                          alt="Systers - Anitab.org logo"></a>
+    </div>
+
+  <nav id="main-menu"
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+    <a href="#main-menu-toggle"
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+        <li><a href="#join-systers">Join Systers</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li class="toggle"><a href="#main-menu">Contribute<span class="fas fa-chevron-down"></span></a>
+            <ul>
+              <li><a href="/newcomers">Newcomers</a></li>
+              <li><a href="/open-source-workflow">Open Source Workflow</a></li>
+              <li><a href="/member-levels">Member Levels</a></li>
+            </ul>
+        </li>
+            <li class="toggle"><a href="#main-menu">About Us <span class="fas fa-chevron-down"></span></a>
+            <ul>
+              <li><a href="/contactus.html">Contact Us</a></li>
+              <li><a href="/code-of-conduct">Code of Conduct</a></li>
+              <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    <a href="#main-menu-toggle"
+    class="backdrop"
+    tabindex="-1"
+    aria-hidden="true"
+    hidden></a>
+  </header>
+
+    <div class="header"><h1>Welcome to Systers' Open Source!</h1></div>
+        <p>Systers is an international <a href="https://anitab.org/" target="_blank">Anita B.org</a> community encouraging the participation of all women involved in technology.</p>
+
+        <p>We are committed to providing a friendly, safe, and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, work experience, or religion (or lack thereof).</p>
+
+        <p>We believe in inclusivity, diversity, and transparency.  We value open source citizenship and collaborative involvement.</p>
+
+    <div class="subheader" id="join-systers"><h2>Join Systers</h2></div>
+        <p> In order to engage with the community, you can sign up on <a href="http://systers.io/slack-systers-opensource/" target="_blank">Systers Open Source Slack</a> and introduce yourself in the #intro channel. Then, subscribe to our <a href="http://systers.org/mailman/listinfo/systers-opensource" target="_blank">systers-opensource mailing list</a> for more opportunities.</p>
+
+        <p>You can also attend the Systers Weekly Update meetings every Thursday at 17:00 GMT on Zoom.  You'll find the meeting details on our <a href="/contactus.html">contact page</a> with updates in the #announcements channel on Slack.</p>
+
+    <div class="subheader" id="projects"><h2>Projects</h2></div>
+        <p>Our projects focus on impacting users and communities by improving their lives with technology. We use various development languages and technologies, while encouraging our contributors to learn new skills and solve new challenges. We host all of our code on GitHub, where contributors can publish and store their code, connect with other open source communities, and learn version control with Git. Github tracks your personal contributions, so you can share them as part of your portfolio.</p>
+
+    <h3>Peace Corps Projects</h3>
+        <p>The <a href="https://www.peacecorps.gov/" target="_blank">Peace Corps</a> has had nearly 220,000 volunteers (PCVs) in 151 countries around the world since its creation in 1961. Great technology projects are started for the Peace Corps, usually at codeathons, but they are rarely complete enough to deploy to the PCVs. Systers takes on these projects, completes them, then works with Peace Corps administrators to test and deploy in the field.</p>
+
+        <p>Please note that these projects have been archived until AnitaB.org finds new contacts within the Peace Corps to finish and test them in the field.</p>
+
+        <table class="projects">
+            <tr><td><a href="https://github.com/systers/peacetrack-android/wiki" target="_blank">PeaceTrack Android</a></td>
+                <td><a href="https://github.com/systers/peacetrack-ios/wiki" target="_blank">PeaceTrack iOS</a></td></tr>
+            <tr><td><a href="https://github.com/systers/malaria-app-android/wiki" target="_blank">Malaria Prevention Android</a></td>
+                <td><a href="https://github.com/systers/malaria-app-ios/wiki" target="_blank">Malaria Prevention iOS</a></td></tr>
+            <tr><td><a href="https://github.com/systers/macc/wiki" target="_blank">Mobile App Control Center (Python w/Django)</a></td>
+                <td><a href="https://github.com/systers/crowdmap/wiki" target="_blank">CrowdMap</a></td></tr>
+            <tr><td><a href="https://github.com/systers/language-translation/wiki" target="_blank">Photo Language Translation (Ruby on Rails)</a></td>
+                <td><a href="https://github.com/systers/ossprojects/wiki/Crowdsourcing%20for%20Guyana%20Deaf%20Community" target="_blank">Crowdsourcing for Guyana Deaf Community</a></td></tr>
+            <tr><td colspan="2"><a href="https://github.com/systers/PCSA/wiki" target="_blank">PCSA Office of Victim Advocacy</a></td></tr>
+        </table>
+
+    <h3>Systers Projects</h3>
+        <p>Systers has very specific needs with managing volunteers. We have the Volunteer Management System and Systers Portal to help Systers and volunteers to make an engaged connection. We also maintain the Systers GNU Mailman and apply our customized features to the latest release. Our customized version, is very complex and has a high difficulty level for developers. We’re also working on a new project to help manage our community's meetups.</p>
+
+        <table class="projects">
+            <tr><td><a href="https://github.com/systers/vms/wiki" target="_blank">Volunteer Management System (Python w/Django)</a></td>
+                <td><a href="https://github.com/systers/portal/wiki" target="_blank">Systers Portal(Python w/Django)</a></td></tr>
+            <tr><td><a href="https://github.com/systers/automated-testing/wiki" target="_blank">Automated Testing (Selenium using Java & Python)</a></td>
+                <td><a href="https://github.com/systers/ossprojects/wiki/Meetup%20Features" target="_blank">Meetup Features for Portal</a></td></tr>
+            <tr><td><a href="https://github.com/systers/ossprojects/wiki/Systers%20Features%20for%20Mailman%203" target="_blank">Systers Features for Mailman 3</a></td>
+                <td><a href="https://github.com/systers/ossprojects/wiki/PowerUp" target="_blank">PowerUp</a></td></tr>
+        </table>
+
+    <div class="subheader" id="programs"><h2>Programs</h2></div>
+        <p>Systers participates in several Open Source Programs, including <a href="https://summerofcode.withgoogle.com/" target="_blank">Google Summer of Code</a>, <a href="https://www.outreachy.org/" target="_blank">Outreachy</a>, and various codeathons to encourage new people to contribute to our projects and become part of our community.</p>
+
+    <h3>Google Summer of Code</h3>
+        <p class="years">
+            <a href="/assets/gsoc_2017.html">2017</a>
+            <a href="/assets/gsoc_2016.html">2016</a>
+            <a href="/assets/gsoc_2015.html">2015</a>
+            <a href="/assets/gsoc_2014.html">2014</a>
+            <a href="/assets/gsoc_2013.html">2013</a>
+            <a href="/assets/gsoc_2012.html">2012</a>
+            <a href="/assets/gsoc_2010.html">2010</a>
+            <a href="/assets/gsoc_2009.html">2009</a>
+        </p>
+
+    <h3>Outreachy (winter rounds only)</h3>
+        <p class="years">
+            <a href="/assets/outreachy_2017.html">2017</a>
+        </p>
+
+    <h3>Codeathons</h3>
+    <p class="years">
+        <a href="https://codein.withgoogle.com/">GCI</a>
+        <a href="https://challengerocket.com/anitasmoonshot">Anita's Moonshot</a>
+        <a href="https://empowhermentqualcomm.devpost.com/">EmpowHERment Summit</a>
+    </p>
+
+    <footer>
+        <div class="footerLine">
+        <p>Find us at:</p>
+        <ul class="socialMedia">
+            <li><a href="https://twitter.com/systers_org"><img src="/assets/img/twitter.png" class="squareLogo"></a></li>
+            <li><a href="https://www.facebook.com/AnitaB.0rg/"><img src="/assets/img/facebook.png" class="squareLogo"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCUvti1DEKYUZBtQqQAtCK6g/videos"><img src="/assets/img/youtube.png" class="squareLogo"></a></li>
+            <li><a href="https://medium.com/@systers_org"><img src="/assets/img/medium.png" class="squareLogo"></a></li>
+            <li><a href="https://systers-opensource.blogspot.com/"><img src="/assets/img/blogger.png" class="squareLogo"></a></li>
+        </ul>
+        <img src="/assets/img/footer-bars.png" class="">
+        </div>
+    </footer>
+
+  </body>
+</html>
