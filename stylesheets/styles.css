@@ -459,7 +459,6 @@ blockquote {
 .workflowBlush1 {
   background-color: #fce7f0;
 }
-
 .workflowBlush2 {
   background-color: #fad8e7;
 }
@@ -506,6 +505,15 @@ footer {
 
 .footerBars {
   width: 100%;
+}
+@media (max-width: 320px) {
+  .socialMedia{
+    padding: 2px;
+  }
+  .squareLogo {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media (min-width: 1024px) {
