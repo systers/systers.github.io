@@ -1,18 +1,27 @@
-# systers.github.io
-## Project Overview
-This is the main website for Systers Open Source.  It contains information about our various open source projects, the programs we participate in (as well as their historical data), information about how to contribute, and general information about how to contact us.
+# MdbAngularFree
 
-In the future, we hope to add Google Calendar integration and additional orientation/onboarding materials.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0-rc.5.
 
-## Installation
-To preview, run these commands in your terminal (as long as you’ve previously installed [node](https://nodejs.org/en/download/)):
+## Development server
 
-1. git clone https://github.com/systers/systers.github.io
-2. cd systers.github.io
-3. npm install
-4. npm start
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Then open http://localhost:8050 in your browser, you should see a current version of the website!
+## Code scaffolding
 
-## Contact Information
-If you have any questions or want to discuss something about this repo, please sign up for the [Systers Slack Channel](http://systers.io/slack-systers-opensource/) and join the the #gh-pages channel.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

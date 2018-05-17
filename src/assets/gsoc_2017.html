@@ -1,0 +1,658 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <title>Systers Open Source Projects by Systers</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="icon" href="img/favicon.png">
+    <style>
+    body {
+  background: white;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(87, 87, 87);
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* Button styling */
+.menu-toggle {
+  display: inline-block;
+  padding: .75rem 15px;
+  line-height: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: rgb(141,33,101);
+}
+
+/*
+Default styles + Mobile first
+Offscreen menu style
+*/
+.main-menu {
+  position: absolute;
+  left: -200px;
+  top: 0;
+  height: 100%;
+  overflow-y: visible;
+  overflow-x: visible;
+  transition: left 0.3s ease,
+              box-shadow 0.3s ease;
+  z-index: 999;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.5rem 0 0;
+  /* Hide shadow w/ -2px while 'closed' */
+  box-shadow: -2px 0 2px rgba(0,0,0,.5);
+  min-height: 100%;
+  width: 200px;
+  background: rgb(255, 255, 255);
+}
+
+.main-menu a {
+  display: block;
+  padding: .75rem;
+  line-height: 1rem;
+  font-size: 1rem;
+  color: rgb(98,181,229);
+  text-decoration: none;
+  border-bottom: 1px solid rgb(141,33,101);
+  text-align: center;
+}
+
+/*.main-menu li:first-child a {
+border-top: 1px solid #383838;
+}*/
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background: #333;
+  text-decoration: underline;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*
+On small devices, allow it to toggle...
+*/
+/*
+:target for non-JavaScript
+aria-expanded="true/false" will be for JavaScript
+*/
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+  left: 0;
+  outline: none;
+  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+
+/*
+We could use `.main-menu:target:after`, but
+it wouldn't be clickable.
+*/
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: rgba(0,0,0,.85);
+  cursor: default;
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    position: fixed;
+  }
+}
+
+/*
+Larger screen styling
+Horizontal menu
+*/
+@media (min-width: 768px) {
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
+
+  /* Undo positioning of off-canvas menu */
+  .main-menu {
+    position: relative;
+    left: auto;
+    top: auto;
+    height: auto;
+  }
+
+  .main-menu > ul {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+    /* Undo off-canvas styling */
+    padding: 0;
+    -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+            box-shadow: none;
+    height: auto;
+    width: auto;
+    background: none;
+  }
+
+  .main-menu a {
+    color: rgb(98,181,229);
+    border: 0 !important; /* Remove borders from off-canvas styling */
+  }
+
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none; /* Remove background from off-canvas styling */
+    color: rgb(141,33,101);
+  }
+
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    display: none;
+  }
+  .main-menu:target,
+  .main-menu[aria-expanded="true"] {
+    box-shadow: 0 0 0 0;
+  }
+}
+
+
+/*
+Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+article {
+  padding: 30px;
+  width: 55rem;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+article h2 {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.logo {
+  width: 95%;
+  margin-right: 1rem;
+}
+
+
+
+.hamburger {
+  margin: -1.5rem;
+  color: rgb(141,33,101);
+}
+
+
+
+
+#main-menu ul ul
+{
+  display:none;
+  position:absolute;
+  top:100%;
+  right:0;
+  background:#fff;
+  padding:0;
+}
+
+#main-menu ul
+{
+  list-style:none;
+  position:relative;
+  float:right;
+  margin:0;
+  padding:0;
+}
+
+#main-menu ul li{
+  position: relative;
+}
+
+#main-menu ul li:hover > ul
+{
+  display:block;
+}
+
+
+h1, h2, h3, .second {
+  font-family: 'Cairo', sans-serif;
+  margin-left: auto;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+
+h1 {
+  color: rgb(141,33,101);
+  margin-bottom: 0;
+  margin-top: .25rem;
+
+}
+
+h3 {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+h2, h3 {
+  color: rgb(0,98,140);
+}
+
+.header{
+  border-bottom: 3px solid rgb(141,33,101);
+}
+
+.subheader{
+  border-bottom: 1px solid rgb(0,98,140);
+}
+
+p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+a, a:link {
+  text-decoration: none;
+  color: rgb(98,181,229);
+}
+
+a:hover {
+  color: rgb(141,33,101);
+}
+
+table {
+  width: 90%;
+  table-layout: fixed;
+  margin: 2rem;
+  border-spacing: .25rem;
+}
+
+td {
+  height: 4rem;
+  overflow: auto;
+  padding: .5rem;
+}
+
+.years a {
+  margin: 2rem;
+  line-height: 2rem;
+}
+
+.years {
+  line-height: 1.5rem;
+}
+
+.projects td{
+  vertical-align: top;
+}
+
+.footer {
+  font-size: .75rem;
+}
+
+.newcomers {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.horizontal {
+  float: center;
+  padding: .5rem;
+  list-style: none;
+  font-size: 1.15rem;
+  margin: auto;
+}
+
+.zoom li {
+  list-style: none;
+  padding: .25rem;
+  margin: auto;
+}
+
+.internships {
+  width: 96%;
+  table-layout: fixed;
+  margin: 2rem auto;
+  border-spacing: .25rem;
+}
+
+.internships th, .internships td {
+  padding: .5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 85%;
+}
+
+.internships th {
+  background-color: rgb(238, 151, 40);
+  color: white;
+  text-transform: uppercase;
+}
+
+.internships tr:nth-child(odd) {
+  background-color:  rgba(238, 151, 40, .1);
+}
+
+.internships tr:nth-child(even) {
+  background-color:  rgba(238, 151, 40, .25);
+}
+
+.table-header {
+  text-align: center;
+}
+
+.p-center {
+  text-align: center;
+}
+
+.codeSample {
+  background-color: rgba(0, 98, 140, 0.2);
+  max-width: 95%;
+}
+
+code {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding: .1rem .5rem;
+}
+
+.inlineCode {
+  background-color: rgba(0, 98, 140, 0.2);
+}
+
+.withBullets li {
+  margin-bottom: .5rem;
+}
+
+blockquote {
+  max-width: 60%;
+  margin: auto;
+}
+
+.sampleProfile {
+  max-width: 100%;
+}
+
+.bolded {
+  color: rgb(0,98,140);
+  font-weight: 500;
+}
+
+.workflowCircle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.workflowChart {
+  display: block;
+  width: 80%;
+  margin: .25rem auto;
+  padding: .25rem;
+}
+
+.requirements {
+  margin-left: 1rem;
+  margin-bottom: .5rem;
+}
+
+.ombre {
+  margin-left: 1rem;
+  margin-right: .5rem;
+  margin-top: .5rem;
+}
+
+.workflowChart * {
+  color: rgb(17, 25, 33);
+}
+
+.workflowBlush1 {
+  background-color: #fce7f0;
+}
+
+.workflowBlush2 {
+  background-color: #fad8e7;
+}
+
+.workflowBlush3 {
+  background-color: #f7c1d8;
+}
+
+.workflowBlush4 {
+  background-color: #f6b2cf;
+}
+
+.workflowBlush5 {
+  background-color: #dda0ba;
+}
+
+footer {
+  padding-top: 2rem;
+}
+
+.footerLine {
+  padding-top: 2rem;
+  border-top: 1px solid rgb(0,98,140);
+}
+
+.footerLine > p {
+  color: rgb(141,33,101);
+  font-family: 'Cairo', sans-serif;
+  font-weight: bold;
+}
+
+.socialMedia {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 1rem 0 2rem 0;
+  list-style: none;
+}
+
+.squareLogo {
+  width: 40px;
+  height: 40px;
+}
+
+.footerBars {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  p, table, .newcomers, body > ol, .withBullets {
+    margin-right: 8rem;
+    margin-left: 8rem;
+  }
+
+  h2, h3 {
+    margin-left: 5rem;
+  }
+
+  h1, .second {
+    margin-left: 3rem;
+  }
+
+  .internships {
+    margin: 2rem auto;
+    width: 80%;
+  }
+
+  blockquote {
+    margin-left: 10rem;
+  }
+
+  .zoom li {
+    margin-left: 8rem;
+  }
+
+  .horizontal {
+    margin-left: 5rem;
+  }
+
+  .footerBars {
+    width: 100%;
+    height: 4rem;
+  }
+}
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+    <a href="#main-menu"
+        class="menu-toggle"
+        role="button"
+        id="main-menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars hamburger" aria-hidden="true"></span>
+    </a>
+
+    <div>
+            <a href="/"><img class="logo" src="./img/systers-logo.png"
+                          alt="Systers - Anitab.org logo"></a>
+    </div>
+
+  <nav id="main-menu"
+        class="main-menu"
+        role="navigation"
+        aria-expanded="false"
+        aria-label="Main menu">
+    <a href="#main-menu-toggle"
+        class="menu-close"
+        role="button"
+        id="main-menu-close"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+        <li><a href="/index.html#join-systers">Join Systers</a></li>
+        <li><a href="/index.html#projects">Projects</a></li>
+        <li><a href="/index.html#programs">Programs</a></li>
+        <li class="toggle"><a href="#main-menu">Contribute<span class="fas fa-chevron-down"></span></a>
+            <ul>
+              <li><a href="/newcomers">Newcomers</a></li>
+              <li><a href="/open-source-workflow">Open Source Workflow</a></li>
+              <li><a href="/member-levels">Member Levels</a></li>
+            </ul>
+        </li>
+            <li class="toggle"><a href="#main-menu">About Us <span class="fas fa-chevron-down"></span></a>
+            <ul>
+              <li><a href="/contactus.html">Contact Us</a></li>
+              <li><a href="/code-of-conduct">Code of Conduct</a></li>
+              <li><a href="/reporting-guidelines">Reporting Guidelines</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    <a href="#main-menu-toggle"
+    class="backdrop"
+    tabindex="-1"
+    aria-hidden="true"
+    hidden></a>
+  </header>
+
+    <h1 class="table-header">Google Summer of Code 2017</h1>
+    <table class="internships">
+      <tr><th colspan="4">Peace Corps Projects</th></tr>
+      <tr><th>Project</th><th>Student</th><th>Project Manager & Mentor</th><th>Mentors</th></tr>
+      <tr><td>Photo Language Translation</td><td>Aditya</td><td>May</td><td>Prachi <br>Anjali</td></tr>
+      <tr><td>MACC</td><td>Gunpreet</td><td>Angel</td><td>Beiyu <br> Medha </td></tr>
+      <tr><td>MACC</td><td>Yatna</td><td>Angel</td><td>Beiyu <br> Medha </td></tr>
+      <tr><td>PC Prep Kit</td><td>SJ Rajath</td><td>Buddhiprabha</td><td>Visitha <br> Rhythm</td></tr>
+      <tr><td>PC Prep Kit</td><td>Shreyans</td><td>Buddhiprabha</td><td>Jennifer <br> Visitha</td></tr>
+    </table>
+
+    <table class="internships">
+      <tr><th colspan="4">Systers Projects</th></tr>
+      <tr><th>Project</th><th>Student</th><th>Project Manager & Mentor</th><th>Mentors</th></tr>
+      <tr><td>Hoppers App iOS</td><td>Connie</td><td>May</td><td>Shruti <br> Bruno <br> Pichleap </td></tr>
+      <tr><td>Hoppers App Android</td><td>Divya</td><td>May</td><td>Himanshi <br> Dinu</td></tr>
+      <tr><td>PowerUp UI/UX/Graphics</td><td>Kim</td><td>May</td><td>Dilushi</td></tr>
+      <tr><td>PowerUp Android</td><td>Sachin</td><td>May</td><td>Dhara <br> Aanchal </td></tr>
+      <tr><td>PowerUp iOS</td><td>Yu</td><td>May</td><td>Sally <br> Ginny <br> Jennifer</td></tr>
+      <tr><td>Mailman 3</td><td>Aditi</td><td>May</td><td>Vatsala <br> Khushali <br> Rosario <br> Stephen</td></tr>
+    </table>
+    <footer>
+        <div class="footerLine">
+        <p>Find us at:</p>
+        <ul class="socialMedia">
+            <li><a href="https://twitter.com/systers_org"><img src="img/twitter.png" class="squareLogo"></a></li>
+            <li><a href="https://www.facebook.com/AnitaB.0rg/"><img src="img/facebook.png" class="squareLogo"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCUvti1DEKYUZBtQqQAtCK6g/videos"><img src="img/youtube.png" class="squareLogo"></a></li>
+            <li><a href="https://medium.com/@systers_org"><img src="img/medium.png" class="squareLogo"></a></li>
+            <li><a href="https://systers-opensource.blogspot.com/"><img src="img/blogger.png" class="squareLogo"></a></li>
+        </ul>
+        <img src="img/footer-bars.png" class="footerBars">
+        </div>
+    </footer>
+
+  </body>
+</html>
