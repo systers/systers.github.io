@@ -13,37 +13,37 @@
  },
  {
    "PROJECT": "Malaria (Web)",
-   "STUDENT": "Ananta",
+   "STUDENT": "Ananta (India)",
    "PROJECT MANAGER & MENTOR": "Nicki (USA)",
-   "MENTORS": "Khushali; Ritesh; Rheeya"
+   "MENTORS": "Khushali(USA); Ritesh(USA); Rheeya(USA)"
  },
  {
    "PROJECT": "PCSA (Android)",
-   "STUDENT": "Rohan",
+   "STUDENT": "Rohan (India)",
    "PROJECT MANAGER & MENTOR": "Nicki (USA)",
-   "MENTORS": "Dinu (Sri Lanka; Buddhiprabha (Sri Lanka); Ilo (Nigeria)"
+   "MENTORS": "Dinu (Sri Lanka); Buddhiprabha (Sri Lanka); Ilo (Nigeria)"
  },
  {
    "PROJECT": "PCSA (iOS)",
-   "STUDENT": "Chamika",
+   "STUDENT": "Chamika (Sri Lanka)",
    "PROJECT MANAGER & MENTOR": "Nicki (USA)",
    "MENTORS": "Shruti (India)"
  },
  {
    "PROJECT": "PCSA (Web)",
    "STUDENT": "Akanksha (Sri Lanka)",
-   "PROJECT MANAGER & MENTOR": "Maybellin",
-   "MENTORS": "Prajakta; Themiya"
+   "PROJECT MANAGER & MENTOR": "Maybellin (USA)",
+   "MENTORS": "Prajakta(USA); Themiya"
  },
  {
    "PROJECT": "Mobile App Control Center",
-   "STUDENT": "Medha",
+   "STUDENT": "Medha (India)",
    "PROJECT MANAGER & MENTOR": "",
-   "MENTORS": "Neetu (USA); Irish (Canada; Angel; Lorena"
+   "MENTORS": "Neetu (USA); Irish (Canada); Angel(USA); Lorena"
  },
  {
    "PROJECT": "Peace Corps Hub",
-   "STUDENT": "Izabela",
+   "STUDENT": "Izabela (Brazil)",
    "PROJECT MANAGER & MENTOR": "Rose (USA)",
    "MENTORS": "Jessica"
  },
@@ -55,9 +55,9 @@
  },
  {
    "PROJECT": "Photo Language Translation",
-   "STUDENT": "Rupinderjit",
+   "STUDENT": "Rupinderjit (India)",
    "PROJECT MANAGER & MENTOR": "Rose (USA)",
-   "MENTORS": "Saumya (India); Valerie (USA; Saurabh"
+   "MENTORS": "Saumya (India); Valerie (USA); Saurabh"
  },
  {
    "PROJECT": "Portal",
@@ -75,19 +75,19 @@
    "PROJECT": "Meetup",
    "STUDENT": "Amrutha",
    "PROJECT MANAGER & MENTOR": "Rose (USA)",
-   "MENTORS": "Nida; Jiaqui; Shaifhali (India; Ana (Moldova)"
+   "MENTORS": "Nida; Jiaqui; Shaifhali (India); Ana (Moldova)"
  },
  {
    "PROJECT": "Mailman 3",
-   "STUDENT": "Aditi",
+   "STUDENT": "Aditi (India)",
    "PROJECT MANAGER & MENTOR": "Ana (Spain)",
    "MENTORS": "Stephen (Japan)"
  },
  {
    "PROJECT": "PowerUp (Android)",
-   "STUDENT": "Aanchal",
+   "STUDENT": "Aanchal (India)",
    "PROJECT MANAGER & MENTOR": "",
-   "MENTORS": "Finda; Chhavi; Harshita"
+   "MENTORS": "Finda; Chhavi (India); Harshita(USA)"
  },
  {
    "PROJECT": "PowerUp (iOS)",
@@ -99,7 +99,7 @@
    "PROJECT": "Malaria (Web) - Automated Testing",
    "STUDENT": "Shraddha",
    "PROJECT MANAGER & MENTOR": "",
-   "MENTORS": "Shwetambara"
+   "MENTORS": "Shwetambara(India)"
  },
  {
    "PROJECT": "PCSA Web - Automated Testing",
@@ -111,7 +111,7 @@
    "PROJECT": "MACC - Automated Testing",
    "STUDENT": "Tahirih",
    "PROJECT MANAGER & MENTOR": "Nicki (USA)",
-   "MENTORS": "Suryadip (USA; Kesha (India)"
+   "MENTORS": "Suryadip (USA); Kesha (India)"
  },
  {
    "PROJECT": "PCHUB - Automated Testing",
@@ -127,7 +127,7 @@
  },
  {
    "PROJECT": "Portal - Automated Testing",
-   "STUDENT": "Vatsala",
+   "STUDENT": "Vatsala(India)",
    "PROJECT MANAGER & MENTOR": "Rose (USA)",
    "MENTORS": "Nidhi"
  }
