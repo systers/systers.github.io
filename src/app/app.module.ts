@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AgmCoreModule } from '@agm/core';
 import { MDBBootstrapModule } from './typescripts/free';
 import { FormsModule } from '@angular/forms';
+
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';

@@ -18,6 +18,7 @@ exports.config = {
     showColors: true,
     defaultTimeoutInterval: 30000,
     print() {}
+
   },
   onPrepare() {
     require("ts-node").register({
