@@ -492,10 +492,15 @@ footer {
 
 .socialMedia {
   display: flex;
-  width: 100%;
-  justify-content: space-around;
-  padding: 1rem 0 2rem 0;
+  margin-right: auto;
+  margin-left: auto;
   list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  justify-content: space-between;
+  align-content: space-around;
+  width:35%;
 }
 
 .squareLogo {
