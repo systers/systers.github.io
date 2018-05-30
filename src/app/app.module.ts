@@ -16,7 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 
-@NgModule(
+@NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
