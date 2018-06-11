@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {SystersProj} from '../projects/systers-projects';
+import {PeaceCorpsProj} from '../projects/peacecorps-projects';
+
 
 @Component({
   selector: 'app-projects',
@@ -7,8 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+  currentJustify = 'justified';
+  sys_details = SystersProj;
+  peace_details = PeaceCorpsProj;
   constructor() { }
-
   ngOnInit() {
   }
 
