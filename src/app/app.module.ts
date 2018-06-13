@@ -13,8 +13,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
-import { NewcomerComponent } from './newcomer/newcomer.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NewcomersComponent } from './newcomers/newcomers.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     NavbarComponent,
     FooterComponent,
     ContactComponent,
-    NewcomerComponent
+    NewcomersComponent
   ],
   imports: [
     BrowserModule,

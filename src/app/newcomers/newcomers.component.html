@@ -1,0 +1,58 @@
+<div class="container-fluid mt-5">
+  <div class=" container box logos mx-auto d-block">
+    <div class="row text-center">
+      <h1 class="mx-auto mb-5"> Welcome to Systers Open Source!</h1>
+      <p>
+        Systers is an international Anita B.org community encouraging the participation of all women involved in technology.
+      </p>
+      <p>
+        We are committed to providing a friendly, safe, and welcoming environment for all, regardless of gender, sexual orientation,
+        ability, ethnicity, socioeconomic status, work experience, or religion (or lack thereof).
+      </p>
+      <p class="mb-5">
+        We believe in inclusivity, diversity, and transparency. We value open source citizenship and collaborative involvement.
+      </p>
+    </div>
+    <div class="row text-center">
+      <img class="container-fluid mb-5" src="/assets/img/full_map.png">
+    </div>
+    <div>
+      <p class="text-center">
+        At Systers, we welcome contributions of all forms. Non-coders are welcomed to join the community!
+        <br> Apart from code you can contribute in any of the following ways:
+      </p>
+    </div>
+    <div class="container box logos mx-auto d-block">
+      <div class="row text-center justify-content-center">
+        <div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of method_details">
+          <img class="card-img-top" src="{{det.image}}" alt="{{det.methodName}}">
+          <div class="card-body">
+            <h5 class="card-title">{{det.methodName}}</h5>
+            <button type="button" class="btn btn-primary waves-light mx-auto" (click)="style.show()" mdbWavesEffect>View Details</button>
+            <!-- Modal -->
+									<div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+                <div class="modal-dialog modal-notify modal-success" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header" style="background-color: #8d2165;">
+                      <p class="heading lead" style="background-color: #8d2165 ">{{det.methodName}}</p>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
+                        <span aria-hidden="true" class="white-text">×</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="card-img-top mt-3 mb-5 h-50" src="{{det.image}}" alt="{{det.methodName}}">
+                      <div class="text-center">
+                        <p>{{det.details}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
