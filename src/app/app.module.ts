@@ -13,6 +13,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { NewcomerComponent } from './newcomer/newcomer.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { ContactComponent } from './contact/contact.component';
     ProjectsComponent,
     NavbarComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    NewcomerComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,7 @@ import { ContactComponent } from './contact/contact.component';
     MDBBootstrapModule.forRoot(),
     FormsModule,
     AppRoutingModule,
+    NgbModule.forRoot(),
     AgmCoreModule.forRoot({
       // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
       apiKey: 'Your_api_key'
