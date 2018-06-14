@@ -27,7 +27,7 @@ import { GetFirstWord } from './contributors/first.pipe';
     NavbarComponent,
     FooterComponent,
     ContactComponent,
-    NewcomersComponent
+    NewcomersComponent,
     ContributorsComponent,
     pipe,
     GetFirstWord
