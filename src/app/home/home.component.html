@@ -1,1 +1,12 @@
-<h1 class="mt-5"> HOME PAGE</h1>
+<div class="container box logos mx-auto d-block mt-5 mb-5">
+  <!--Carousel Wrapper-->
+  <mdb-carousel [isControls]="true" [animation]="'slide'">
+    <!--Slides-->
+    <mdb-slide *ngFor="let slide of slides;">
+      <img class="d-block w-100" [src]="slide.image">
+      <div class="carousel-caption">
+          <p>{{slide.desc}}</p>
+        </div>
+    </mdb-slide>
+  </mdb-carousel>
+</div>
