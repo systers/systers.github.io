@@ -4,7 +4,7 @@ export const Workflow: WorkflowStagesFormat[] = [
     {
         name: 'Requirements Analysis',
         // tslint:disable-next-line:max-line-length
-        details: 'Project Requirements Document   -> Create Issues -> Approved by Mentor or Maintainer ->'
+        details: 'Project Requirements Document -> Create Issues -> Approved by Mentor or Maintainer ->'
     },
     {
         name: 'Design',
