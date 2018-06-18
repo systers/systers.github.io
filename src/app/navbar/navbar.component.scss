@@ -1,6 +1,3 @@
-mdb-navbar{
-	background-color :  white;
-}
 .navl{
 	color: #54BCEB !important;
 }
@@ -11,4 +8,10 @@ mdb-navbar{
 .active {
     background-color: #54BCEB;
     color: white !important;
+}
+@media only screen and (max-width: 1024px) {
+    .social_icons
+    {
+        display: none;
+    }
 }
