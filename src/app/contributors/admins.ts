@@ -20,7 +20,7 @@ export const Admins: Member[] = [
     handle: 'ExactlyMay',
     url: 'https://github.com/ExactlyMay',
     avatar:'https://avatars0.githubusercontent.com/u/2440938?v=4',
-    projects: 'Sysbot, PowerUp-iOS',
+    projects: 'Sysbot, PowerUp-iOS'
     
 	},
 	{
