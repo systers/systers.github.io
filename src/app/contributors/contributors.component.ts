@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Admins } from './admins';
 
 @Component({
   selector: 'app-contributors',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contributors.component.scss']
 })
 export class ContributorsComponent implements OnInit {
+  admins = Admins;
 
   constructor() { }
 
