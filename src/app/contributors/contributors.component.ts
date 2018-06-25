@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Admins } from './admins';
+import { Maintainers } from './maintainers';
+import { Contri } from './committers';
 
 @Component({
   selector: 'app-contributors',
@@ -8,6 +10,8 @@ import { Admins } from './admins';
 })
 export class ContributorsComponent implements OnInit {
   admins = Admins;
+  maint = Maintainers;
+  contri = Contri;
 
   constructor() { }
 
