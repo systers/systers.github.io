@@ -6,7 +6,29 @@
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">
-		  		<p><a href="#">{{det.name}}</a></p>
+		  		
+		  		<a (click)="basicModal.show()" >{{ det.name}}</a>
+
+				<div mdbModal #basicModal="mdb-modal" class="modal " tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: true}">
+				    <div class="modal-dialog" role="document">
+				        <div class="modal-content">
+				            <div class="modal-header">
+				                <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
+				                    <span aria-hidden="true">×</span>
+				                </button>
+				                <h4 class="modal-title w-100" id="myModalLabel">{{det.name}}</h4>
+				            </div>
+				            <div class="modal-body">
+				                {{det.projects}}
+
+				            </div>
+				            <div class="modal-footer">
+				                <button type="button" class="btn btn-secondary waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Close</button>
+				                <button type="button" class="btn btn-primary relative waves-light" mdbWavesEffect>{{det.handle}}</button>
+				            </div>
+				        </div>
+				    </div>
+				</div>
 		  	</div>		
 		</div>
 		</div>		
@@ -22,8 +44,29 @@
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">
-		  			<p><a href="#">{{det.name}}</a></p>
-		  		</div>
+		  		
+		  		<a (click)="basicModal.show()" >{{ det.name}}</a>
+
+				<div mdbModal #basicModal="mdb-modal" class="modal " tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: true}">
+				    <div class="modal-dialog" role="document">
+				        <div class="modal-content">
+				            <div class="modal-header">
+				                <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
+				                    <span aria-hidden="true">×</span>
+				                </button>
+				                <h4 class="modal-title w-100" id="myModalLabel">{{det.name}}</h4>
+				            </div>
+				            <div class="modal-body">
+				                {{det.projects}}
+
+				            </div>
+				            <div class="modal-footer box logos mx-auto d-block">
+				                <a  target="_blank" href = "{{det.url}}"><i class="fa fa-github fa-4x " aria-hidden="true"></i></a>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+		  	</div>	
 		</div>
 		</div>
 		
@@ -38,8 +81,29 @@
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">
-		  			<p><a href="#">{{det.name}}</a></p>
-		  		</div>
+		  		
+		  		<a (click)="basicModal.show()" >{{ det.name}}</a>
+
+				<div mdbModal #basicModal="mdb-modal" class="modal " tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: true}">
+				    <div class="modal-dialog" role="document">
+				        <div class="modal-content">
+				            <div class="modal-header">
+				                <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
+				                    <span aria-hidden="true">×</span>
+				                </button>
+				                <h4 class="modal-title w-100" id="myModalLabel">{{det.name}}</h4>
+				            </div>
+				            <div class="modal-body">
+				                {{det.projects}}
+
+				            </div>
+				            <div class="modal-footer box logos mx-auto d-block">
+				                <a  target="_blank" href = "{{det.url}}"><i class="fa fa-github fa-4x " aria-hidden="true"></i></a>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+		  	</div>	
 		</div>
 		</div>
 		
