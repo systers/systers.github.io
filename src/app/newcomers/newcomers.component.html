@@ -30,26 +30,26 @@
             <h5 class="card-title">{{det.methodName}}</h5>
             <button type="button" class="btn btn-primary waves-light mx-auto" (click)="style.show()" mdbWavesEffect>View Details</button>
             <!-- Modal -->
-									<div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                  aria-hidden="true">
-                <div class="modal-dialog modal-notify modal-success" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header" style="background-color: #8d2165;">
-                      <p class="heading lead" style="background-color: #8d2165 ">{{det.methodName}}</p>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
-                        <span aria-hidden="true" class="white-text">×</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="card-img-top mt-3 mb-5 h-50" src="{{det.image}}" alt="{{det.methodName}}">
-                      <div class="text-center">
-                        <p>{{det.details}}</p>
-                      </div>
+            <div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-notify modal-success" role="document">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: #8d2165;">
+                    <p class="heading lead colour1">{{det.methodName}}</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
+                      <span aria-hidden="true" class="white-text">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="card-img-top mt-3 mb-5 h-50" src="{{det.image}}" alt="{{det.methodName}}">
+                    <div class="text-center">
+                      <p>{{det.details}}</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- Modal -->
+            </div>
+            <!-- Modal -->
           </div>
         </div>
       </div>
