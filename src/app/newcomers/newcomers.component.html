@@ -13,8 +13,9 @@
         We believe in inclusivity, diversity, and transparency. We value open source citizenship and collaborative involvement.
       </p>
     </div>
-    <div class="row text-center">
-      <img class="container-fluid mb-5" src="/assets/img/full_map.png">
+    <div class="row justify-content-center mb-3">
+      <img class="img-fluid" src="/assets/img/map.png">
+      <img class="img-fluid" src="/assets/img/stats.png">
     </div>
     <div>
       <p class="text-center">
@@ -73,8 +74,8 @@
             aria-hidden="true">
             <div class="modal-dialog modal-notify modal-success" role="document">
               <div class="modal-content">
-                <div class="modal-header" style="background-color: #9e186d;">
-                  <p class="heading lead" style="background-color: #a32173 ">{{stage.name}}</p>
+                <div class="modal-header colour2">
+                  <p class="heading lead colour3 ">{{stage.name}}</p>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
                     <span aria-hidden="true" class="white-text">×</span>
                   </button>
@@ -94,29 +95,29 @@
         </div>
       </div>
       <div class="row text-center justify-content-center mt-5">
-          <button type="button" class="btn btn-link mx-auto" (click)="style.show()" mdbWavesEffect>
-            <h3>Requirements Analysis</h3>
-          </button>
-          <!-- Modal -->
-          <div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-notify modal-success" role="document">
-              <div class="modal-content">
-                <div class="modal-header" style="background-color: #9e186d;">
-                  <p class="heading lead" style="background-color: #a32173 ">Requirements Analysis</p>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
-                    <span aria-hidden="true" class="white-text">×</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="text-center">
-                    <p>Project Requirements Document   -> Create Issues -> Approved by Mentor or Maintainer ->'</p>
-                  </div>
+        <button type="button" class="btn btn-link mx-auto" (click)="style.show()" mdbWavesEffect>
+          <h3>Requirements Analysis</h3>
+        </button>
+        <!-- Modal -->
+        <div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-notify modal-success" role="document">
+            <div class="modal-content">
+              <div class="modal-header colour2">
+                <p class="heading lead colour3">Requirements Analysis</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
+                  <span aria-hidden="true" class="white-text">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="text-center">
+                  <p>Project Requirements Document -> Create Issues -> Approved by Mentor or Maintainer ->'</p>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Modal -->
+        </div>
+        <!-- Modal -->
       </div>
     </div>
   </div>
