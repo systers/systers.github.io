@@ -3,7 +3,8 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import {CommonService} from './common.service';
+import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
 import { MDBBootstrapModule } from './typescripts/free';
 import { FormsModule } from '@angular/forms';
@@ -29,13 +30,14 @@ import { ContactComponent } from './contact/contact.component';
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
+    HttpModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
       // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
       apiKey: 'Your_api_key'
     })
   ],
-  providers: [],
+  providers: [ CommonService ],
   bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA ]
 })
