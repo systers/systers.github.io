@@ -1,8 +1,11 @@
 <center> <h1> Contributors </h1></center>
+<h5> Enter name of project </h5>
+<input [(ngModel)]="query">
+
 <center> <h2> Admins </h2></center>
 <div class="container box logos mx-auto d-block">
 	<div class="row">
-		<div class="card" *ngFor=" let det of admins ;" >
+		<div class="card" *ngFor=" let det of admins | search:'name,projects':query ;" >
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">
@@ -38,9 +41,10 @@
 
 
 <center> <h2> Maintainers </h2></center>
+
 <div class="container box logos mx-auto d-block">
 	<div class="row">
-		<div class="card" *ngFor=" let det of maint ;" >
+		<div class="card" *ngFor=" let det of maint | search:'name,projects':query;" >
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">
@@ -77,7 +81,7 @@
 <center> <h2> Committers </h2></center>
 <div class="container box logos mx-auto d-block">
 	<div class="row">
-		<div class="card" *ngFor=" let det of contri ;" >
+		<div class="card" *ngFor=" let det of contri | search:'name,projects':query ;" >
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">

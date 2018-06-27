@@ -3,7 +3,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { Pipe, PipeTransform } from '@angular/core';  
 import { AgmCoreModule } from '@agm/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
@@ -14,7 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContributorsComponent } from './contributors/contributors.component';
-
+import { pipe } from './contributors/pipe'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,8 @@ import { ContributorsComponent } from './contributors/contributors.component';
     NavbarComponent,
     FooterComponent,
     ContactComponent,
-    ContributorsComponent
+    ContributorsComponent,
+    pipe
   ],
   imports: [
     BrowserModule,
