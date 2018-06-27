@@ -132,7 +132,7 @@
 <center> <h2> Improvers </h2></center>
 <div class="container box logos mx-auto d-block">
 	<div class="row">
-		<div class="card" *ngFor=" let det of imp ;" >
+		<div class="card" *ngFor=" let det of imp | search:'name,projects':query ;" >
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">
