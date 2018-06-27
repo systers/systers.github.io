@@ -15,8 +15,26 @@ export class ContributorsComponent implements OnInit {
   maint = Maintainers;
   contri = Contri;
   imp = Improvers;
+  options =['Sysbot','PowerUp', 'GH Pages','PowerUp-Android', 'VMS','PC Prep Kit','Portal','PowerUp-iOS' , 'PC Hub' , 'Malaria-Android' , 'MACC' , 'Mailman3' , 'Infrastructure iOS' , 'Infrastructure Android' ,'FirstAide'];
+  selected;
+  selectedData;
+  selectedContri;
+  onSelect(val){
+  if(val==''){
+  	this.selectedData=this.maint;
+  	this.selectedContri = this.contri;
+  }
+  else{
 
-  constructor() { }
+  	this.selectedData = this.maint.filter(x => x.projects == val)
+  	this.selectedContri = this.contri.filter(x => x.projects == val)
+  	}
+}
+
+  constructor() { 
+  	this.selectedData=this.maint;
+  	this.selectedContri = this.contri;
+  	}
 
   ngOnInit() {
   }
