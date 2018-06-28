@@ -120,5 +120,16 @@
         <!-- Modal -->
       </div>
     </div>
+    <div class="container box logos mx-auto d-block mb-5">
+        <h1 class="mt-5 mb-5">Resources</h1>
+        <div class="row text-center justify-content-center">
+          <div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of resources">
+            <img class="card-img-top" src="{{det.image}}" alt="{{det.name}}">
+            <div class="card-body">
+              <h5 class="card-title">{{det.name}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
