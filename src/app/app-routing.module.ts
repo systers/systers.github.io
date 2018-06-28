@@ -6,6 +6,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContributorsComponent } from './contributors/contributors.component';
 const routes: Routes = [
+
 	{
 		path: '',
 		component: HomeComponent
@@ -26,6 +27,7 @@ const routes: Routes = [
 		path: 'contributors',
 		component: ContributorsComponent
 	}
+
 ];
 
 @NgModule({
