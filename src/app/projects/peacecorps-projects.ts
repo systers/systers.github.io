@@ -69,7 +69,7 @@ export const PeaceCorpsProj: Projects[] = [
         summary: 'A central hub for Peace Corps staff and volunteers to access all of the applications.',
         link: 'https://github.com/systers/pchub',
         technologiesUsed: 'Ruby on Rails, SQLite',
-        documentation: 'https://github.com/systers/pchub',
+        documentation: 'https://github.com/systers/pchub/wiki',
         contact_maintainers: '@systers/maintainers-pc-hub',
         slack: '#pc-hub'
     },

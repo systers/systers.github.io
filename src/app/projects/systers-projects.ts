@@ -78,8 +78,8 @@ export const SystersProj: Projects[] = [
         summary: 'Websites for Systers Open Source and Systers community built on MEAN Stack.',
         link: 'https://github.com/systers/systers.github.io',
         technologiesUsed: 'MongoDB, Angular, Express.js, Node.js, HTML, CSS',
-        documentation: 'https://github.com/systers/vms/tree/develop/docs',
+        documentation: 'https://github.com/systers/systers.github.io/wiki',
         contact_maintainers: '@systers/maintainers-vms',
-        slack: 'gh-pages'
+        slack: '#gh-pages'
     }
 ];
