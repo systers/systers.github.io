@@ -14,7 +14,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContributorsComponent } from './contributors/contributors.component';
-import { pipe } from './contributors/pipe'
+import { pipe } from './contributors/pipe';
+import { GetFirstWord } from './contributors/first.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { pipe } from './contributors/pipe'
     FooterComponent,
     ContactComponent,
     ContributorsComponent,
-    pipe
+    pipe,
+    GetFirstWord
   ],
   imports: [
     BrowserModule,

@@ -40,7 +40,7 @@ export const Admins: Member[] = [
     
 	},
 	{
-    name: ' Prachi Manchanda ',
+    name: 'Prachi Manchanda ',
     handle: 'prachi1210',
     url: 'https://github.com/prachi1210',
     avatar: 'https://avatars3.githubusercontent.com/u/14016564?v=4',

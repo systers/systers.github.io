@@ -8,6 +8,7 @@ import { Improvers } from './improvers';
   selector: 'app-contributors',
   templateUrl: './contributors.component.html',
   styleUrls: ['./contributors.component.scss']
+  
 })
 export class ContributorsComponent implements OnInit {
   filterargs = {projects: 'Sysbot'};  
@@ -30,6 +31,7 @@ export class ContributorsComponent implements OnInit {
   	this.selectedContri = this.contri.filter(x => x.projects == val)
   	}
 }
+
 
   constructor() { 
   	this.selectedData=this.maint;

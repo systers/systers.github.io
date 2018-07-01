@@ -25,7 +25,7 @@ export const Maintainers: Member[] = [
     },
 
     {
-    name:  ' Divyanshu Rawat ',
+    name:  'Divyanshu Rawat ',
     handle: 'divyanshu-rawat',
     url: 'https://github.com/divyanshu-rawat',
     avatar: 'https://avatars3.githubusercontent.com/u/13464678?v=4',

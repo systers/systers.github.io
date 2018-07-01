@@ -1,13 +1,13 @@
-<center> <h1> Contributors </h1></center>
+
 <div class="row">
 <div class="col-md-7">
-	<h5> Enter name of project / Coontributor </h5>
-	<input [(ngModel)]="query">
+	
+	<input [(ngModel)] = "query" placeholder="Enter name of project / Contributor" >
 </div>
 <div class="col-md-5">
 	<div>
-	    <select [(ngModel)]="selected" (ngModelChange)="onSelect(selected)">
-	    	<option value="">--- Select a Project ---</option>
+	    <select [(ngModel)]="selected" (ngModelChange)="onSelect(selected)" >
+	    	<option value="">--- No Filter ---</option>
 	        <option *ngFor="let option of options" 
 	                [value]="option"> 
 	          {{ option }}
@@ -16,15 +16,15 @@
 	</div>
 </div>
 </div>
-<center> <h2> Admins </h2></center>
+<h2> Admins </h2>
 <div class="container box logos mx-auto d-block">
-	<div class="row">
-		<div class="card" *ngFor=" let det of admins | search:'name,projects':query ;" >
+	<div class="row" style="margin: auto;">
+		<div class="card card-block d-flex" *ngFor=" let det of admins | search:'name,projects':query ;" >
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">
 		  		
-		  		<a (click)="basicModal.show()" >{{ det.name}}</a>
+		  		<a (click)="basicModal.show()" ><span class="card-title">{{ det.name | first}}</span></a>
 
 				<div mdbModal #basicModal="mdb-modal" class="modal " tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: true}">
 				    <div class="modal-dialog" role="document">
@@ -39,9 +39,8 @@
 				                {{det.projects}}
 
 				            </div>
-				            <div class="modal-footer">
-				                <button type="button" class="btn btn-secondary waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Close</button>
-				                <button type="button" class="btn btn-primary relative waves-light" mdbWavesEffect>{{det.handle}}</button>
+				            <div class="modal-footer box logos mx-auto d-block">
+				                <a  target="_blank" href = "{{det.url}}"><i class="fa fa-github fa-4x " aria-hidden="true"></i></a>
 				            </div>
 				        </div>
 				    </div>
@@ -54,16 +53,16 @@
 
 
 
-<center> <h2> Maintainers </h2></center>
+<h2> Maintainers </h2>
 
 <div class="container box logos mx-auto d-block">
-	<div class="row">
+	<div class="row" style="margin: auto;">
 		<div class="card" *ngFor=" let det of selectedData | search:'name,projects':query;" >
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">
 		  		
-		  		<a (click)="basicModal.show()" >{{ det.name}}</a>
+		  		<a (click)="basicModal.show()" ><span class="card-title">{{ det.name | first}}</span></a>
 
 				<div mdbModal #basicModal="mdb-modal" class="modal " tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: true}">
 				    <div class="modal-dialog" role="document">
@@ -92,15 +91,15 @@
 	
 </div>
 
-<center> <h2> Committers </h2></center>
+<h2> Committers </h2>
 <div class="container box logos mx-auto d-block">
-	<div class="row">
+	<div class="row" style="margin: auto;">
 		<div class="card" *ngFor=" let det of selectedContri | search:'name,projects':query ;" >
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">
 		  		
-		  		<a (click)="basicModal.show()" >{{ det.name}}</a>
+		  		<a (click)="basicModal.show()" ><span class="card-title">{{ det.name | first}}</span></a>
 
 				<div mdbModal #basicModal="mdb-modal" class="modal " tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: true}">
 				    <div class="modal-dialog" role="document">
@@ -129,15 +128,15 @@
 	
 </div>
 
-<center> <h2> Improvers </h2></center>
+<h2> Improvers </h2>
 <div class="container box logos mx-auto d-block">
-	<div class="row">
+	<div class="row" style="margin: auto;">
 		<div class="card" *ngFor=" let det of imp | search:'name,projects':query ;" >
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">
 		  		
-		  		<a (click)="basicModal.show()" >{{ det.name}}</a>
+		  		<a (click)="basicModal.show()" ><span class="card-title">{{ det.name | first}}</span></a>
 
 				<div mdbModal #basicModal="mdb-modal" class="modal " tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: true}">
 				    <div class="modal-dialog" role="document">

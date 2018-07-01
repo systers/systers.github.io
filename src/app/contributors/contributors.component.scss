@@ -10,8 +10,11 @@ p{
 	margin: 5px;
 }
 h2{
-	color:#54BCEB;
-	margin: 20px;
+	color:#8D2166;
+	margin-left: 80px;
+	margin-top:20px;
+	margin-bottom:20px;
+
 }
 h1{
 	color:#54BCEB;
@@ -19,4 +22,18 @@ h1{
 }
 input,h5{
 	margin-left : 20px;
+}
+input::placeholder {
+ 
+  font-size: 0.9em;
+}
+.card-title{
+	color:#54BCEB;
+	margin-left:10px;
+}
+.fa{
+	color:black;
+}
+.fa:hover{
+	color:#54BCEB;
 }
