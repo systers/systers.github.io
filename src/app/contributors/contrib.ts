@@ -4,6 +4,7 @@ export class Member {
     url: string;
     avatar: string;
     projects: string;
+    slack: string;
     
 }
 
