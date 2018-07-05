@@ -99,7 +99,7 @@
 		  	</div>	
 		</div>
 		</div>
-		<div *ngIf="(admins | search:'name,projects':query).length==0" class="missing">No contributors found!</div>
+		<div *ngIf="(selectedData | search:'name,projects':query).length==0" class="missing">No contributors found!</div>
 	</div>
 	
 </div>
@@ -108,7 +108,7 @@
 <div class="container box logos mx-auto d-block">
 	<div class="row" style="margin: auto;">
 		<div class="card" *ngFor=" let det of selectedContri | search:'name,projects':query ;" >
-		<div *ngIf="det === -1">"No matches"</div>
+	
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">
@@ -141,7 +141,7 @@
 		  	</div>	
 		</div>
 		</div>
-		<div *ngIf="(admins | search:'name,projects':query).length==0" class="missing">No contributors found!</div>
+		<div *ngIf="(selectedContri | search:'name,projects':query).length==0" class="missing">No contributors found!</div>
 	</div>
 	
 </div>
@@ -179,7 +179,7 @@
 		  	</div>		
 		</div>
 		</div>
-		<div *ngIf="(admins | search:'name,projects':query).length==0" class="missing">No contributors found!</div>
+		<div *ngIf="(imp | search:'name,projects':query).length==0" class="missing">No contributors found!</div>
 	</div>
 </div>
 
