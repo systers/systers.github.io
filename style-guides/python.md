@@ -116,4 +116,69 @@ Start your file with a module docstring. Do not put a shebang line (`#!/usr/bin/
 
 > *Rationale:* a shebang line is useless for non-executable files. An `__author__` line just gets out of date, and is better determined by looking at source control history in any case. Code is automatically copyrighted; a copyright line doesn't help. No need to put this useless boilerplate at the top of the file!
 
+## Line Breaking (Splitting)
+
+PEP8's guideline for Python formatting causes a great deal of debate: the 79-character line limit. It's still better to stick with this guideline as many linters do use it. Several other coders reading open source code may find it easier to work with widely accepted standards.
+
+> Rationale: short lines have benefits, including:
+
+> - Broad tool support. 
+> - Side-by-side code windows. Try it out, it's great.
+
+Unlike many C-based languages, Python expressions end with a newline, not a semicolon. 
+
+```py
+>>> True and (True or
+...           False)
+
+
+>>> [x * x
+...  for x
+...  in xrange(0, 10)
+...  if x % 2]
+```
+
+It's important to know that you don't need the + operator to concatenate adjancent literals. Adjacent literals are automatically combined.
+
+```py
+>>> literal = 'Welcome to ' 'systers ' 'open source'
+>>> literal
+'Welcome to systers open source'
+```
+
+This makes splitting long messages easy.
+
+```py
+>>> literal = ('Welcome to '
+...          'systers '
+...          'open source')
+```
+
+Python's indentation style is unlike many C-based languages, most editors might require some tweaking and or cajoling to help out.
+
+- Emacs has great support out of the box via `python-mode`.
+- Vim needs some help. Installing [this indent script by Eric Mc Sween](http://www.vim.org/scripts/script.php?script_id=974) will get you there.
+
+
+## Indenting continued lines properly
+
+When a logical statement is split into multiple lines and is followed by an indented line, the continued lines should be indented further to set them apart from the next logical statement.
+
+In the following example taken from http://www.python.org/dev/peps/pep-0008/#maximum-line-length, notice how the second and third lines of the if condition are indented further to differentiate them from the actual raise statement within the if block:
+
+```py
+class Rectangle(Blob):
+    def __init__(self, width, height,
+                     color='black', emphasis=None, highlight=0):
+        if (width == 0 and height == 0 and
+                color == 'red' and emphasis == 'strong' or
+                highlight > 100):
+            raise ValueError("sorry, you lose")
+```
+
+## Classes
+
+Classes should be used as data wrappers and **prefferably** just class per file. The Python implementation of a class needs to be in a single file.  If you have a class with many methods doing many different things, each with its own set of dependencies, then the file defining that class ends up with a huge number of dependencies.  This can make the class hard to use, since importing it may cause circular imports -- or at the least, bloat your dependency graph.
+
+
 
