@@ -20,6 +20,7 @@ export class ContributorsComponent implements OnInit {
   selected;
   selectedData;
   boolval;
+
   selectedContri;
   onSelect(val){
   if(val==''){
@@ -30,11 +31,11 @@ export class ContributorsComponent implements OnInit {
 
   	this.selectedData = this.maint.filter(x => x.projects == val)
   	this.selectedContri = this.contri.filter(x => x.projects == val)
-    
+
     if(this.selectedContri.length === 0) {
       return [-1];
     }
-    
+
   	}
 }
 

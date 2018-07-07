@@ -7,6 +7,7 @@ export const Admins: Member[] = [
     avatar: 'https://avatars0.githubusercontent.com/u/15123411?v=4',
     projects: ' ',
     slack: '@angel'
+
 	},
 	{
     name:  'Buddhiprabha',
@@ -42,7 +43,6 @@ export const Admins: Member[] = [
     avatar: 'https://avatars2.githubusercontent.com/u/3844911?v=4',
     projects: ' ',
     slack: '@juliap'
-    
 	},
 	{
     name: 'Prachi Manchanda ',
@@ -60,6 +60,7 @@ export const Admins: Member[] = [
     avatar:'https://avatars2.githubusercontent.com/u/63290?v=4',
     projects: '',
     slack: '@rosarioarobinson'
+
     
 	}
 
