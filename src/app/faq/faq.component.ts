@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FAQComponent implements OnInit {
 
+
   public isCollapsed = true;
   public isCollapsed1 = true;
   public isCollapsed2 = true;
@@ -17,9 +18,10 @@ export class FAQComponent implements OnInit {
   public isCollapsed7 = true;
   public isCollapsed8 = true;
   public isCollapsed9 = true;
+
   constructor() { }
 
   ngOnInit() {
-   }
+  }
 
 }
