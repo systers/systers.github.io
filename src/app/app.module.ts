@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { FAQComponent } from './faq/faq.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NewcomersComponent } from './newcomers/newcomers.component';
 import { ContributorsComponent } from './contributors/contributors.component';
 import { pipe } from './contributors/pipe';
 import { GetFirstWord } from './contributors/first.pipe';
@@ -27,7 +28,8 @@ import { GetFirstWord } from './contributors/first.pipe';
     NavbarComponent,
     FooterComponent,
     ContactComponent,
-    FAQComponent
+    FAQComponent,
+    NewcomersComponent
     ContributorsComponent,
     pipe,
     GetFirstWord
@@ -40,11 +42,10 @@ import { GetFirstWord } from './contributors/first.pipe';
     AppRoutingModule,
     NgbModule.forRoot(),
     AgmCoreModule.forRoot({
-      // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
       apiKey: 'Your_api_key'
     })
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA ]
 })

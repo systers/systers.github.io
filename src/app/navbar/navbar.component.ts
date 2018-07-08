@@ -9,19 +9,17 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() 
-  {
-    var nav = document.getElementsByClassName("nav-item");
+  ngOnInit() {
+    var nav = document.getElementsByClassName('nav-item');
     for (var j = 0; j < nav.length; j++) {
-      var btns = nav[j].getElementsByClassName("navl");
+      var btns = nav[j].getElementsByClassName('navl');
       for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", " ");
-          this.className += " active";
+        btns[i].addEventListener('click', function () {
+          var current = document.getElementsByClassName('active');
+          current[0].className = current[0].className.replace('active', ' ');
+          this.className += ' active';
         });
       }
     }
   }
-
 }
