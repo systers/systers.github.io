@@ -2,64 +2,125 @@
 	<div class=" container box logos mx-auto d-block">
 		<div class="row text-center">
 			<h1 class="mx-auto mb-5"> OUR PROJECTS</h1>
-			<p>Our projects focus on impacting users and communities by improving their lives with technology. We use various development
+
+			<p class="mb-5">Our projects focus on impacting users and communities by improving their lives with technology. We use various development
 				languages and technologies, while encouraging our contributors to learn new skills and solve new challenges. We host
 				all of our code on GitHub, where contributors can publish and store their code, connect with other open source communities,
 				and learn version control with Git. Github tracks your personal contributions, so you can share them as part of your
 				portfolio.
 			</p>
 		</div>
-		<!-- Peace Corps Projects Note-->
-		<div class="row text-center">
-			<h1 class="mx-auto mt-5 mb-5">PEACE CORPS PROJECTS</h1>
-			<p>The Peace Corps has had nearly 220,000 volunteers (PCVs) in 151 countries around the world since its creation in 1961.
-				Great technology projects are started for the Peace Corps, usually at codeathons, but they are rarely complete enough
-				to deploy to the PCVs. Systers takes on these projects, completes them, then works with Peace Corps administrators to
-				test and deploy in the field.
-				<br>Please note that these projects have been archived until AnitaB.org finds new contacts within the Peace Corps to finish
-				and test them in the field.</p>
-		</div>
-		<!-- Peace Corps Projects Note-->
-
-		<!-- Projects -->
-		<div class=" container box logos mx-auto d-block">
-			<div class="row text-center justify-content-center">
-				<div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of peace_details ;">
-					<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">{{det.name}}</h5>
-						<p class="card-text">Technologies Used : {{det.technologiesUsed}}</p>
-						<a href="{{det.link}}" class="btn btn-primary">Repo</a>
+		<ngb-tabset [justify]="currentJustify">
+			<ngb-tab title="Peace Corps Projects">
+				<ng-template ngbTabContent>
+					<!-- Peace Corps Projects Note-->
+					<div class="row text-center">
+						<h1 class="mx-auto mt-5 mb-5">PEACE CORPS PROJECTS</h1>
+						<p>The Peace Corps has had nearly 220,000 volunteers (PCVs) in 151 countries around the world since its creation in 1961.
+							Great technology projects are started for the Peace Corps, usually at codeathons, but they are rarely complete enough
+							to deploy to the PCVs. Systers takes on these projects, completes them, then works with Peace Corps administrators
+							to test and deploy in the field.
+							<br>Please note that these projects have been archived until AnitaB.org finds new contacts within the Peace Corps to finish
+							and test them in the field.</p>
 					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<!-- Systers Projects Note-->
-		<div class="row text-center">
-			<h1 class="mx-auto mt-5 mb-5">SYSTERS PROJECTS</h1>
-			<p>Systers has very specific needs with managing volunteers. We have the Volunteer Management System and Systers Portal to
-				help Systers and volunteers to make an engaged connection. We also maintain the Systers GNU Mailman and apply our customized
-				features to the latest release. Our customized version, is very complex and has a high difficulty level for developers.
-				We’re also working on a new project to help manage our community's meetups.</p>
-		</div>
-		<!-- Systers Projects Note-->
-
-		<!-- Projects -->
-
-		<div class=" container box logos mx-auto d-block">
-			<div class="row text-center justify-content-center">
-				<div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of sys_details ;">
-					<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">{{det.name}}</h5>
-						<p class="card-text">Technologies Used : {{det.technologiesUsed}}</p>
-						<a href="{{det.link}}" class="btn btn-primary">Repo</a>
+					<!-- Peace Corps Projects Note-->
+					<!-- Projects -->
+					<div class="container box logos mx-auto d-block">
+						<div class="row text-center justify-content-center">
+							<div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of peace_details ;">
+								<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">{{det.name}}</h5>
+									<p class="card-text">{{det.summary}}</p>
+									<button type="button" class="btn btn-primary waves-light mx-auto" (click)="style.show()" mdbWavesEffect>View Details</button>
+									<!-- Modal -->
+									<div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+									 aria-hidden="true">
+										<div class="modal-dialog modal-notify modal-success" role="document">
+											<div class="modal-content">
+												<div class="modal-header" style="background-color: #8d2165;">
+													<p class="heading lead colour1">{{det.name}}</p>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
+														<span aria-hidden="true" class="white-text">×</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<div class="text-center">
+														<p>Technologies Used: {{det.technologiesUsed}}</p>
+														<p>
+															<a href="{{det.link}}" target="_blank">Link to the Github repo</a>
+														</p>
+														<p>
+															<a href="{{det.documentation}}" target="_blank">Link to the documentation</a>
+														</p>
+														<p>Handle to tag the Maintainers of the repo on Github : {{det.contact_maintainers}}</p>
+														<p>Slack Channel: {{det.slack}}</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Modal -->
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-
+				</ng-template>
+			</ngb-tab>
+			<ngb-tab title="Systers Projects">
+				<ng-template ngbTabContent>
+					<!-- Systers Projects Note-->
+					<div class="row text-center">
+						<h1 class="mx-auto mt-5 mb-5">SYSTERS PROJECTS</h1>
+						<p>Systers has very specific needs with managing volunteers. We have the Volunteer Management System and Systers Portal
+							to help Systers and volunteers to make an engaged connection. We also maintain the Systers GNU Mailman and apply our
+							customized features to the latest release. Our customized version, is very complex and has a high difficulty level
+							for developers. We’re also working on a new project to help manage our community's meetups.</p>
+					</div>
+					<!-- Systers Projects Note-->
+					<!-- Projects -->
+					<div class="container box logos mx-auto d-block">
+						<div class="row text-center justify-content-center">
+							<div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of sys_details ;">
+								<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">{{det.name}}</h5>
+									<p class="card-text">{{det.summary}}</p>
+									<button type="button" class="btn btn-primary waves-light mx-auto" (click)="style.show()" mdbWavesEffect>View Details</button>
+									<!-- Modal -->
+									<div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+									 aria-hidden="true">
+										<div class="modal-dialog modal-notify modal-success" role="document">
+											<div class="modal-content">
+												<div class="modal-header" style="background-color: #8d2165;">
+													<p class="heading lead" style="background-color: #8d2165 ">{{det.name}}</p>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
+														<span aria-hidden="true" class="white-text">×</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<div class="text-center">
+														<p>Technologies Used: {{det.technologiesUsed}}</p>
+														<p>
+															<a href="{{det.link}}" target="_blank">Link to the Github repo</a>
+														</p>
+														<p>
+															<a href="{{det.documentation}}" target="_blank">Link to the documentation</a>
+														</p>
+														<p>Handle to tag the Maintainers of the repo on Github : {{det.contact_maintainers}}</p>
+														<p>Slack Channel: {{det.slack}}</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Modal -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</ng-template>
+			</ngb-tab>
+		</ngb-tabset>
 	</div>
 </div>
