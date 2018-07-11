@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NewcomersComponent } from './newcomers/newcomers.component';
+import { ProgramComponent } from './program/program.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NewcomersComponent } from './newcomers/newcomers.component';
     NavbarComponent,
     FooterComponent,
     ContactComponent,
-    NewcomersComponent
+    NewcomersComponent,
+    ProgramComponent
   ],
   imports: [
     BrowserModule,
