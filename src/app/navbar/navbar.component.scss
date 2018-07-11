@@ -1,0 +1,17 @@
+.navl{
+	color: #54BCEB !important;
+}
+.navl:hover {
+    background-color: #54BCEB;
+    color: white !important;
+}
+.active {
+    background-color: #54BCEB;
+    color: white !important;
+}
+@media only screen and (max-width: 1024px) {
+    .social_icons
+    {
+        display: none;
+    }
+}

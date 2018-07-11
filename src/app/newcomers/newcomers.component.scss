@@ -1,0 +1,34 @@
+.fa-long-arrow-down {
+  font-size: 48px;
+}
+
+.modal {
+  text-align: center;
+}
+
+.colour1 {
+  background-color: #8d2165;
+}
+
+.colour2 {
+  background-color: #9e186d;;
+}
+
+.colour3 {
+  background-color: #a32173;
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}

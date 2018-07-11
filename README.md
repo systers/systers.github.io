@@ -10,9 +10,9 @@ To preview, run these commands in your terminal (as long as you’ve previously 
 1. git clone https://github.com/systers/systers.github.io
 2. cd systers.github.io
 3. npm install
-4. npm start
+4. ng serve -o
 
-Then open http://localhost:8050 in your browser, you should see a current version of the website!
+Then open http://localhost:4200 in your browser, you should see a current version of the website!
 
 ## Contact Information
 If you have any questions or want to discuss something about this repo, please sign up for the [Systers Slack Channel](http://systers.io/slack-systers-opensource/) and join the the #gh-pages channel.
