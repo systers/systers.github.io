@@ -18,6 +18,8 @@ import { NewcomersComponent } from './newcomers/newcomers.component';
 import { ContributorsComponent } from './contributors/contributors.component';
 import { pipe } from './contributors/pipe';
 import { GetFirstWord } from './contributors/first.pipe';
+import { ProgramsComponent } from './programs/programs.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,8 @@ import { GetFirstWord } from './contributors/first.pipe';
     NewcomersComponent,
     ContributorsComponent,
     pipe,
-    GetFirstWord
+    GetFirstWord,
+    ProgramsComponent
   ],
   imports: [
     BrowserModule,

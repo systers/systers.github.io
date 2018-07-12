@@ -6,8 +6,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { NewcomersComponent } from './newcomers/newcomers.component';
 import { ContributorsComponent } from './contributors/contributors.component';
-const routes: Routes = [
+import {ProgramsComponent} from './programs/programs.component';
 
+const routes: Routes = [
 	{
 		path: '',
 		component: HomeComponent
@@ -31,6 +32,10 @@ const routes: Routes = [
 	{
 		path: 'newcomers',
 		component: NewcomersComponent
+  },
+  {
+		path: 'programs',
+		component: ProgramsComponent
 	}
 
 ];
