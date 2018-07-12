@@ -272,35 +272,25 @@
     </ngb-tab>
     <ngb-tab title="Outreachy">
       <ng-template ngbTabContent>
-        <div class="row text-center">
-          <h2 class="mt-5 mx-auto">Outreachy 2017</h2>
-          <table class="internships">
-            <tr>
-              <th>Project</th>
-              <th>Students</th>
-              <th>Project Manager & Mentor</th>
-              <th>Mentors</th>
-            </tr>
-            <tr>
-              <td>Portal</td>
-              <td>Poojitha (India)</td>
-              <td>Tapasweni</td>
-              <td>Mansimar</td>
-            </tr>
-            <tr>
-              <td>PowerUp Android</td>
-              <td>Debanjanah (India)</td>
-              <td>May</td>
-              <td>Tanvi </td>
-            </tr>
-            <tr>
-              <td>Documentation</td>
-              <td>Janice (USA)</td>
-              <td>May (USA)</td>
-              <td>Prachi (India)</td>
-            </tr>
-          </table>
-        </div>
+          <div class="row text-center">
+              <h2 class="mt-5 mx-auto">Outreachy 2017</h2>
+              <table class="internships">
+                <tr>
+                  <th>Project</th>
+                  <th>Student</th>
+                  <th>Project Manager & Mentor</th>
+                  <th>Mentors</th>
+                </tr>
+                <ng-container *ngFor="let kk of Repdata">
+                  <tr *ngIf="kk.YEAR==='2017' && kk.PROGRAM==='Outreachy'">
+                    <td>{{kk.PROJECT}}</td>
+                    <td>{{kk.STUDENT}}</td>
+                    <td>{{kk.PROJECTMANAGERANDMENTOR}}</td>
+                    <td>{{kk.MENTORS}}</td>
+                  </tr>
+                </ng-container>
+              </table>
+            </div>
       </ng-template>
     </ngb-tab>
     <ngb-tab title="Codeathons">
