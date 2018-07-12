@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./programs.component.scss']
 })
 export class ProgramsComponent implements OnInit {
-
+  currentJustify = 'justified';
   constructor() { }
 
   ngOnInit() {
