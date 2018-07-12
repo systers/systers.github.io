@@ -1,0 +1,48 @@
+<form #userForm="ngForm" (ngSubmit)="onSave(userForm.value)" novalidate>
+  <p>Is "myForm" valid? {{userForm.valid}}</p>
+  <table border='1'>
+    <tr>
+      <td>PROGRAM</td>
+      <td>
+        <input name="id" type="hidden" [(ngModel)]="id" />
+        <input name="PROGRAM" type="text" required [(ngModel)]="PROGRAM" />
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>STUDENT</td>
+      <td>
+        <input name="STUDENT" required type="text" [(ngModel)]="STUDENT" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="submit" value="{{valbutton}}" />
+      </td>
+    </tr>
+  </table>
+</form>
+
+<table border='1'>
+
+  <tr>
+    <td>Id</td>
+    <td>PROGRAM</td>
+    <td>STUDENT</td>
+    <td>Edit</td>
+    <td>Delete</td>
+  </tr>
+  <tr *ngFor="let kk of Repdata;let ind = index">
+
+    <td>{{ind + 1}}</td>
+    <td>{{kk.PROGRAM}}</td>
+    <td>{{kk.STUDENT}}</td>
+    <td>
+      <a (click)="edit(kk)" style="color:blueviolet">Edit</a>
+    </td>
+    <td>
+      <a (click)="delete(kk._id)" style="color:blueviolet">Delete</a>
+    </td>
+  </tr>
+</table>

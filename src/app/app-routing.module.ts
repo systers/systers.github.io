@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NewcomersComponent } from './newcomers/newcomers.component';
 import { ContributorsComponent } from './contributors/contributors.component';
 import {ProgramsComponent} from './programs/programs.component';
+import { FormComponent } from './form/form.component';
 
 const routes: Routes = [
 	{
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
 		path: 'programs',
 		component: ProgramsComponent
+	},
+	{
+		path: 'forms',
+		component: FormComponent
 	}
 
 ];

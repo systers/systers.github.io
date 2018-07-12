@@ -433,6 +433,25 @@
             </tr>
           </table>
         </div>
+        <div class="row text-center">
+          <h2 class="mt-5 mx-auto">GSOC COPY 2017</h2>
+          <table class="internships">
+            <tr>
+              <th>Project</th>
+              <th>Student</th>
+              <th>Project Manager & Mentor</th>
+              <th>Mentors</th>
+              <th>Year</th>
+            </tr>
+            <tr *ngFor="let kk of Repdata;">
+              <td>{{kk.PROJECT}}</td>
+              <td>{{kk.STUDENT}}</td>
+              <td>{{kk.PROJECTMANAGERANDMENTOR}}</td>
+              <td>{{kk.MENTORS}}</td>
+              <td>{{kk.YEAR}}</td>
+            </tr>
+          </table>
+        </div>
       </ng-template>
     </ngb-tab>
     <ngb-tab title="Outreachy">

@@ -13,12 +13,15 @@ import { ProjectsComponent } from './projects/projects.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NewcomersComponent } from './newcomers/newcomers.component';
 import { ContributorsComponent } from './contributors/contributors.component';
 import { pipe } from './contributors/pipe';
 import { GetFirstWord } from './contributors/first.pipe';
 import { ProgramsComponent } from './programs/programs.component';
+import { HttpModule } from '@angular/http';
+import {CommonService} from './common.service';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -33,11 +36,13 @@ import { ProgramsComponent } from './programs/programs.component';
     ContributorsComponent,
     pipe,
     GetFirstWord,
-    ProgramsComponent
+    ProgramsComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
     AppRoutingModule,
@@ -46,7 +51,7 @@ import { ProgramsComponent } from './programs/programs.component';
       apiKey: 'Your_api_key'
     })
   ],
-  providers: [Title],
+  providers: [CommonService],
   bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA ]
 })

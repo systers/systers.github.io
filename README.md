@@ -12,7 +12,11 @@ To preview, run these commands in your terminal (as long as you’ve previously 
 3. npm install
 4. npm install -g @angular/cli
 5. npm i -g typescript
-6. ng serve -o
+6. npm install express --save
+7. npm install mongoose -- save
+8. npm install body-parser --save
+9. node server.js
+10. ng serve -o
 
 Then open http://localhost:4200 in your browser, you should see a current version of the website!
 

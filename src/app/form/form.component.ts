@@ -4,12 +4,12 @@ import { CommonService } from '../common.service';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 
 @Component({
-  selector: 'app-programs',
-  templateUrl: './programs.component.html',
-  styleUrls: ['./programs.component.scss']
+  selector: 'app-form',
+  templateUrl: './form.component.html',
+  styleUrls: ['./form.component.scss']
 })
-export class ProgramsComponent implements OnInit {
-  currentJustify = 'justified';
+export class FormComponent implements OnInit {
+
   constructor(private newService: CommonService, ) { }
   Repdata;
   valbutton = 'Save';
@@ -44,4 +44,5 @@ export class ProgramsComponent implements OnInit {
     this.newService.deleteUser(id)
       .subscribe(data => { alert(data.data); this.ngOnInit(); }, error => this.errorMessage = error);
   };
+
 }
