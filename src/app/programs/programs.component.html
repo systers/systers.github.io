@@ -215,241 +215,57 @@
           <h2 class="mt-5 mx-auto">Google Summer of Code 2015</h2>
           <table class="internships">
             <tr>
-              <th colspan="4">Peace Corps Projects</th>
-            </tr>
-            <tr>
-              <th colspan="4">Mobile Projects</th>
-            </tr>
-            <tr>
               <th>Project</th>
-              <th>Students</th>
+              <th>Student</th>
               <th>Project Manager & Mentor</th>
               <th>Mentors</th>
             </tr>
-            <tr>
-              <td>PeaceTrack Android</td>
-              <td>Bhagya (Sri Lanka)</td>
-              <td>Nicki (USA)</td>
-              <td>Neeraja (USA)
-                <br>Pooja</td>
-            </tr>
-            <tr>
-              <td>PeaceTrack iOS</td>
-              <td>Vennela (India)</td>
-              <td>Nicki (USA)</td>
-              <td>Jessica</td>
-            </tr>
-            <tr>
-              <td>Malaria Android</td>
-              <td>Ankita (India)</td>
-              <td>Nicki (USA)
-                <br> Rose (USA)</td>
-              <td>Aditi (India)
-                <br>Aneke (Nigeria)</td>
-            </tr>
-            <tr>
-              <td>Malaria iOS</td>
-              <td>Bruno (Portugal)</td>
-              <td>Nicki (USA)
-                <br> Rose (USA)</td>
-              <td>Shanu (India)</td>
-            </tr>
-            <tr>
-              <td>MACC</td>
-              <td>Irish - Malaria (Canada)
-                <br> Ajay - PeaceTrack (India)</td>
-              <td>Nicki (USA)
-                <br> Rose (USA)</td>
-              <td>Neeta (USA)
-                <br> Nishita (India)
-                <br> Vaibhavi (India)</td>
-            </tr>
-            <tr>
-              <td>OVA Android</td>
-              <td>Ilo (Nigeria)</td>
-              <td>Rose (USA)</td>
-              <td>Dinu (Sri Lanka)</td>
-            </tr>
-            <tr>
-              <td>OVA Android</td>
-              <td>Buddhiprabha (Sri Lanka)</td>
-              <td>Rose (USA)</td>
-              <td>Shruti (India)</td>
-            </tr>
-            <tr>
-              <td>Ushahidi Guyana</td>
-              <td>Divya (India)</td>
-              <td>Rose (USA)</td>
-              <td>Julia (USA)
-                <br> Jennifer (Austria)
-                <br> Angela (Kenya)
-                <br> Linda (Kenya)</td>
-            </tr>
-            <tr>
-              <td>Language Translation</td>
-              <td>Won Wook (Seoul)
-                <br> Isuri (Sri Lanka)</td>
-              <td>Rose (USA)</td>
-              <td>Valerie (USA)
-                <br> Kai (USA)
-                <br> Mike (USA)
-                <br> Saumya (India)
-                <br> Sylvain (France)</td>
-            </tr>
+            <ng-container *ngFor="let kk of Repdata">
+              <tr *ngIf="kk.YEAR==='2015' && kk.PROGRAM==='Google Summer of Code'">
+                <td>{{kk.PROJECT}}</td>
+                <td>{{kk.STUDENT}}</td>
+                <td>{{kk.PROJECTMANAGERANDMENTOR}}</td>
+                <td>{{kk.MENTORS}}</td>
+              </tr>
+            </ng-container>
           </table>
         </div>
         <div class="row text-center">
           <h2 class="mt-5 mx-auto">Google Summer of Code 2016</h2>
           <table class="internships">
             <tr>
-              <th colspan="4">Peace Corps Projects</th>
-            </tr>
-            <tr>
               <th>Project</th>
               <th>Student</th>
               <th>Project Manager & Mentor</th>
               <th>Mentors</th>
             </tr>
-            <tr>
-              <td>Malaria (Android)</td>
-              <td>Yatna (India)</td>
-              <td>Nicki (USA)</td>
-              <td>Ankita (India)
-                <br> Leroi </td>
-            </tr>
-            <tr>
-              <td>Malaria (iOS)</td>
-              <td>Teodor (Romania)</td>
-              <td>Nicki (USA)</td>
-              <td>Bruno (Portugal)
-                <br> Jayaruwan</td>
-            </tr>
-            <tr>
-              <td>Malaria (Web)</td>
-              <td>Ananta</td>
-              <td>Nicki (USA)</td>
-              <td>Khushali
-                <br> Ritesh
-                <br> Rheeya</td>
-            </tr>
-            <tr>
-              <td>PCSA (Android)</td>
-              <td>Rohan</td>
-              <td>Nicki (USA)</td>
-              <td>Dinu (Sri Lanka)
-                <br> Buddhiprabha (Sri Lanka)
-                <br> Ilo (Nigeria)</td>
-            </tr>
-            <tr>
-              <td>PCSA (iOS)</td>
-              <td>Chamika</td>
-              <td>Nicki (USA)</td>
-              <td>Shruti (India)</td>
-            </tr>
-            <tr>
-              <td>PCSA (Web)</td>
-              <td>Akanksha (Sri Lanka)</td>
-              <td>Maybellin</td>
-              <td>Prajakta
-                <br> Themiya</td>
-            </tr>
-            <tr>
-              <td>Mobile App Control Center</td>
-              <td>Medha</td>
-              <td></td>
-              <td>Neetu (USA)
-                <br> Irish (Canada)
-                <br> Angel
-                <br> Lorena</td>
-            </tr>
-            <tr>
-              <td>Peace Corps Hub</td>
-              <td>Izabela</td>
-              <td>Rose (USA)</td>
-              <td>Jessica</td>
-            </tr>
-            <tr>
-              <td>Ushahidi Crowdmap</td>
-              <td>Divya (India)</td>
-              <td>Julia (USA)</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Photo Language Translation</td>
-              <td>Rupinderjit</td>
-              <td>Rose (USA)</td>
-              <td>Saumya (India)
-                <br> Valerie (USA)
-                <br> Saurabh</td>
-            </tr>
+            <ng-container *ngFor="let kk of Repdata">
+              <tr *ngIf="kk.YEAR==='2016' && kk.PROGRAM==='Google Summer of Code'">
+                <td>{{kk.PROJECT}}</td>
+                <td>{{kk.STUDENT}}</td>
+                <td>{{kk.PROJECTMANAGERANDMENTOR}}</td>
+                <td>{{kk.MENTORS}}</td>
+              </tr>
+            </ng-container>
           </table>
         </div>
         <div class="row text-center">
           <h2 class="mt-5 mx-auto">Google Summer of Code 2017</h2>
           <table class="internships">
             <tr>
-              <th colspan="4">Peace Corps Projects</th>
-            </tr>
-            <tr>
               <th>Project</th>
               <th>Student</th>
               <th>Project Manager & Mentor</th>
               <th>Mentors</th>
             </tr>
-            <tr>
-              <td>Photo Language Translation</td>
-              <td>Aditya</td>
-              <td>May</td>
-              <td>Prachi
-                <br>Anjali</td>
-            </tr>
-            <tr>
-              <td>MACC</td>
-              <td>Gunpreet</td>
-              <td>Angel</td>
-              <td>Beiyu
-                <br> Medha </td>
-            </tr>
-            <tr>
-              <td>MACC</td>
-              <td>Yatna</td>
-              <td>Angel</td>
-              <td>Beiyu
-                <br> Medha </td>
-            </tr>
-            <tr>
-              <td>PC Prep Kit</td>
-              <td>SJ Rajath</td>
-              <td>Buddhiprabha</td>
-              <td>Visitha
-                <br> Rhythm</td>
-            </tr>
-            <tr>
-              <td>PC Prep Kit</td>
-              <td>Shreyans</td>
-              <td>Buddhiprabha</td>
-              <td>Jennifer
-                <br> Visitha</td>
-            </tr>
-          </table>
-        </div>
-        <div class="row text-center">
-          <h2 class="mt-5 mx-auto">GSOC COPY 2017</h2>
-          <table class="internships">
-            <tr>
-              <th>Project</th>
-              <th>Student</th>
-              <th>Project Manager & Mentor</th>
-              <th>Mentors</th>
-              <th>Year</th>
-            </tr>
-            <tr *ngFor="let kk of Repdata;">
-              <td>{{kk.PROJECT}}</td>
-              <td>{{kk.STUDENT}}</td>
-              <td>{{kk.PROJECTMANAGERANDMENTOR}}</td>
-              <td>{{kk.MENTORS}}</td>
-              <td>{{kk.YEAR}}</td>
-            </tr>
+            <ng-container *ngFor="let kk of Repdata">
+              <tr *ngIf="kk.YEAR==='2017' && kk.PROGRAM==='Google Summer of Code'">
+                <td>{{kk.PROJECT}}</td>
+                <td>{{kk.STUDENT}}</td>
+                <td>{{kk.PROJECTMANAGERANDMENTOR}}</td>
+                <td>{{kk.MENTORS}}</td>
+              </tr>
+            </ng-container>
           </table>
         </div>
       </ng-template>
