@@ -35,7 +35,7 @@
               aria-hidden="true">
               <div class="modal-dialog modal-notify modal-success" role="document">
                 <div class="modal-content">
-                  <div class="modal-header" style="background-color: #8d2165;">
+                  <div class="modal-header colour1">
                     <p class="heading lead colour1">{{det.methodName}}</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="mymodal.hide()">
                       <span aria-hidden="true" class="white-text">×</span>
@@ -118,6 +118,41 @@
           </div>
         </div>
         <!-- Modal -->
+      </div>
+    </div>
+    <div class="container box logos mx-auto d-block mb-5">
+      <h1 class="mt-5 mb-5">Resources</h1>
+      <div class="row text-center justify-content-center">
+        <div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of resources">
+          <img class="card-img-top" src="{{det.image}}" alt="{{det.name}}">
+          <div class="card-body">
+            <h5 class="card-title">{{det.name}}</h5>
+            <button type="button" class="btn btn-primary waves-light mx-auto" (click)="style.show()" mdbWavesEffect>View Details</button>
+          </div>
+          <!-- Modal -->
+          <div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-notify modal-success" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: #8d2165;">
+                  <p class="heading lead colour1">{{det.name}}</p>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
+                    <span aria-hidden="true" class="white-text">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-center">
+                    <p>Here are some of the resources:</p>
+                    <p><a href="{{det.link1}}">{{det.link1}}</a></p>
+                    <p><a href="{{det.link2}}">{{det.link2}}</a></p>
+                    <p><a href="{{det.link3}}">{{det.link3}}</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+        </div>
       </div>
     </div>
   </div>
