@@ -37,7 +37,6 @@ const routes: Routes = [
 		path: 'programs',
 		component: ProgramsComponent
 	}
-
 ];
 
 @NgModule({
