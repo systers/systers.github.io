@@ -21,7 +21,6 @@ import { GetFirstWord } from './contributors/first.pipe';
 import { ProgramsComponent } from './programs/programs.component';
 import { HttpModule } from '@angular/http';
 import {CommonService} from './common.service';
-import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -36,8 +35,7 @@ import { FormComponent } from './form/form.component';
     ContributorsComponent,
     pipe,
     GetFirstWord,
-    ProgramsComponent,
-    FormComponent
+    ProgramsComponent
   ],
   imports: [
     BrowserModule,

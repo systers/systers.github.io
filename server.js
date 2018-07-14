@@ -11,7 +11,7 @@ var db = mongo.connect("mongodb://systers:systers2018@ds235461.mlab.com:35461/pr
     }
 });
 
-var app = express()
+var app = express();
 app.use(bodyParser());
 app.use(bodyParser.json({
     limit: '5mb'
@@ -53,11 +53,11 @@ var UsersSchema = new Schema({
     versionKey: false
 });
 
-var model = mongo.model('users', UsersSchema, 'users');
+var Model = mongo.model('users', UsersSchema, 'users');
 
 app.post("/api/SaveUser", function (req, res) {
-    var mod = new model(req.body);
-    if (req.body.mode == "Save") {
+    var mod = new Model(req.body);
+    if (req.body.mode === "Save") {
         mod.save(function (err, data) {
             if (err) {
                 res.send(err);
@@ -68,7 +68,7 @@ app.post("/api/SaveUser", function (req, res) {
             }
         });
     } else {
-        model.findByIdAndUpdate(req.body.id, {
+        Model.findByIdAndUpdate(req.body.id, {
                 PROGRAM: req.body.PROGRAM,
                 YEAR: req.body.YEAR,
                 PROJECT: req.body.PROJECT,
@@ -89,7 +89,7 @@ app.post("/api/SaveUser", function (req, res) {
 })
 
 app.post("/api/deleteUser", function (req, res) {
-    model.remove({
+    Model.remove({
         _id: req.body.id
     }, function (err) {
         if (err) {
@@ -103,7 +103,7 @@ app.post("/api/deleteUser", function (req, res) {
 })
 
 app.get("/api/getUser", function (req, res) {
-    model.find({}, function (err, data) {
+    Model.find({}, function (err, data) {
         if (err) {
             res.send(err);
         } else {
