@@ -27,6 +27,10 @@ const routes: Routes = [
 	{
 		path: 'contributors',
 		component: ContributorsComponent
+	},
+	{
+		path: 'newcomers',
+		component: NewcomersComponent
 	}
 
 ];

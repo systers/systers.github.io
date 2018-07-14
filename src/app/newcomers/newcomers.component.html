@@ -13,8 +13,9 @@
         We believe in inclusivity, diversity, and transparency. We value open source citizenship and collaborative involvement.
       </p>
     </div>
-    <div class="row text-center">
-      <img class="container-fluid mb-5" src="/assets/img/full_map.png">
+    <div class="row justify-content-center mb-3">
+      <img class="img-fluid" src="/assets/img/map.png">
+      <img class="img-fluid" src="/assets/img/stats.png">
     </div>
     <div>
       <p class="text-center">
@@ -22,7 +23,7 @@
         <br> Apart from code you can contribute in any of the following ways:
       </p>
     </div>
-    <div class="container box logos mx-auto d-block">
+    <div class="container box logos mx-auto d-block mb-5">
       <div class="row text-center justify-content-center">
         <div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of method_details">
           <img class="card-img-top" src="{{det.image}}" alt="{{det.methodName}}">
@@ -34,7 +35,7 @@
               aria-hidden="true">
               <div class="modal-dialog modal-notify modal-success" role="document">
                 <div class="modal-content">
-                  <div class="modal-header" style="background-color: #8d2165;">
+                  <div class="modal-header colour1">
                     <p class="heading lead colour1">{{det.methodName}}</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
                       <span aria-hidden="true" class="white-text">×</span>
@@ -51,6 +52,106 @@
             </div>
             <!-- Modal -->
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container box logos mx-auto d-block mt-5 mb-5">
+      <div class="row text-center justify-content-center">
+        <h2 class="mt-4 mb-4">
+          How to get started with contributing to Open Source?
+        </h2>
+      </div>
+      <div class="row text-center justify-content-center">
+        <h2>OSS Workflow Diagram</h2>
+      </div>
+      <div *ngFor="let stage of workflow_stages">
+        <div class="row text-center justify-content-center mt-5">
+          <button type="button" class="btn btn-link mx-auto" (click)="style.show()" mdbWavesEffect>
+            <h3>{{stage.name}}</h3>
+          </button>
+          <!-- Modal -->
+          <div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-notify modal-success" role="document">
+              <div class="modal-content">
+                <div class="modal-header colour2">
+                  <p class="heading lead colour3 ">{{stage.name}}</p>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
+                    <span aria-hidden="true" class="white-text">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-center">
+                    <p>{{stage.details}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+        </div>
+        <div class="row text-center justify-content-center">
+          <i class="fa fa-long-arrow-down"></i>
+        </div>
+      </div>
+      <div class="row text-center justify-content-center mt-5">
+        <button type="button" class="btn btn-link mx-auto" (click)="style.show()" mdbWavesEffect>
+          <h3>Requirements Analysis</h3>
+        </button>
+        <!-- Modal -->
+        <div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-notify modal-success" role="document">
+            <div class="modal-content">
+              <div class="modal-header colour2">
+                <p class="heading lead colour3">Requirements Analysis</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
+                  <span aria-hidden="true" class="white-text">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="text-center">
+                  <p>Project Requirements Document -> Create Issues -> Approved by Mentor or Maintainer ->'</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+      </div>
+    </div>
+    <div class="container box logos mx-auto d-block mb-5">
+      <h1 class="mt-5 mb-5">Resources</h1>
+      <div class="row text-center justify-content-center">
+        <div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of resources">
+          <img class="card-img-top" src="{{det.image}}" alt="{{det.name}}">
+          <div class="card-body">
+            <h5 class="card-title">{{det.name}}</h5>
+            <button type="button" class="btn btn-primary waves-light mx-auto" (click)="style.show()" mdbWavesEffect>View Details</button>
+          </div>
+          <!-- Modal -->
+          <div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-notify modal-success" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: #8d2165;">
+                  <p class="heading lead colour1">{{det.name}}</p>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
+                    <span aria-hidden="true" class="white-text">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-center">
+                    <p>Here are some of the resources:</p>
+                    <p><a href="{{det.link1}}">{{det.link1}}</a></p>
+                    <p><a href="{{det.link2}}">{{det.link2}}</a></p>
+                    <p><a href="{{det.link3}}">{{det.link3}}</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
         </div>
       </div>
     </div>

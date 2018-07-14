@@ -3,7 +3,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Pipe, PipeTransform } from '@angular/core';  
+import { Pipe, PipeTransform } from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
@@ -27,7 +27,7 @@ import { GetFirstWord } from './contributors/first.pipe';
     NavbarComponent,
     FooterComponent,
     ContactComponent,
-    NewcomersComponent
+    NewcomersComponent,
     ContributorsComponent,
     pipe,
     GetFirstWord
