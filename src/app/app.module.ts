@@ -13,6 +13,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { FAQComponent } from './faq/faq.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NewcomersComponent } from './newcomers/newcomers.component';
 import { ContributorsComponent } from './contributors/contributors.component';
@@ -27,7 +28,8 @@ import { GetFirstWord } from './contributors/first.pipe';
     NavbarComponent,
     FooterComponent,
     ContactComponent,
-    NewcomersComponent,
+    FAQComponent,
+    NewcomersComponent
     ContributorsComponent,
     pipe,
     GetFirstWord
