@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {nonCodeMethodsData} from '../newcomers/nonCodeMethodsData';
+import {Workflow} from '../newcomers/workflow-stages-data';
+import { Resources } from './resources-data';
 
 @Component({
   selector: 'app-newcomers',
@@ -8,6 +10,8 @@ import {nonCodeMethodsData} from '../newcomers/nonCodeMethodsData';
 })
 export class NewcomersComponent implements OnInit {
   method_details = nonCodeMethodsData;
+  workflow_stages = Workflow;
+  resources = Resources;
   constructor() { }
 
   ngOnInit() { }

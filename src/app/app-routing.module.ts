@@ -30,8 +30,11 @@ const routes: Routes = [
 		component: FAQComponent
 		path: 'contributors',
 		component: ContributorsComponent
+	},
+	{
+		path: 'newcomers',
+		component: NewcomersComponent
 	}
-
 ];
 
 @NgModule({
