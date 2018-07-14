@@ -32,7 +32,6 @@ const routes: Routes = [
 		path: 'newcomers',
 		component: NewcomersComponent
 	}
-
 ];
 
 @NgModule({
