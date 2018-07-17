@@ -14,6 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FAQComponent } from './faq/faq.component';
 import { NewcomersComponent } from './newcomers/newcomers.component';
 import { ContributorsComponent } from './contributors/contributors.component';
 import { pipe } from './contributors/pipe';
@@ -31,6 +32,7 @@ import {CommonService} from './common.service';
     NavbarComponent,
     FooterComponent,
     ContactComponent,
+    FAQComponent,
     NewcomersComponent,
     ContributorsComponent,
     pipe,
