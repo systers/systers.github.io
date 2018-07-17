@@ -29,6 +29,8 @@ const routes: Routes = [
 	{
 		path: 'FAQ',
 		component: FAQComponent
+  },
+  {
 		path: 'contributors',
 		component: ContributorsComponent
 	},
