@@ -8,7 +8,6 @@ import { AgmCoreModule } from '@agm/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -27,7 +26,6 @@ import {CommonService} from './common.service';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
     ProjectsComponent,
     NavbarComponent,
     FooterComponent,
