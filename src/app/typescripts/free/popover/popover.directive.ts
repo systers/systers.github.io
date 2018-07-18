@@ -125,3 +125,4 @@ import { Directive, Input, Output, EventEmitter, OnInit, OnDestroy, Renderer2, E
      this._popover.dispose();
    }
  }
+

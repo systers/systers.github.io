@@ -320,3 +320,4 @@ export class MdbInputDirective implements AfterViewChecked, OnInit, AfterViewIni
         }
     }
 }
+

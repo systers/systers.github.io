@@ -21,3 +21,4 @@ If in step 6, you use npm start, you can see the local version hosted at http://
 
 ## Contact Information
 If you have any questions or want to discuss something about this repo, please sign up for the [Systers Slack Channel](http://systers.io/slack-systers-opensource/) and join the the #gh-pages channel.
+

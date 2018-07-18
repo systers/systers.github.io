@@ -30,3 +30,4 @@ export const Resources: ResourcesFormat[] = [
         link3: 'Link3'
     }
 ];
+

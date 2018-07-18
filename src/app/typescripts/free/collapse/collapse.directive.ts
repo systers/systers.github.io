@@ -155,3 +155,4 @@ export class CollapseDirective implements OnInit, AfterViewInit {
     }
   }
 }
+

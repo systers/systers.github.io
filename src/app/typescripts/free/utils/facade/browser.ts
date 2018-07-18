@@ -24,3 +24,4 @@
  export const History = win['History'];
  export const Location = win['Location'];
  export const EventListener = win['EventListener'];
+

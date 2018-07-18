@@ -83,3 +83,4 @@ export const SystersProj: Projects[] = [
         slack: '#gh-pages'
     }
 ];
+

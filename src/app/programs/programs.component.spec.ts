@@ -23,3 +23,4 @@ describe('ProgramsComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

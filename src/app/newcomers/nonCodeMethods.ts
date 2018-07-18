@@ -3,3 +3,4 @@ export class MethodsFormat {
     image: string;
     details: string;
 }
+
