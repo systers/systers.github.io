@@ -154,7 +154,36 @@
           <div class="card-footer">
             <button type="button" class="btn btn-primary waves-light mx-auto" (click)="style.show()" mdbWavesEffect>View Details</button>
           </div>
+          <!-- Modal -->
         </div>
+        <div class="row text-center justify-content-center">
+          <i class="fa fa-long-arrow-down"></i>
+        </div>
+      </div>
+      <div class="row text-center justify-content-center mt-5">
+          <button type="button" class="btn btn-link mx-auto" (click)="style.show()" mdbWavesEffect>
+            <h3>Requirements Analysis</h3>
+          </button>
+          <!-- Modal -->
+          <div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-notify modal-success" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: #9e186d;">
+                  <p class="heading lead" style="background-color: #a32173 ">Requirements Analysis</p>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
+                    <span aria-hidden="true" class="white-text">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-center">
+                    <p>Project Requirements Document   -> Create Issues -> Approved by Mentor or Maintainer ->'</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
       </div>
     </div>
   </div>

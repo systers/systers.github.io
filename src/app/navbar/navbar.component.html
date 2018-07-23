@@ -7,10 +7,24 @@
     </logo>
     <links>
         <ul class="navbar-nav mr-auto">
+            <li class="nav-item bold">
+                <a class="nav-link waves-light active navl" mdbWavesEffect routerLink="/home">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link waves-light navl" mdbWavesEffect routerLink="/projects">Projects</a>
             </li>
-            <li class="nav-item">
+            <!-- Dropdown -->
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light navl" mdbWavesEffect>
+                More info<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item nav-link waves-light navl" mdbWavesEffect routerLink="/contact">Contact Us</a>
+                    <a class="dropdown-item nav-link waves-light navl" mdbWavesEffect routerLink="/FAQ">FAQ</a>
+                </div>
+            </li>
+            <li>
                 <a class="nav-link waves-light navl" mdbWavesEffect routerLink="/newcomers">Newcomers</a>
             </li>
              <li class="nav-item">
