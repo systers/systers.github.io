@@ -87,3 +87,4 @@ export class ModalContainerComponent implements OnInit, OnDestroy {
     }, this.isAnimated ? TransitionDurations.MODAL : 0);
   }
 }
+

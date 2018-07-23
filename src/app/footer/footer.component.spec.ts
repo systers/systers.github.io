@@ -23,3 +23,4 @@ describe('FooterComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

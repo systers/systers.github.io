@@ -17,3 +17,4 @@ export class NewcomersComponent implements OnInit {
   ngOnInit() { }
 
 }
+

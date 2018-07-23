@@ -25,3 +25,4 @@ export interface Color {
   hoverBorderColor?: string | string[];
   hoverBorderWidth?: number;
 }
+

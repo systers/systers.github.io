@@ -41,3 +41,4 @@ export const nonCodeMethodsData: MethodsFormat[] = [
         details: 'If you have an idea that may help an organization, reach out to them and let them know! Sometimes the best task is one that the organization hasn’t even considered yet.'
     }
 ];
+

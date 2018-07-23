@@ -49,3 +49,4 @@ export class ContributorsComponent implements OnInit {
   }
 
 }
+

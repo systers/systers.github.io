@@ -16,3 +16,4 @@ export class CarouselModule {
     return {ngModule: CarouselModule, providers: []};
   }
 }
+

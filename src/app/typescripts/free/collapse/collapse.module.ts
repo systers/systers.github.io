@@ -10,3 +10,4 @@ export class CollapseModule {
     return {ngModule: CollapseModule, providers: []};
   }
 }
+

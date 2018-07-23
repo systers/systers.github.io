@@ -7,3 +7,4 @@ export class Projects {
     contact_maintainers: string;
     slack: string;
 }
+
