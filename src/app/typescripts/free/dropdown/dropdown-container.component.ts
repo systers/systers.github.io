@@ -35,3 +35,4 @@ export class BsDropdownContainerComponent implements OnDestroy {
     this._subscription.unsubscribe();
   }
 }
+

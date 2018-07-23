@@ -14,3 +14,4 @@
 
    public isManual(): boolean { return this.open === 'manual' || this.close === 'manual'; }
  }
+

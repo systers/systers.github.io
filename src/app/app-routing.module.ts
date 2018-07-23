@@ -23,9 +23,9 @@ const routes: Routes = [
 	},
 	{
 		path: 'FAQ',
-		component: FAQComponent,
-	},
-	{
+		component: FAQComponent
+  },
+  {
 		path: 'contributors',
 		component: ContributorsComponent
 	},
@@ -44,3 +44,4 @@ const routes: Routes = [
 	exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

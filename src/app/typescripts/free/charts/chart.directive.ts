@@ -286,3 +286,4 @@ function getColors(chartType: string, index: number, count: number): any {
 }
 
 
+

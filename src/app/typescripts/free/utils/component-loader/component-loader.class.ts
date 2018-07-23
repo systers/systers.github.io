@@ -288,3 +288,4 @@ export class ComponentLoader<T> {
          return new ContentRef([[this._renderer.createText(`${content}`)]]);
        }
      }
+

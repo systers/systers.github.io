@@ -5,3 +5,4 @@ export class ResourcesFormat {
     link2: string;
     link3: string;
 }
+

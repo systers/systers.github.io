@@ -19,6 +19,8 @@ export class ContributorsComponent implements OnInit {
   options =['Sysbot','PowerUp', 'GH Pages','PowerUp-Android', 'VMS','PC Prep Kit','Portal','PowerUp-iOS' , 'PC Hub' , 'Malaria-Android' , 'MACC' , 'Mailman3' , 'Infrastructure iOS' , 'Infrastructure Android' ,'FirstAide'];
   selected;
   selectedData;
+  boolval;
+
   selectedContri;
   onSelect(val){
   if(val==''){
@@ -29,6 +31,11 @@ export class ContributorsComponent implements OnInit {
 
   	this.selectedData = this.maint.filter(x => x.projects == val)
   	this.selectedContri = this.contri.filter(x => x.projects == val)
+
+    if(this.selectedContri.length === 0) {
+      return [-1];
+    }
+
   	}
 }
 
@@ -42,3 +49,4 @@ export class ContributorsComponent implements OnInit {
   }
 
 }
+

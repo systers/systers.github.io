@@ -13,3 +13,4 @@ import { BaseChartDirective } from './chart.directive';
 })
 export class MDBChartsModule {
 }
+
