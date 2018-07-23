@@ -12,3 +12,4 @@ import { NavlinksComponent } from './navlinks.component';
   providers: [NavbarService]
 })
 export class NavbarModule {}
+

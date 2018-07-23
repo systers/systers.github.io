@@ -1,10 +1,12 @@
 
 <div class="row">
-<div class="col-md-7">
+<div class="filter">
 	
 	<input [(ngModel)] = "query" placeholder="Enter name of project / Contributor" >
 </div>
-<div class="col-md-5">
+</div>
+<div class="row">
+<div class="filter">
 	<div>
 	    <select [(ngModel)]="selected" (ngModelChange)="onSelect(selected)" >
 	    	<option value="">--- No Filter ---</option>
@@ -19,12 +21,13 @@
 <h2> Admins </h2>
 <div class="container box logos mx-auto d-block">
 	<div class="row" style="margin: auto;">
-		<div class="card card-block d-flex" *ngFor=" let det of admins | search:'name,projects':query ;" >
+		<div class="card card-block d-flex" *ngFor=" let det of admins | search:'name,projects':query ; index as i" >
+
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">
 		  		
-		  		<a (click)="basicModal.show()" ><span class="card-title">{{ det.name | first}}</span></a>
+		  		<a (click)="basicModal.show()" ><span class="card-title ">{{ det.name | first}}</span></a>
 
 				<div mdbModal #basicModal="mdb-modal" class="modal " tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: true}">
 				    <div class="modal-dialog" role="document">
@@ -33,10 +36,11 @@
 				                <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
 				                    <span aria-hidden="true">×</span>
 				                </button>
-				                <h4 class="modal-title w-100" id="myModalLabel">{{det.name}}</h4>
+				                <h4 class="modal-title w-100 " id="myModalLabel">{{det.name}}</h4>
 				            </div>
+
 				            <div class="modal-body">
-				                {{det.projects}}
+				                Slack :- {{det.slack}}
 
 				            </div>
 				            <div class="modal-footer box logos mx-auto d-block">
@@ -47,8 +51,10 @@
 				</div>
 		  	</div>		
 		</div>
-		</div>		
+		</div>	
+			<div *ngIf="(admins | search:'name,projects':query).length==0" class="missing">No contributors found!</div>
 	</div>
+
 </div>
 
 
@@ -74,7 +80,11 @@
 				                <h4 class="modal-title w-100" id="myModalLabel">{{det.name}}</h4>
 				            </div>
 				            <div class="modal-body">
-				                {{det.projects}}
+				                Projects :- {{det.projects}}
+
+				            </div>
+				            <div class="modal-body">
+				                Slack :- {{det.slack}}
 
 				            </div>
 				            <div class="modal-footer box logos mx-auto d-block">
@@ -86,7 +96,7 @@
 		  	</div>	
 		</div>
 		</div>
-		
+		<div *ngIf="(selectedData | search:'name,projects':query).length==0" class="missing">No contributors found!</div>
 	</div>
 	
 </div>
@@ -95,6 +105,7 @@
 <div class="container box logos mx-auto d-block">
 	<div class="row" style="margin: auto;">
 		<div class="card" *ngFor=" let det of selectedContri | search:'name,projects':query ;" >
+	
 		<div class="col-md-3">
 			<img src="{{det.avatar}}">
 			<div class="row">
@@ -111,7 +122,11 @@
 				                <h4 class="modal-title w-100" id="myModalLabel">{{det.name}}</h4>
 				            </div>
 				            <div class="modal-body">
-				                {{det.projects}}
+				                Projects :- {{det.projects}}
+
+				            </div>
+				            <div class="modal-body">
+				                Slack :- {{det.slack}}
 
 				            </div>
 				            <div class="modal-footer box logos mx-auto d-block">
@@ -123,7 +138,7 @@
 		  	</div>	
 		</div>
 		</div>
-		
+		<div *ngIf="(selectedContri | search:'name,projects':query).length==0" class="missing">No contributors found!</div>
 	</div>
 	
 </div>
@@ -147,6 +162,10 @@
 				                </button>
 				                <h4 class="modal-title w-100" id="myModalLabel">{{det.name}}</h4>
 				            </div>
+				            <div class="modal-body">
+				                Slack :- {{det.slack}}
+
+				            </div>
 				           
 				            <div class="modal-footer box logos mx-auto d-block">
 				                <a  target="_blank" href = "{{det.url}}"><i class="fa fa-github fa-4x " aria-hidden="true"></i></a>
@@ -156,7 +175,9 @@
 				</div>
 		  	</div>		
 		</div>
-		</div>		
+		</div>
+		<div *ngIf="(imp | search:'name,projects':query).length==0" class="missing">No contributors found!</div>
 	</div>
 </div>
+
 

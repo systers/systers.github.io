@@ -12,3 +12,4 @@ export class ActiveModule {
     return {ngModule: ActiveModule, providers: []};
   }
 }
+

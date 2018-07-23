@@ -4,3 +4,4 @@ export class BsComponentRef<T> {
   templateRef: TemplateRef<T>;
   viewContainer: ViewContainerRef;
 }
+

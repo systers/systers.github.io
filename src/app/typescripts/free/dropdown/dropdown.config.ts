@@ -6,3 +6,4 @@ export class BsDropdownConfig {
   /** default dropdown auto closing behavior */
   autoClose = true;
 }
+

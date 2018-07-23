@@ -19,3 +19,4 @@ export class Utils {
     return view.getComputedStyle(elem);
   }
 }
+

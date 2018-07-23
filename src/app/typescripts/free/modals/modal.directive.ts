@@ -348,3 +348,4 @@ export class ModalDirective implements AfterViewInit, OnDestroy {
    return scrollbarWidth;
  }
 }
+

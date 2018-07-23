@@ -11,3 +11,4 @@ export class RippleModule {
     return {ngModule: RippleModule, providers: []};
   }
 }
+

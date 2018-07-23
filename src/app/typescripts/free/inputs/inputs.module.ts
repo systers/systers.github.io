@@ -12,3 +12,4 @@ export class InputsModule {
     return {ngModule: InputsModule, providers: []};
   }
 }
+

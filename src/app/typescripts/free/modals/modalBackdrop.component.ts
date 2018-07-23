@@ -59,3 +59,4 @@ export class ModalBackdropComponent implements OnInit {
     this.isShown = true;
   }
 }
+
