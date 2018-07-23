@@ -1,7 +1,8 @@
 <mdb-navbar SideClass="navbar navbar-expand-xl navbar-light white scrolling-navbar">
     <logo>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/home">
             <img src="/assets/img/logo.png">
+            <span class="sr-only">(current)</span>
         </a>
     </logo>
     <links>
@@ -31,6 +32,15 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link waves-light navl" mdbWavesEffect routerLink="/programs">Programs</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light navl" mdbWavesEffect>
+                More info<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item nav-link waves-light navl" mdbWavesEffect routerLink="/contact">Contact Us</a>
+                    <a class="dropdown-item nav-link waves-light navl" mdbWavesEffect routerLink="/FAQ">FAQ</a>
+                </div>
             </li>
         </ul>
 
