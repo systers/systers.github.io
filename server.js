@@ -5,9 +5,9 @@ var mongo = require("mongoose");
 
 var db = mongo.connect("mongodb://systers:systers2018@ds235461.mlab.com:35461/programs", function (err, response) {
     if (err) {
-        console.log(err);
+        console.log(err);   // eslint-disable-line
     } else {
-        console.log("Connected to " + db, " + ", response);
+        console.log("Connected to " + db, " + ", response); // eslint-disable-line
     }
 });
 
@@ -100,7 +100,7 @@ app.post("/api/deleteUser", function (req, res) {
             });
         }
     });
-})
+});
 
 app.get("/api/getUser", function (req, res) {
     Model.find({}, function (err, data) {
@@ -110,9 +110,9 @@ app.get("/api/getUser", function (req, res) {
             res.send(data);
         }
     });
-})
+});
 
 app.listen(8080, function () {
 
-    console.log("Example app listening on port 8080!");
-})
+    console.log("Example app listening on port 8080!"); // eslint-disable-line
+});
