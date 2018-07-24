@@ -1,0 +1,60 @@
+img {
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+}
+p{
+	font-size: 14px;
+}
+.card{
+	margin: 5px;
+}
+h2{
+	color:#8D2166;
+	margin-left: 80px;
+	margin-top:20px;
+	margin-bottom:20px;
+
+}
+h1{
+	color:#54BCEB;
+	margin: 20px;
+}
+input,h5{
+	margin-left : 20px;
+}
+input::placeholder {
+ 
+  font-size: 0.9em;
+}
+.card-title{
+	color:#54BCEB;
+	margin-left:10px;
+}
+.fa{
+	color:black;
+}
+.fa:hover{
+	color:#54BCEB;
+}
+
+.filter{
+	position: relative;
+  	float: right;
+  	margin-left:auto; 
+  margin-right:30px;
+  margin-top:10px;
+}
+.modal-body{
+	font-family:'Source Sans Pro', sans-serif;
+	margin-bottom:0px;
+}
+.modal-header{
+	background:#54BCEB;
+}
+.missing{
+	font-family:'Source Sans Pro', sans-serif;
+	font-size:20px;
+}
+
+

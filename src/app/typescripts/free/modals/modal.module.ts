@@ -18,3 +18,4 @@ export class ModalModule {
     return {ngModule: ModalModule, providers: [MDBModalService, ComponentLoaderFactory, PositioningService]};
   }
 }
+

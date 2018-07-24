@@ -13,3 +13,4 @@ export class CarouselConfig {
 
   public keyboard = false;
 }
+

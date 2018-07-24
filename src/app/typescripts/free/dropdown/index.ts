@@ -5,3 +5,4 @@ export { BsDropdownContainerComponent } from './dropdown-container.component';
 export { BsDropdownState } from './dropdown.state';
 export { BsDropdownConfig } from './dropdown.config';
 export { BsDropdownModule } from './dropdown.module';
+

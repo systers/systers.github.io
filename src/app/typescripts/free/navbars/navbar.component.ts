@@ -167,3 +167,4 @@ export class NavbarComponent implements AfterViewInit, OnInit {
     }
   }
 }
+

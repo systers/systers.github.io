@@ -158,3 +158,4 @@ export class TooltipDirective implements OnInit, OnDestroy {
      this._tooltip.dispose();
    }
  }
+

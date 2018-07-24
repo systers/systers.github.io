@@ -11,3 +11,4 @@ export class WavesModule {
     return {ngModule: WavesModule, providers: []};
   }
 }
+

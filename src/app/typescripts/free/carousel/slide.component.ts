@@ -42,3 +42,4 @@ export class SlideComponent implements OnInit, OnDestroy {
     this.carousel.removeSlide(this);
   }
 }
+

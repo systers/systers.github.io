@@ -70,3 +70,4 @@ export function listenToTriggers(renderer: Renderer2, target: any, triggers: str
 
   return () => { listeners.forEach((unsubscribeFn: Function) => unsubscribeFn()); };
 }
+

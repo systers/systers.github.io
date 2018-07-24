@@ -12,3 +12,4 @@ export class ButtonsModule {
     return {ngModule: ButtonsModule, providers: []};
   }
 }
+
