@@ -78,3 +78,4 @@ export class ModalOptions {
    BACKRDOP: 'backdrop-click',
    ESC: 'esc'
  };
+

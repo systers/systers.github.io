@@ -23,3 +23,4 @@ describe('NewcomersComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

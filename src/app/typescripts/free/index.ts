@@ -122,3 +122,4 @@ export class MDBBootstrapModule {
     return { ngModule: MDBRootModule };
   }
 }
+

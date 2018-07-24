@@ -1,5 +1,9 @@
-.fa-long-arrow-down {
-  font-size: 48px;
+.colour1{
+    background-color: #8d2165;
+}
+.fa-long-arrow-down
+{
+    font-size:48px;
 }
 
 .modal {
@@ -11,11 +15,17 @@
 }
 
 .colour2 {
-  background-color: #9e186d;;
+  background-color: #9e186d;
+  ;
 }
 
 .colour3 {
   background-color: #a32173;
+}
+
+.colour4 {
+  background-color: white;
+  color: black;
 }
 
 @media screen and (min-width: 768px) {
@@ -31,4 +41,8 @@
   display: inline-block;
   text-align: left;
   vertical-align: middle;
+}
+
+.card-footer{
+  background-color: white; 
 }

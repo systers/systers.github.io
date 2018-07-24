@@ -458,3 +458,4 @@ export class CarouselComponent implements OnDestroy {
    }
 
  }
+
