@@ -27,4 +27,3 @@ export const Workflow: WorkflowStagesFormat[] = [
         details: 'Create Issues that Fix Errors, Improve Implementation, or Upgrade the Current Language -> Approved by Mentor, Maintainer, or Committer'
     }
 ];
-
