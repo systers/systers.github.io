@@ -1,159 +1,161 @@
-  <div class="container-fluid mt-5 mb-5">
-  <h2 class="mt-3 mb-5 heading-color"> Frequently Asked Questions</h2>
-  <div class="card mb-4">
-    <div class="card-header pt-2 pb-2" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-      <span *ngIf="isCollapsed">
+<div class="container-fluid mt-5 mb-5">
+  <div class=" container box logos mx-auto d-block">
+    <h2 class="mt-3 mb-5 heading-color"> Frequently Asked Questions</h2>
+    <div class="card mb-4">
+      <div class="card-header pt-2 pb-2" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+        <span *ngIf="isCollapsed">
           <i class="fa fa-chevron-down" style="float:right"></i>
-      </span>
-      <span *ngIf="!isCollapsed">
+        </span>
+        <span *ngIf="!isCollapsed">
           <i class="fa fa-chevron-up" style="float:right"></i>
-      </span>
-      Q1) I am new to open source. Where do I start?
-    </div>
-    <div id="collapseExample" [ngbCollapse]="isCollapsed">
-      <div class="card-body">
-        A good start would be to look at all the projects on the Systers GitHub page and find one that fits your skillset best. If
-        you still can't find a match, just mention @maintainers on Slack and someone will help you.
+        </span>
+        Q1) I am new to open source. Where do I start?
+      </div>
+      <div id="collapseExample" [ngbCollapse]="isCollapsed">
+        <div class="card-body">
+          A good start would be to look at all the projects on the Systers GitHub page and find one that fits your skillset best. If
+          you still can't find a match, just mention @maintainers on Slack and someone will help you.
+        </div>
       </div>
     </div>
-  </div>
-  <div class="card mb-4">
-    <div class="card-header pt-2 pb-2" (click)="isCollapsed1 = !isCollapsed1" [attr.aria-expanded]="!isCollapsed1" aria-controls="collapseExample1">
+    <div class="card mb-4">
+      <div class="card-header pt-2 pb-2" (click)="isCollapsed1 = !isCollapsed1" [attr.aria-expanded]="!isCollapsed1" aria-controls="collapseExample1">
         <span *ngIf="isCollapsed1">
-            <i class="fa fa-chevron-down" style="float:right"></i>
+          <i class="fa fa-chevron-down" style="float:right"></i>
         </span>
         <span *ngIf="!isCollapsed1">
-            <i class="fa fa-chevron-up" style="float:right"></i>
+          <i class="fa fa-chevron-up" style="float:right"></i>
         </span>
-      Q2) I see a lot of projects have been archived. Which projects are active right now?
-    </div>
-    <div id="collapseExample1" [ngbCollapse]="isCollapsed1">
-      <div class="card-body">
-        We have several active projects going on: VMS, Portal, PLT, PC-Prep Kit, Powerup (Android & iOS) are all active and need
-        work. If you want to work on an archived project, you can fork it and work on it independently. Your contributions
-        will still be recognised.
+        Q2) I see a lot of projects have been archived. Which projects are active right now?
+      </div>
+      <div id="collapseExample1" [ngbCollapse]="isCollapsed1">
+        <div class="card-body">
+          We have several active projects going on: VMS, Portal, PLT, PC-Prep Kit, Powerup (Android & iOS) are all active and need
+          work. If you want to work on an archived project, you can fork it and work on it independently. Your contributions
+          will still be recognised.
+        </div>
       </div>
     </div>
-  </div>
-  <div class="card mb-4">
-    <div class="card-header pt-2 pb-2" (click)="isCollapsed3 = !isCollapsed3" [attr.aria-expanded]="!isCollapsed3" aria-controls="collapseExample3">
+    <div class="card mb-4">
+      <div class="card-header pt-2 pb-2" (click)="isCollapsed3 = !isCollapsed3" [attr.aria-expanded]="!isCollapsed3" aria-controls="collapseExample3">
         <span *ngIf="isCollapsed3">
-            <i class="fa fa-chevron-down" style="float:right"></i>
+          <i class="fa fa-chevron-down" style="float:right"></i>
         </span>
         <span *ngIf="!isCollapsed3">
-            <i class="fa fa-chevron-up" style="float:right"></i>
+          <i class="fa fa-chevron-up" style="float:right"></i>
         </span>
-      Q3) I picked out a project. What do I do next?
-    </div>
-    <div id="collapseExample3" [ngbCollapse]="isCollapsed3">
-      <div class="card-body">
-        Each project comes with a README which guides you on how to setup the project. If you face any problems you need to head
-        over to the project’s slack channel and ask your question there. Someone from the community will help you out. If
-        you need help right away, please mention @maintainers and someone will help you out. Once the project is setup, read
-        the contributing guidelines to make your first contribution.
+        Q3) I picked out a project. What do I do next?
+      </div>
+      <div id="collapseExample3" [ngbCollapse]="isCollapsed3">
+        <div class="card-body">
+          Each project comes with a README which guides you on how to setup the project. If you face any problems you need to head
+          over to the project’s slack channel and ask your question there. Someone from the community will help you out.
+          If you need help right away, please mention @maintainers and someone will help you out. Once the project is setup,
+          read the contributing guidelines to make your first contribution.
+        </div>
       </div>
     </div>
-  </div>
-  <div class="card mb-4">
-    <div class="card-header pt-2 pb-2" (click)="isCollapsed4 = !isCollapsed4" [attr.aria-expanded]="!isCollapsed4" aria-controls="collapseExample4">
+    <div class="card mb-4">
+      <div class="card-header pt-2 pb-2" (click)="isCollapsed4 = !isCollapsed4" [attr.aria-expanded]="!isCollapsed4" aria-controls="collapseExample4">
         <span *ngIf="isCollapsed4">
-            <i class="fa fa-chevron-down" style="float:right"></i>
+          <i class="fa fa-chevron-down" style="float:right"></i>
         </span>
         <span *ngIf="!isCollapsed4">
-            <i class="fa fa-chevron-up" style="float:right"></i>
+          <i class="fa fa-chevron-up" style="float:right"></i>
         </span>
-      Q4) I want to participate with Systers in GSoC/RGSoC. How do I start?
-    </div>
-    <div id="collapseExample4" [ngbCollapse]="isCollapsed4">
-      <div class="card-body">
-        We have open sessions related to different FOSS programs and also about specific projects. Attending atleast open session
-        is mandatory for your participation and is also recommended as it gives you a chance to learn about us and also get
-        any questions answered.
+        Q4) I want to participate with Systers in GSoC/RGSoC. How do I start?
+      </div>
+      <div id="collapseExample4" [ngbCollapse]="isCollapsed4">
+        <div class="card-body">
+          We have open sessions related to different FOSS programs and also about specific projects. Attending atleast open session
+          is mandatory for your participation and is also recommended as it gives you a chance to learn about us and also
+          get any questions answered.
+        </div>
       </div>
     </div>
-  </div>
-  <div class="card mb-4">
-    <div class="card-header pt-2 pb-2" (click)="isCollapsed5 = !isCollapsed5" [attr.aria-expanded]="!isCollapsed5" aria-controls="collapseExample5">
+    <div class="card mb-4">
+      <div class="card-header pt-2 pb-2" (click)="isCollapsed5 = !isCollapsed5" [attr.aria-expanded]="!isCollapsed5" aria-controls="collapseExample5">
         <span *ngIf="isCollapsed5">
-            <i class="fa fa-chevron-down" style="float:right"></i>
+          <i class="fa fa-chevron-down" style="float:right"></i>
         </span>
         <span *ngIf="!isCollapsed5">
-            <i class="fa fa-chevron-up" style="float:right"></i>
+          <i class="fa fa-chevron-up" style="float:right"></i>
         </span>
-      Q5) Which PRs/Issues do I review as a Mentor/Maintainer?
-    </div>
-    <div id="collapseExample5" [ngbCollapse]="isCollapsed5">
-      <div class="card-body">
-        All of them.
+        Q5) Which PRs/Issues do I review as a Mentor/Maintainer?
+      </div>
+      <div id="collapseExample5" [ngbCollapse]="isCollapsed5">
+        <div class="card-body">
+          All of them.
+        </div>
       </div>
     </div>
-  </div>
-  <div class="card mb-4">
-    <div class="card-header pt-2 pb-2" (click)="isCollapsed6 = !isCollapsed6" [attr.aria-expanded]="!isCollapsed6" aria-controls="collapseExample6">
+    <div class="card mb-4">
+      <div class="card-header pt-2 pb-2" (click)="isCollapsed6 = !isCollapsed6" [attr.aria-expanded]="!isCollapsed6" aria-controls="collapseExample6">
         <span *ngIf="isCollapsed6">
-            <i class="fa fa-chevron-down" style="float:right"></i>
+          <i class="fa fa-chevron-down" style="float:right"></i>
         </span>
         <span *ngIf="!isCollapsed6">
-            <i class="fa fa-chevron-up" style="float:right"></i>
+          <i class="fa fa-chevron-up" style="float:right"></i>
         </span>
-      Q6) Which PRs/Issues do I review as a Newcomer?
-    </div>
-    <div id="collapseExample6" [ngbCollapse]="isCollapsed6">
-      <div class="card-body">
-        All of them.
+        Q6) Which PRs/Issues do I review as a Newcomer?
+      </div>
+      <div id="collapseExample6" [ngbCollapse]="isCollapsed6">
+        <div class="card-body">
+          All of them.
+        </div>
       </div>
     </div>
-  </div>
-  <div class="card mb-4">
-    <div class="card-header pt-2 pb-2" (click)="isCollapsed7 = !isCollapsed7" [attr.aria-expanded]="!isCollapsed7" aria-controls="collapseExample7">
+    <div class="card mb-4">
+      <div class="card-header pt-2 pb-2" (click)="isCollapsed7 = !isCollapsed7" [attr.aria-expanded]="!isCollapsed7" aria-controls="collapseExample7">
         <span *ngIf="isCollapsed7">
-            <i class="fa fa-chevron-down" style="float:right"></i>
+          <i class="fa fa-chevron-down" style="float:right"></i>
         </span>
         <span *ngIf="!isCollapsed7">
-            <i class="fa fa-chevron-up" style="float:right"></i>
+          <i class="fa fa-chevron-up" style="float:right"></i>
         </span>
-      Q7) Where do we discuss ideas related to the project development?
-    </div>
-    <div id="collapseExample7" [ngbCollapse]="isCollapsed7">
-      <div class="card-body">
-        In the project channel (i.e. #gh-pages, #vms, etc.)
+        Q7) Where do we discuss ideas related to the project development?
+      </div>
+      <div id="collapseExample7" [ngbCollapse]="isCollapsed7">
+        <div class="card-body">
+          In the project channel (i.e. #gh-pages, #vms, etc.)
+        </div>
       </div>
     </div>
-  </div>
-  <div class="card mb-4">
-    <div class="card-header pt-2 pb-2" (click)="isCollapsed8 = !isCollapsed8" [attr.aria-expanded]="!isCollapsed8" aria-controls="collapseExample8">
+    <div class="card mb-4">
+      <div class="card-header pt-2 pb-2" (click)="isCollapsed8 = !isCollapsed8" [attr.aria-expanded]="!isCollapsed8" aria-controls="collapseExample8">
         <span *ngIf="isCollapsed8">
-            <i class="fa fa-chevron-down" style="float:right"></i>
+          <i class="fa fa-chevron-down" style="float:right"></i>
         </span>
         <span *ngIf="!isCollapsed8">
-            <i class="fa fa-chevron-up" style="float:right"></i>
+          <i class="fa fa-chevron-up" style="float:right"></i>
         </span>
-      Q8) What is the minimal technical knowledge needed to contribute to Systers projects?
-    </div>
-    <div id="collapseExample8" [ngbCollapse]="isCollapsed8">
-      <div class="card-body">
-        Zero technical knowledge needed! Because you can always help with documentation, testing the app, and creating wireframes
-        to update it to the new branding guidelines. i.e. Reaching out to therapist for PowerUp scenario content, reviewed
-        UI designs for Wheelchairs from the Cerebral Palsy communities on Facebook.
+        Q8) What is the minimal technical knowledge needed to contribute to Systers projects?
+      </div>
+      <div id="collapseExample8" [ngbCollapse]="isCollapsed8">
+        <div class="card-body">
+          Zero technical knowledge needed! Because you can always help with documentation, testing the app, and creating wireframes
+          to update it to the new branding guidelines. i.e. Reaching out to therapist for PowerUp scenario content, reviewed
+          UI designs for Wheelchairs from the Cerebral Palsy communities on Facebook.
 
+        </div>
       </div>
     </div>
-  </div>
-  <div class="card mb-5">
-    <div class="card-header pt-2 pb-2" (click)="isCollapsed9 = !isCollapsed9" [attr.aria-expanded]="!isCollapsed9" aria-controls="collapseExample9">
-         <span *ngIf="isCollapsed9">
+    <div class="card mb-5">
+      <div class="card-header pt-2 pb-2" (click)="isCollapsed9 = !isCollapsed9" [attr.aria-expanded]="!isCollapsed9" aria-controls="collapseExample9">
+        <span *ngIf="isCollapsed9">
           <i class="fa fa-chevron-down" style="float:right"></i>
-      </span>
-      <span *ngIf="!isCollapsed9">
+        </span>
+        <span *ngIf="!isCollapsed9">
           <i class="fa fa-chevron-up" style="float:right"></i>
-      </span>
-      Q9) Can I contribute to GSoC projects even if I’m not a GSoC student?
-    </div>
-    <div id="collapseExample9" [ngbCollapse]="isCollapsed9">
-      <div class="card-body mb-5">
-        Yes, GSoC projects are discussed in public channels because we want community involvement. You can even attend weekly meetings
-        of each project if you want to! These projects are just as open source as they were before the GSoC selections. You
-        can contribute with ideas, and even issues if they're not labeled as GSoC issues.
+        </span>
+        Q9) Can I contribute to GSoC projects even if I’m not a GSoC student?
+      </div>
+      <div id="collapseExample9" [ngbCollapse]="isCollapsed9">
+        <div class="card-body mb-5">
+          Yes, GSoC projects are discussed in public channels because we want community involvement. You can even attend weekly meetings
+          of each project if you want to! These projects are just as open source as they were before the GSoC selections.
+          You can contribute with ideas, and even issues if they're not labeled as GSoC issues.
+        </div>
       </div>
     </div>
   </div>
