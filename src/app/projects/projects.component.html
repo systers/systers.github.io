@@ -28,10 +28,9 @@
 					<div class="container box logos mx-auto d-block">
 						<div class="row text-center justify-content-center">
 							<div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of peace_details ;">
-								<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap">
+								<img class="card-img-top mt-3 mb-3" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap">
 								<div class="card-body">
 									<h5 class="card-title">{{det.name}}</h5>
-									<p class="card-text">{{det.summary}}</p>
 									<!-- Modal -->
 									<div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 									    aria-hidden="true">
@@ -45,6 +44,10 @@
 												</div>
 												<div class="modal-body">
 													<div class="text-center">
+														<img class="card-img-top mt-3 mb-3" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap">
+														<p>
+															{{det.summary}}
+														</p>
 														<p>Technologies Used: {{det.technologiesUsed}}</p>
 														<p>
 															<a href="{{det.link}}" target="_blank">Link to the Github repo</a>
@@ -84,10 +87,9 @@
 					<div class="container box logos mx-auto d-block">
 						<div class="row text-center justify-content-center">
 							<div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of sys_details ;">
-								<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap">
+								<img class="card-img-top mt-3 mb-3" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap">
 								<div class="card-body">
 									<h5 class="card-title">{{det.name}}</h5>
-									<p class="card-text">{{det.summary}}</p>
 									<!-- Modal -->
 									<div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 									    aria-hidden="true">
@@ -101,6 +103,10 @@
 												</div>
 												<div class="modal-body">
 													<div class="text-center">
+														<img class="card-img-top mt-3 mb-3" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="Card image cap">
+														<p>
+															{{det.summary}}
+														</p>
 														<p>Technologies Used: {{det.technologiesUsed}}</p>
 														<p>
 															<a href="{{det.link}}" target="_blank">Link to the Github repo</a>
