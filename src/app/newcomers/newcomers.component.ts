@@ -1,18 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import {nonCodeMethodsData} from '../newcomers/nonCodeMethodsData';
-import {Workflow} from '../newcomers/workflow-stages-data';
+import { nonCodeMethodsData } from '../newcomers/nonCodeMethodsData';
+import { Workflow } from './workflow-stages-data';
 import { Resources } from './resources-data';
+import { LanguageWiseProjects } from './LanguageWiseProjects';
+import { Pipe, PipeTransform } from '@angular/core';
+import { DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-newcomers',
   templateUrl: './newcomers.component.html',
   styleUrls: ['./newcomers.component.scss']
 })
-export class NewcomersComponent implements OnInit {
+
+@Pipe({ name: 'safe' })
+
+export class NewcomersComponent implements OnInit, PipeTransform {
   method_details = nonCodeMethodsData;
   workflow_stages = Workflow;
   resources = Resources;
-  constructor() { }
+  languagewiseprojects = LanguageWiseProjects;
+
+  constructor(private sanitizer: DomSanitizer) {}
+
+  transform(url) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
 
   ngOnInit() { }
 

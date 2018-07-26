@@ -67,7 +67,9 @@
       <div *ngFor="let stage of workflow_stages">
         <div class="row text-center justify-content-center mt-5">
           <button type="button" class="btn btn-link mx-auto" (click)="mymodal.show()" mdbWavesEffect>
-            <button type="button" class="btn colour4" mdbWavesEffect><h3>{{stage.name}}</h3></button>
+            <button type="button" class="btn colour4" mdbWavesEffect>
+              <h3>{{stage.name}}</h3>
+            </button>
           </button>
           <!-- Modal -->
           <div mdbModal #mymodal="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -96,7 +98,9 @@
       </div>
       <div class="row text-center justify-content-center mt-5">
         <button type="button" class="btn btn-link mx-auto" (click)="mymodal.show()" mdbWavesEffect>
-          <button type="button" class="btn colour4" mdbWavesEffect><h3>Requirement Analysis</h3></button>
+          <button type="button" class="btn colour4" mdbWavesEffect>
+            <h3>Requirement Analysis</h3>
+          </button>
         </button>
         <!-- Modal -->
         <div mdbModal #mymodal="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -142,9 +146,15 @@
                 <div class="modal-body">
                   <div class="text-center">
                     <p>Here are some of the resources:</p>
-                    <p><a href="{{det.link1}}">{{det.link1}}</a></p>
-                    <p><a href="{{det.link2}}">{{det.link2}}</a></p>
-                    <p><a href="{{det.link3}}">{{det.link3}}</a></p>
+                    <p>
+                      <a href="{{det.link1}}">{{det.link1}}</a>
+                    </p>
+                    <p>
+                      <a href="{{det.link2}}">{{det.link2}}</a>
+                    </p>
+                    <p>
+                      <a href="{{det.link3}}">{{det.link3}}</a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -160,7 +170,11 @@
   </div>
   <div class="container box logos mx-auto d-block mb-5">
     <h1 class="text-center mt-5 mb-5">First-Timers-Only Issues</h1>
-    <iframe src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=systers.github.io&l=first-timers-only"
-      style="border:none;" width="100%" height="600px"></iframe>
+    <div *ngFor="let lang of languagewiseprojects">
+      <iframe src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r={{lang.Project1}}"
+        style="border:none;" width="100%" height="600px"></iframe>
+      <iframe src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r={{lang.Project2}}"
+        style="border:none;" width="100%" height="600px"></iframe>
+    </div>
   </div>
 </div>
