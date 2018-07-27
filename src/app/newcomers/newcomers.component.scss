@@ -16,7 +16,6 @@
 
 .colour2 {
   background-color: #9e186d;
-  ;
 }
 
 .colour3 {
@@ -37,6 +36,12 @@
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .card-img-top {
+      display: none;
+  }
+}
+
 .modal-dialog {
   display: inline-block;
   text-align: left;
@@ -51,4 +56,8 @@
   border:none;
   height: 600px;
   width: 100%;
+}
+.modal-body1 {
+  min-width: 50vh;
+  overflow-y: auto;
 }
