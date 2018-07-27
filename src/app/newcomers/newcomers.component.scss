@@ -37,6 +37,12 @@
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .card-img-top {
+      display: none;
+  }
+}
+
 .modal-dialog {
   display: inline-block;
   text-align: left;
