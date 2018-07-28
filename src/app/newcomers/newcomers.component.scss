@@ -1,59 +1,63 @@
 .colour1{
-    background-color: #8d2165;
+  background-color: #8d2165;
 }
 .fa-long-arrow-down
 {
-    font-size:48px;
+  font-size:48px;
 }
 
 .modal {
-  text-align: center;
+text-align: center;
 }
 
 .colour1 {
-  background-color: #8d2165;
+background-color: #8d2165;
 }
 
 .colour2 {
-  background-color: #9e186d;
-  ;
+background-color: #9e186d;
+;
 }
 
 .colour3 {
-  background-color: #a32173;
+background-color: #a32173;
 }
 
 .colour4 {
-  background-color: white;
-  color: black;
+background-color: white;
+color: black;
 }
 
 @media screen and (min-width: 768px) {
-  .modal:before {
-    display: inline-block;
-    vertical-align: middle;
-    content: " ";
-    height: 100%;
-  }
+.modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
 }
-
+}
 @media only screen and (max-width: 1024px) {
-  .card-img-top {
-      display: none;
-  }
+.card-img-top {
+    display: none;
+}
 }
 
 .modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
+display: inline-block;
+text-align: left;
+vertical-align: middle;
 }
 
 .card-footer{
-  background-color: white; 
+background-color: white; 
 }
 
 .modal-body1 {
-  min-width: 50vh;
-  overflow-y: auto;
+min-width: 50vh;
+overflow-y: auto;
+}
+.iframe-style{
+border:none;
+height: 600px;
+width: 100%;
 }

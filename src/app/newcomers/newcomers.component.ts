@@ -12,9 +12,13 @@ export class NewcomersComponent implements OnInit {
   method_details = nonCodeMethodsData;
   workflow_stages = Workflow;
   resources = Resources;
+  currentJustify = 'justified';
+  isCollapsed = true;
+  isCollapsed1 = true;
+  isCollapsed2 = true;
+  isCollapsed3 = true;
   constructor() { }
 
   ngOnInit() { }
 
 }
-
