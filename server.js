@@ -3,7 +3,7 @@ var path = require("path");
 var bodyParser = require("body-parser");
 var mongo = require("mongoose");
 
-var db = mongo.connect(process.env.MONGODB_URI , function (err, response) {
+var db = mongo.connect(process.env.MONGODB_URI || "mongodb://systers:systers2018@ds235461.mlab.com:35461/programs", function (err, response) {
     if (err) {
         console.log(err);
     } else {
