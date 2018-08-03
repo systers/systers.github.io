@@ -1,0 +1,8 @@
+mmcopy src pointer till n bytes copy to destination - C code
+new vs malloc
+multi threading vs multi process
+what share where
+two process joined by socket. local variable of A shared with B. B changes it. local variable diff stack, cant share.
+ll - reversing, finding a loop
+DP problems - given boxes, diff width, height, ; stack them such that width, height max height
+no of paths in a grid, all 4 direction, list down path bw pt A n B. BFS. exponential.

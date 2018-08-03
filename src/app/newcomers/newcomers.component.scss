@@ -16,7 +16,6 @@ background-color: #8d2165;
 
 .colour2 {
 background-color: #9e186d;
-;
 }
 
 .colour3 {
@@ -52,6 +51,11 @@ vertical-align: middle;
 background-color: white; 
 }
 
+.iframe-style{
+  border:none;
+  height: 600px;
+  width: 100%;
+}
 .modal-body1 {
 min-width: 50vh;
 overflow-y: auto;
