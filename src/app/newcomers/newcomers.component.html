@@ -2,96 +2,42 @@
   <div class=" container box logos mx-auto d-block">
     <div class="row text-center">
       <h1 class="mx-auto mb-5"> Welcome to Systers Open Source!</h1>
-      <div class="mx-auto text-center">
-        <p>
+    </div>
+    <div class="card mb-5">
+      <div class="card-header pt-2 pb-2" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+        <span *ngIf="isCollapsed">
+          <i class="fa fa-chevron-down" style="float:right"></i>
+        </span>
+        <span *ngIf="!isCollapsed">
+          <i class="fa fa-chevron-up" style="float:right"></i>
+        </span>
+        Non Coders Methods of contributions
+      </div>
+      <div id="collapseExample" [ngbCollapse]="isCollapsed">
+        <p class=" mt-4 text-center mx-auto">
           At Systers, we welcome contributions of all forms. Non-coders are welcomed to join the community!
           <br> Apart from code you can contribute in any of the following ways:
         </p>
-      </div>
-      <div class="card mb-5">
-        <div class="card-header pt-2 pb-2" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-          <span *ngIf="isCollapsed">
-            <i class="fa fa-chevron-down" style="float:right"></i>
-          </span>
-          <span *ngIf="!isCollapsed">
-            <i class="fa fa-chevron-up" style="float:right"></i>
-          </span>
-          Non Coders Methods of contributions
-        </div>
-        <div id="collapseExample" [ngbCollapse]="isCollapsed">
-          <p class=" mt-4 text-center mx-auto">
-            At Systers, we welcome contributions of all forms. Non-coders are welcomed to join the community!
-            <br> Apart from code you can contribute in any of the following ways:
-          </p>
-          <div class="card-body row text-center justify-content-center">
-            <div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of method_details">
-              <img class="card-img-top" src="{{det.image}}" alt="{{det.methodName}}">
-              <div class="card-body">
-                <h5 class="card-title">{{det.methodName}}</h5>
-                <!-- Modal -->
-                <div mdbModal #mymodal="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog modal-notify modal-success" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header" style="background-color: #8d2165;">
-                        <p class="heading lead colour1">{{det.methodName}}</p>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="mymodal.hide()">
-                          <span aria-hidden="true" class="white-text">×</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <img class="card-img-top mt-3 mb-5 h-50" src="{{det.image}}" alt="{{det.methodName}}">
-                        <div class="text-center">
-                          <p>{{det.details}}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Modal -->
-              </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-primary waves-light mx-auto" (click)="mymodal.show()" mdbWavesEffect>View Details</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-5">
-        <div class="card-header pt-2 pb-2" (click)="isCollapsed1 = !isCollapsed1" [attr.aria-expanded]="!isCollapsed1" aria-controls="collapseExample">
-          <span *ngIf="isCollapsed1">
-            <i class="fa fa-chevron-down" style="float:right"></i>
-          </span>
-          <span *ngIf="!isCollapsed">
-            <i class="fa fa-chevron-up" style="float:right"></i>
-          </span>
-          How to get started with contributing to Open Source?
-        </div>
-        <div id="collapseExample" [ngbCollapse]="isCollapsed1">
-          <div class="row text-center justify-content-center mt-5">
-            <h2>OSS Workflow Diagram</h2>
-          </div>
-          <div *ngFor="let stage of workflow_stages">
-            <div class="row text-center justify-content-center mt-5">
-              <button type="button" class="btn btn-link mx-auto" (click)="mymodal.show()" mdbWavesEffect>
-                <button type="button" class="btn colour4" mdbWavesEffect>
-                  <h3>{{stage.name}}</h3>
-                </button>
-              </button>
+        <div class="card-body row text-center justify-content-center">
+          <div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of method_details">
+            <img class="card-img-top" src="{{det.image}}" alt="{{det.methodName}}">
+            <div class="card-body">
+              <h5 class="card-title">{{det.methodName}}</h5>
               <!-- Modal -->
               <div mdbModal #mymodal="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-notify modal-success" role="document">
                   <div class="modal-content">
                     <div class="modal-header" style="background-color: #8d2165;">
-                      <p class="heading lead colour1 ">{{stage.name}}</p>
+                      <p class="heading lead colour1">{{det.methodName}}</p>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="mymodal.hide()">
                         <span aria-hidden="true" class="white-text">×</span>
                       </button>
                     </div>
                     <div class="modal-body">
+                      <img class="card-img-top mt-3 mb-5 h-50" src="{{det.image}}" alt="{{det.methodName}}">
                       <div class="text-center">
-                        <p>{{stage.details}}</p>
+                        <p>{{det.details}}</p>
                       </div>
                     </div>
                   </div>
@@ -99,14 +45,32 @@
               </div>
               <!-- Modal -->
             </div>
-            <div class="row text-center justify-content-center">
-              <i class="fa fa-long-arrow-down"></i>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary waves-light mx-auto" (click)="mymodal.show()" mdbWavesEffect>View Details</button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-5">
+      <div class="card-header pt-2 pb-2" (click)="isCollapsed1 = !isCollapsed1" [attr.aria-expanded]="!isCollapsed1" aria-controls="collapseExample">
+        <span *ngIf="isCollapsed1">
+          <i class="fa fa-chevron-down" style="float:right"></i>
+        </span>
+        <span *ngIf="!isCollapsed">
+          <i class="fa fa-chevron-up" style="float:right"></i>
+        </span>
+        How to get started with contributing to Open Source?
+      </div>
+      <div id="collapseExample" [ngbCollapse]="isCollapsed1">
+        <div class="row text-center justify-content-center mt-5">
+          <h2>OSS Workflow Diagram</h2>
+        </div>
+        <div *ngFor="let stage of workflow_stages">
           <div class="row text-center justify-content-center mt-5">
             <button type="button" class="btn btn-link mx-auto" (click)="mymodal.show()" mdbWavesEffect>
               <button type="button" class="btn colour4" mdbWavesEffect>
-                <h3>Requirement Analysis</h3>
+                <h3>{{stage.name}}</h3>
               </button>
             </button>
             <!-- Modal -->
@@ -115,14 +79,14 @@
               <div class="modal-dialog modal-notify modal-success" role="document">
                 <div class="modal-content">
                   <div class="modal-header" style="background-color: #8d2165;">
-                    <p class="heading lead colour1">Requirements Analysis</p>
+                    <p class="heading lead colour1 ">{{stage.name}}</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="mymodal.hide()">
                       <span aria-hidden="true" class="white-text">×</span>
                     </button>
                   </div>
                   <div class="modal-body">
                     <div class="text-center">
-                      <p>Project Requirements Document -> Create Issues -> Approved by Mentor or Maintainer ->'</p>
+                      <p>{{stage.details}}</p>
                     </div>
                   </div>
                 </div>
@@ -130,290 +94,212 @@
             </div>
             <!-- Modal -->
           </div>
+          <div class="row text-center justify-content-center">
+            <i class="fa fa-long-arrow-down"></i>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center mt-5">
+          <button type="button" class="btn btn-link mx-auto" (click)="mymodal.show()" mdbWavesEffect>
+            <button type="button" class="btn colour4" mdbWavesEffect>
+              <h3>Requirement Analysis</h3>
+            </button>
+          </button>
+          <!-- Modal -->
+          <div mdbModal #mymodal="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-notify modal-success" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: #8d2165;">
+                  <p class="heading lead colour1">Requirements Analysis</p>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="mymodal.hide()">
+                    <span aria-hidden="true" class="white-text">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-center">
+                    <p>Project Requirements Document -> Create Issues -> Approved by Mentor or Maintainer ->'</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
         </div>
       </div>
-      <div class="card mb-5">
-        <div class="card-header pt-2 pb-2" (click)="isCollapsed2 = !isCollapsed2" [attr.aria-expanded]="!isCollapsed2" aria-controls="collapseExample">
-          <span *ngIf="isCollapsed2">
-            <i class="fa fa-chevron-down" style="float:right"></i>
-          </span>
-          <span *ngIf="!isCollapsed2">
-            <i class="fa fa-chevron-up" style="float:right"></i>
-          </span>
-          Newcomers Resources
-        </div>
-        <div id="collapseExample" [ngbCollapse]="isCollapsed2">
-          <h1 class="mt-5 mb-5 text-center">Resources</h1>
-          <div class="row text-center justify-content-center">
-            <div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of resources">
-              <img class="card-img-top" src="{{det.image}}" alt="{{det.name}}">
-              <div class="card-body">
-                <h5 class="card-title">{{det.name}}</h5>
-              </div>
-              <!-- Modal -->
-              <div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-notify modal-success" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header" style="background-color: #8d2165;">
-                      <p class="heading lead colour1">{{det.name}}</p>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
-                        <span aria-hidden="true" class="white-text">×</span>
-                      </button>
-                    </div>
-                    <div class="modal-body modal-body1">
-                      <div class="text-center">
-                        <p>Here are some of the resources:</p>
-                        <p>
-                          <a href="{{det.link1}}">{{det.link1}}</a>
-                        </p>
-                        <p>
-                          <a href="{{det.link2}}">{{det.link2}}</a>
-                        </p>
-                        <p>
-                          <a href="{{det.link3}}">{{det.link3}}</a>
-                        </p>
-                      </div>
+    </div>
+    <div class="card mb-5">
+      <div class="card-header pt-2 pb-2" (click)="isCollapsed2 = !isCollapsed2" [attr.aria-expanded]="!isCollapsed2" aria-controls="collapseExample">
+        <span *ngIf="isCollapsed2">
+          <i class="fa fa-chevron-down" style="float:right"></i>
+        </span>
+        <span *ngIf="!isCollapsed2">
+          <i class="fa fa-chevron-up" style="float:right"></i>
+        </span>
+        Newcomers Resources
+      </div>
+      <div id="collapseExample" [ngbCollapse]="isCollapsed2">
+        <h1 class="mt-5 mb-5 text-center">Resources</h1>
+        <div class="row text-center justify-content-center">
+          <div class="card col-sm-3 mt-3 mb-3 ml-3 mr-3 pt-2" *ngFor="let det of resources">
+            <img class="card-img-top" src="{{det.image}}" alt="{{det.name}}">
+            <div class="card-body">
+              <h5 class="card-title">{{det.name}}</h5>
+            </div>
+            <!-- Modal -->
+            <div mdbModal #style="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-notify modal-success" role="document">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: #8d2165;">
+                    <p class="heading lead colour1">{{det.name}}</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="style.hide()">
+                      <span aria-hidden="true" class="white-text">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body modal-body1">
+                    <div class="text-center">
+                      <p>Here are some of the resources:</p>
+                      <p>
+                        <a href="{{det.link1}}">{{det.link1}}</a>
+                      </p>
+                      <p>
+                        <a href="{{det.link2}}">{{det.link2}}</a>
+                      </p>
+                      <p>
+                        <a href="{{det.link3}}">{{det.link3}}</a>
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- Modal -->
-              <div class="card-footer">
-                <button type="button" class="btn btn-primary waves-light mx-auto" (click)="style.show()" mdbWavesEffect>View Details</button>
-              </div>
+            </div>
+            <!-- Modal -->
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary waves-light mx-auto" (click)="style.show()" mdbWavesEffect>View Details</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="card mb-5">
-        <div class="card-header pt-2 pb-2" (click)="isCollapsed3 = !isCollapsed3" [attr.aria-expanded]="!isCollapsed3" aria-controls="collapseExample">
-          <span *ngIf="isCollapsed3">
-            <i class="fa fa-chevron-down" style="float:right"></i>
-          </span>
-          <span *ngIf="!isCollapsed3">
-            <i class="fa fa-chevron-up" style="float:right"></i>
-          </span>
-          First-Timers-Only Issues
-        </div>
-        <div id="collapseExample" [ngbCollapse]="isCollapsed3">
-          <h1 class="text-center mt-5 mb-5">First-Timers-Only Issues</h1>
-          <ngb-tabset [justify]="currentJustify">
-            <ngb-tab title="Web Dev - Python">
-              <ng-template ngbTabContent>
-                <!-- Peace Corps Projects Note-->
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Sysbot</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=sysbot"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Portal</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=portal"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">VMS</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=vms"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Mentorship System Backend</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=mentorship-backend"></iframe>
-                </div>
-                <!-- Peace Corps Projects Note-->
-              </ng-template>
-            </ngb-tab>
-            <ngb-tab title="Android Dev">
-              <ng-template ngbTabContent>
-                <!-- Systers Projects Note-->
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Conference Android</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=conference-android"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Firstaide Android</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=FirstAide-Android"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Powerup Android</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=powerup-android"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Malaria App Android</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=malaria-app-android"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Mentorship Android</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=mentorship-android"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Peacetrack Android</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=peacetrack-android"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Volunteers Android</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=volunteers-android"></iframe>
-                </div>
-                <!-- Systers Projects Note-->
-              </ng-template>
-            </ngb-tab>
-            <ngb-tab title="Web Dev - Javascript">
-              <ng-template ngbTabContent>
-                <!-- Systers Projects Note-->
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Systers Open Source</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=systers.github.io"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Systers Communities</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=communities"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Systers Open Source Slack Inviter</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=slack-systers-opensource"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">GHC Slack Inviter</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=slack-ghc"></iframe>
-                </div>
-                <!-- Systers Projects Note-->
-              </ng-template>
-            </ngb-tab>
-            <ngb-tab title="iOS App Development">
-              <ng-template ngbTabContent>
-                <!-- Systers Projects Note-->
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Malaria App iOS</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=malaria-app-ios"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Powerup iOS</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=powerup-ios"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Peacetrack iOS</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=peacetrack-ios"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Firstaide iOS</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=FirstAide-iOS"></iframe>
-                </div>
-                <div class="row text-center">
-                  <h1 class="mx-auto mt-5 mb-5">Vola iOS</h1>
-                  <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=volunteers-iOS"></iframe>
-                </div>
-                <!-- Systers Projects Note-->
-              </ng-template>
-            </ngb-tab>
-          </ngb-tabset>
-        </div>
+    </div>
+    <div class="card mb-5">
+      <div class="card-header pt-2 pb-2" (click)="isCollapsed3 = !isCollapsed3" [attr.aria-expanded]="!isCollapsed3" aria-controls="collapseExample">
+        <span *ngIf="isCollapsed3">
+          <i class="fa fa-chevron-down" style="float:right"></i>
+        </span>
+        <span *ngIf="!isCollapsed3">
+          <i class="fa fa-chevron-up" style="float:right"></i>
+        </span>
+        First-Timers-Only Issues
+      </div>
+      <div id="collapseExample" [ngbCollapse]="isCollapsed3">
+        <h1 class="text-center mt-5 mb-5">First-Timers-Only Issues</h1>
+        <ngb-tabset [justify]="currentJustify">
+          <ngb-tab title="Web Dev - Python">
+            <ng-template ngbTabContent>
+              <!-- Peace Corps Projects Note-->
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Sysbot</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=sysbot"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Portal</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=portal"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">VMS</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=vms"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Mentorship System Backend</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=mentorship-backend"></iframe>
+              </div>
+              <!-- Peace Corps Projects Note-->
+            </ng-template>
+          </ngb-tab>
+          <ngb-tab title="Android Dev">
+            <ng-template ngbTabContent>
+              <!-- Systers Projects Note-->
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Conference Android</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=conference-android"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Firstaide Android</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=FirstAide-Android"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Powerup Android</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=powerup-android"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Malaria App Android</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=malaria-app-android"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Mentorship Android</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=mentorship-android"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Peacetrack Android</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=peacetrack-android"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Volunteers Android</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=volunteers-android"></iframe>
+              </div>
+              <!-- Systers Projects Note-->
+            </ng-template>
+          </ngb-tab>
+          <ngb-tab title="Web Dev - Javascript">
+            <ng-template ngbTabContent>
+              <!-- Systers Projects Note-->
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Systers Open Source</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=systers.github.io"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Systers Communities</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=communities"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Systers Open Source Slack Inviter</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=slack-systers-opensource"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">GHC Slack Inviter</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=slack-ghc"></iframe>
+              </div>
+              <!-- Systers Projects Note-->
+            </ng-template>
+          </ngb-tab>
+          <ngb-tab title="iOS App Development">
+            <ng-template ngbTabContent>
+              <!-- Systers Projects Note-->
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Malaria App iOS</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=malaria-app-ios"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Powerup iOS</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=powerup-ios"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Peacetrack iOS</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=peacetrack-ios"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Firstaide iOS</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=FirstAide-iOS"></iframe>
+              </div>
+              <div class="row text-center">
+                <h1 class="mx-auto mt-5 mb-5">Vola iOS</h1>
+                <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=volunteers-iOS"></iframe>
+              </div>
+              <!-- Systers Projects Note-->
+            </ng-template>
+          </ngb-tab>
+        </ngb-tabset>
       </div>
     </div>
-    <div class="container box logos mx-auto d-block mt-5 mb-5">
-      <h1 class="text-center mt-5 mb-5">First-Timers-Only Issues</h1>
-      <ngb-tabset [justify]="currentJustify">
-        <ngb-tab title="Web Dev - Python">
-          <ng-template ngbTabContent>
-            <!-- Peace Corps Projects Note-->
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Sysbot</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=sysbot"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Portal</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=portal"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">VMS</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=vms"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Mentorship System Backend</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=mentorship-backend"></iframe>
-            </div>
-            <!-- Peace Corps Projects Note-->
-          </ng-template>
-        </ngb-tab>
-        <ngb-tab title="Android Dev">
-          <ng-template ngbTabContent>
-            <!-- Systers Projects Note-->
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Conference Android</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=conference-android"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Firstaide Android</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=FirstAide-Android"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Powerup Android</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=powerup-android"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Malaria App Android</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=malaria-app-android"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Mentorship Android</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=mentorship-android"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Peacetrack Android</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=peacetrack-android"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Volunteers Android</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=volunteers-android"></iframe>
-            </div>
-            <!-- Systers Projects Note-->
-          </ng-template>
-        </ngb-tab>
-        <ngb-tab title="Web Dev - Javascript">
-          <ng-template ngbTabContent>
-            <!-- Systers Projects Note-->
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Systers Open Source</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=systers.github.io"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Systers Communities</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=communities"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Systers Open Source Slack Inviter</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=slack-systers-opensource"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">GHC Slack Inviter</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=slack-ghc"></iframe>
-            </div>
-            <!-- Systers Projects Note-->
-          </ng-template>
-        </ngb-tab>
-        <ngb-tab title="iOS App Development">
-          <ng-template ngbTabContent>
-            <!-- Systers Projects Note-->
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Malaria App iOS</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=malaria-app-ios"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Powerup iOS</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=powerup-ios"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Peacetrack iOS</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=peacetrack-ios"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Firstaide iOS</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=FirstAide-iOS"></iframe>
-            </div>
-            <div class="row text-center">
-              <h1 class="mx-auto mt-5 mb-5">Vola iOS</h1>
-              <iframe class="iframe-style" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=volunteers-iOS"></iframe>
-            </div>
-            <!-- Systers Projects Note-->
-          </ng-template>
-        </ngb-tab>
-      </ngb-tabset>
-    </div>
   </div>
+</div>
