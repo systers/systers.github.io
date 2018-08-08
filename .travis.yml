@@ -14,9 +14,11 @@ install:
 script:
   - npm run build
 deploy:
-  provider: pages
-  skip-cleanup: true
-  keep-history: true
+  provider: heroku
   on:
-    branch: master
+    branch: gsoc18-code
+  skip_cleanup: true
+  api_key:
+    secure: FVXkdc4KQhrRVQ3YoPeQ6evN+MNR8JJxKk+wTyB0uC1T3f0KHZNm9hd+O47fUmQJJduyrj6/tRdfXc6LpmVJfuury7NNNMI5sqKePHK0mged/xQtviMyIq/JZ7YLGXmqGEIgLYUUFpiKckOaVwxh+8GfscZfWlXIbvQeIgws+AY=
+
 
