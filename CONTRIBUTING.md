@@ -9,4 +9,3 @@
 * If you’d like to create a new issue, please go through our issue list first (open as well as closed) and make sure the issues you are reporting do not replicate the existing issues. 
 * Have a short description on what has gone wrong (like a root cause analysis and description of the fix), if that information is not already present in the issue.
 * If you have issues on multiple pages, report them separately. Do not combine them into a single issue.
-
