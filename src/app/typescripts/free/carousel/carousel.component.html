@@ -1,3 +1,5 @@
+<html lang="en">
+
 <div tabindex="0" (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)" (mouseenter)="pause()" (mouseleave)="play()" (mouseup)="play()" class="carousel {{ class }} {{ type }}">
   <div class="controls-top" *ngIf="slides.length > 1 && !checkNavigation() && isControls">
     <a class="btn-floating" [class.disabled]="activeSlide===0&&noWrap" (click)="previousSlide()"><i class="fa fa-chevron-left"></i></a>
