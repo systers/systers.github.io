@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ng build --output-path dist",
-    "ci": ""
+    "ci": "",
+    "dev": "concurrently \"npm start\" \"ng serve -o\""
   },
   "private": true,
   "dependencies": {
@@ -53,6 +54,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "concurrently": "^4.0.1",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",

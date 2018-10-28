@@ -15,14 +15,11 @@ To preview, run these commands in your terminal (as long as you’ve previously 
 
 1. `git clone https://github.com/systers/systers.github.io`
 2. `cd systers.github.io`
-3. `git checkout gsoc18-code`
+3. `git checkout develop`
 4. `npm install`
 5. `npm install -g @angular/cli`
-6. Now open a new tab in the same directory
-7. In one tab type the command `npm start`
-8. In the other tab, run the command `ng serve -o`
+6.  Run the command `npm run dev` to run the client side and server side simultaneously. 
 
-Then open http://localhost:4200 in your browser, you should see a current version of the website!
 
 ## Contact Information
 If you have any questions or want to discuss something about this repo, please sign up for the [Systers Slack Channel](http://systers.io/slack-systers-opensource/) and join the the #gh-pages channel.
