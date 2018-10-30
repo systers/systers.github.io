@@ -23,5 +23,12 @@ describe('HomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render image in a carousel tag', () => {
+    fixture = TestBed.createComponent(HomeComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('.carousel-item img').src).toContain('assets/img/stock1.jpg');
+  });
 });
 
