@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-xdescribe('workspace-project App', () => {
+describe('workspace-project App', () => {
   let page: AppPage;
 
   beforeEach(() => {
@@ -9,7 +9,7 @@ xdescribe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toContain('Systers is an international Anita B.org community');
   });
 });
 
