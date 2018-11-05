@@ -4,6 +4,7 @@ var bodyParser = require("body-parser");
 var mongo = require("mongoose");
 const { mongoURI } = require('./config/keys')
 const { connectToDb } = require('./db/connection')
+const { handleUserGet,handleUserDelete,handleUserSave } = require('./controllers/User')
 
 connectToDb(mongo, mongoURI)
 .then(res => {
@@ -53,67 +54,13 @@ var UsersSchema = new Schema({
 
 var Model = mongo.model("users", UsersSchema, "users");
 
-app.post("/api/SaveUser", function (req, res) {
-    var mod = new Model(req.body);
-    if (req.body.mode === "Save") {
-        mod.save(function (err, data) {
-            if (err) {
-                res.send(err);
-            } else {
-                res.send({
-                    data: "Record has been Inserted..!!"
-                });
-            }
-        });
-    } else {
-        Model.findByIdAndUpdate(req.body.id, {
-                PROGRAM: req.body.PROGRAM,
-                YEAR: req.body.YEAR,
-                PROJECT: req.body.PROJECT,
-                STUDENT: req.body.STUDENT,
-                PROJECTMANAGERANDMENTOR: req.body.PROJECTMANAGERANDMENTOR,
-                MENTORS: req.body.MENTORS
-            },
-            function (err, data) {
-                if (err) {
-                    res.send(err);
-                } else {
-                    res.send({
-                        data: "Record has been Updated..!!"
-                    });
-                }
-            });
-    }
-});
-
-app.post("/api/deleteUser", function (req, res) {
-    Model.remove({
-        _id: req.body.id
-    }, function (err) {
-        if (err) {
-            res.send(err);
-        } else {
-            res.send({
-                data: "Record has been Deleted..!!"
-            });
-        }
-    });
-})
-
-app.get("/api/getUser", function (req, res) {
-    Model.find({}, function (err, data) {
-        if (err) {
-            res.send(err);
-        } else {
-            res.send(data);
-        }
-    });
-})
-
+app.post("/api/SaveUser", handleUserSave(Model));
+app.post("/api/deleteUser", handleUserDelete(Model))
+app.get("/api/getUser", handleUserGet(Model))
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname + "/dist/index.html"));
   });
 
 app.listen(process.env.PORT || 8080,  () => {
-    console.log("App listening on port 8080!");
+    console.log("App listening on port 8080!\n");
 })

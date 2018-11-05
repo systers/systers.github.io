@@ -1,6 +1,6 @@
 const connectToDb = (mongo, mongoURI) => {
     return new Promise((resolve,reject) => {
-        mongo.connect(mongoURI, function (err, response) {
+        mongo.connect(mongoURI, (err, response) => {
             if (err) {
                 reject('Could not connect to database');
             } else {
