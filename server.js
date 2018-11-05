@@ -2,14 +2,17 @@ var express = require("express");
 var path = require("path");
 var bodyParser = require("body-parser");
 var mongo = require("mongoose");
+const { mongoURI } = require('./config/keys')
+const { connectToDb } = require('./db/connection')
 
-var db = mongo.connect("mongodb://systers:systers2018@ds235461.mlab.com:35461/programs", function (err, response) {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log("Connected to " + db, " + ", response);
-    }
-});
+connectToDb(mongo, mongoURI)
+.then(res => {
+    console.log('Database connection details:-')
+    console.log(JSON.stringify(res, undefined, 2))
+})
+.catch(console.log)
+
+
 
 var app = express();
 app.use(bodyParser());
@@ -111,7 +114,6 @@ app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname + "/dist/index.html"));
   });
 
-app.listen(process.env.PORT || 8080, function () {
-
-    console.log("Example app listening on port 8080!");
+app.listen(process.env.PORT || 8080,  () => {
+    console.log("App listening on port 8080!");
 })
