@@ -1,14 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ProgramsComponent } from './programs.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpModule } from '@angular/http';
 
-xdescribe('ProgramsComponent', () => {
+describe('ProgramsComponent', () => {
   let component: ProgramsComponent;
   let fixture: ComponentFixture<ProgramsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProgramsComponent ]
+      declarations: [ ProgramsComponent ],
+      imports: [
+        HttpModule,
+        NgbModule.forRoot()
+      ]
     })
     .compileComponents();
   }));
