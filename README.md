@@ -4,7 +4,7 @@ This is the main website for Systers Open Source.  It contains information about
 
 In the future, we hope to add Google Calendar integration and additional orientation/onboarding materials.
 
-##Documentation
+## Documentation
 Link: https://docs.google.com/document/d/18X83wQjltI2PyWmYqNx4cHvGdTBTu2NaWnlIizdsLO8/edit#
 
 ## Live Heroku App
