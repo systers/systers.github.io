@@ -24,7 +24,7 @@
 				<div class="card card-block d-flex" *ngFor=" let det of admins | search:'name,projects':query ; index as i">
 
 					<div class="col-md-3">
-						<img src="{{det.avatar}}">
+						<a (click)="basicModal.show()"><img src="{{det.avatar}}"></a>
 						<div class="row">
 
 							<a (click)="basicModal.show()">
@@ -70,7 +70,7 @@
 			<div class="row" style="margin: auto;">
 				<div class="card" *ngFor=" let det of selectedData | search:'name,projects':query;">
 					<div class="col-md-3">
-						<img src="{{det.avatar}}">
+						<a (click)="basicModal.show()"><img src="{{det.avatar}}"></a>
 						<div class="row">
 
 							<a (click)="basicModal.show()">
@@ -117,7 +117,7 @@
 				<div class="card" *ngFor=" let det of selectedContri | search:'name,projects':query ;">
 
 					<div class="col-md-3">
-						<img src="{{det.avatar}}">
+						<a (click)="basicModal.show()"><img src="{{det.avatar}}"></a>
 						<div class="row">
 
 							<a (click)="basicModal.show()">
@@ -163,7 +163,7 @@
 			<div class="row" style="margin: auto;">
 				<div class="card" *ngFor=" let det of imp | search:'name,projects':query ;">
 					<div class="col-md-3">
-						<img src="{{det.avatar}}">
+						<a (click)="basicModal.show()"><img src="{{det.avatar}}"></a>
 						<div class="row">
 
 							<a (click)="basicModal.show()">

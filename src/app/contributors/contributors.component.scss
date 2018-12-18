@@ -7,7 +7,12 @@ p{
 	font-size: 14px;
 }
 .card{
+	color:#54BCEB;
 	margin: 5px;
+}
+.card:hover{
+	background-color: #54BCEB;
+	color:white;
 }
 h2{
 	color:#8D2166;
@@ -28,8 +33,11 @@ input::placeholder {
   font-size: 0.9em;
 }
 .card-title{
-	color:#54BCEB;
+	
 	margin-left:10px;
+}
+.card-title:hover{
+	color:white;
 }
 .fa{
 	color:black;
