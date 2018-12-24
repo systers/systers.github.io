@@ -29,6 +29,7 @@
                 <th>Mentors</th>
               </tr>
               <ng-container *ngFor="let kk of Repdata">
+                
                 <tr *ngIf="kk.YEAR==='2017' && kk.PROGRAM==='Google Summer of Code'">
                   <td>{{kk.PROJECT}}</td>
                   <td>{{kk.STUDENT}}</td>

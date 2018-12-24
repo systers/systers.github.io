@@ -198,21 +198,59 @@
             <ng-template ngbTabContent>
               <!-- Peace Corps Projects Note-->
               <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Sysbot</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=sysbot"></iframe>
-              </div>
+                <div class = "mx-auto mt-5 mb-5 reponame"><h1>Sysbot</h1><span class = "findRepo"><a href = "https://github.com/systers/sysbot">(Find Sysbot on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of sysbot_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline" href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div>
+                </div>
+              
+                  <div class="row mx-auto">
+                      <div class = "mx-auto mt-5 mb-5 reponame"><h1>Portal</h1><span class = "findRepo"><a href = "https://github.com/systers/portal">(Find Portal on Github)</a></span></div>
+                        <div class = "issueFrame">
+                          <div *ngFor = "let i of portal_issues">
+                            <div *ngIf = "!i.pull_request"  class= "myrow" >
+                              <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                              opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                            </div><div *ngIf = "!i.pull_request"><br></div>
+      
+      
+                          </div>
+                        </div>
+                    </div>
+            
               <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Portal</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=portal"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">VMS</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=vms"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Mentorship System Backend</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=mentorship-backend"></iframe>
-              </div>
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>VMS</h1><span class = "findRepo"><a href = "https://github.com/systers/vms">(Find vms on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Mentorship Backend System</h1><span class = "findRepo"><a href = "https://github.com/systers/mentorship-backend">(Find Mentorship Backend on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
               <!-- Peace Corps Projects Note-->
             </ng-template>
           </ngb-tab>
@@ -220,33 +258,96 @@
             <ng-template ngbTabContent>
               <!-- Systers Projects Note-->
               <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Conference Android</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=conference-android"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Firstaide Android</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=FirstAide-Android"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Powerup Android</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=powerup-android"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Malaria App Android</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=malaria-app-android"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Mentorship Android</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=mentorship-android"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Peacetrack Android</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=peacetrack-android"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Volunteers Android</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=volunteers-android"></iframe>
-              </div>
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Conference Android</h1><span class = "findRepo"><a href = "https://github.com/systers/conference-android">(Find Conference Android on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline" href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>FirstAide Android</h1><span class = "findRepo"><a href = "https://github.com/systers/FirstAide-Android">(Find FirstAide Android on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Powerup Android</h1><span class = "findRepo"><a href = "https://github.com/systers/powerup-android">(Find Powerup Android on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Malaria App Android</h1><span class = "findRepo"><a href = "https://github.com/systers/malaria-app-android">(Find Malaria App Android on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Mentorship Android</h1><span class = "findRepo"><a href = "https://github.com/systers/mentorship-android">(Find Mentorship Android on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Peacetrack Android</h1><span class = "findRepo"><a href = "https://github.com/systers/peacetrack-android">(Find Peacetrack Android on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Volunteers Android</h1><span class = "findRepo"><a href = "https://github.com/systers/volunteers-android">(Find Volunteers Android on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
               <!-- Systers Projects Note-->
             </ng-template>
           </ngb-tab>
@@ -254,21 +355,57 @@
             <ng-template ngbTabContent>
               <!-- Systers Projects Note-->
               <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Systers Open Source</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=systers.github.io"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Systers Communities</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=communities"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Systers Open Source Slack Inviter</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=slack-systers-opensource"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">GHC Slack Inviter</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=slack-ghc"></iframe>
-              </div>
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Systers Open Source</h1><span class = "findRepo"><a href = "https://github.com/systers/systers.github.io">(Find Systers Open Source on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Systers Community</h1><span class = "findRepo"><a href = "https://github.com/systers/communities">(Find Systers Community on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Systers Open Source Slack Inviter</h1><span class = "findRepo"><a href = "https://github.com/systers/slack-systers-opensource">(Find Open Source Slack Inviter on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>GHC Slack Inviter</h1><span class = "findRepo"><a href = "https://github.com/systers/slack-ghc">(Find GHC Slack Inviter on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
               <!-- Systers Projects Note-->
             </ng-template>
           </ngb-tab>
@@ -276,25 +413,70 @@
             <ng-template ngbTabContent>
               <!-- Systers Projects Note-->
               <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Malaria App iOS</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=malaria-app-ios"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Powerup iOS</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=powerup-ios"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Peacetrack iOS</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=peacetrack-ios"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Firstaide iOS</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=FirstAide-iOS"></iframe>
-              </div>
-              <div class="row mx-auto">
-                <h1 class="mx-auto mt-5 mb-5">Vola iOS</h1>
-                <iframe class="iframe-style mx-auto" src="https://publiclab.github.io/community-toolbox/examples/embed.html#o=systers&r=volunteers-iOS"></iframe>
-              </div>
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Malaria App iOS</h1><span class = "findRepo"><a href = "https://github.com/systers/malaria-app-ios">(Find Malaria App iOS on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Powerup iOS</h1><span class = "findRepo"><a href = "https://github.com/systers/powerup-iOS">(Find Sysbot on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Peacetrack iOS</h1><span class = "findRepo"><a href = "https://github.com/systers/peacetrack-ios">(Find Peacetrack iOS on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>FirstAide iOS</h1><span class = "findRepo"><a href = "https://github.com/systers/FirstAide-iOS">(Find FirstAide iOS on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
+               <div class="row mx-auto">
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Vola iOS</h1><span class = "findRepo"><a href = "https://github.com/systers/volunteers-iOS">(Find Vola iOS on Github)</a></span></div>
+                  <div class = "issueFrame">
+                    <div *ngFor = "let i of portal_issues">
+                      <div *ngIf = "!i.pull_request"  class= "myrow" >
+                        <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
+                        opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
+                      </div><div *ngIf = "!i.pull_request"><br></div>
+
+
+                    </div>
+                  </div> 
+               </div>
               <!-- Systers Projects Note-->
             </ng-template>
           </ngb-tab>

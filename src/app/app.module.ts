@@ -21,6 +21,8 @@ import { GetFirstWord } from './contributors/first.pipe';
 import { ProgramsComponent } from './programs/programs.component';
 import { HttpModule } from '@angular/http';
 import {CommonService} from './common.service';
+import {IssueService} from './issue.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,12 +46,13 @@ import {CommonService} from './common.service';
     MDBBootstrapModule.forRoot(),
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
     NgbModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'Your_api_key'
     })
   ],
-  providers: [CommonService],
+  providers: [CommonService, IssueService],
   bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA ]
 })

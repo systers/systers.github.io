@@ -62,3 +62,48 @@
   min-width: 50vh;
   overflow-y: auto;
 }
+.reponame{
+  
+ 
+  padding: 2%;
+  color:black;
+}
+.findRepo{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  
+}
+.findRepo:hover{
+  text-decoration: underline;
+}
+
+
+.issueTitle{
+  min-width : 100%;
+  font-size: 1.2em;
+  color:#54BCEB ;
+  font-weight: bold;
+
+}
+.issueTitle:hover{
+  text-decoration: underline;
+  color:rgb(62, 130, 161);
+}
+.issueFrame{
+  margin-left: 3%;
+  min-width: 94%;
+  overflow-y: scroll;
+  min-height: 35em;
+  max-height: 35em;
+  border: #d3d6d8 solid 1px;
+
+}
+.myrow{
+  padding:1.5%;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 5px #c5c6cc;
+}
+.underline:hover{
+  text-decoration:underline;
+}
