@@ -48,7 +48,7 @@ const handleUserSave = (Model) => (req, res) => {
         res.send(err)
       } else {
         res.send({
-          data: 'Record has been Updated..!!'
+          data: 'Record has been Updated..!'
         })
       }
     })

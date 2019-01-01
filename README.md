@@ -19,6 +19,7 @@ To preview, run these commands in your terminal (as long as you’ve previously 
 4. `npm install`
 5. `npm install -g @angular/cli`
 6.  Run the command `npm run dev` to run the client side and server side simultaneously. 
+7.  Run the command `./node_modules/.bin/eslint yourfile.js --fix` in the root directory to fix linting errors in javascript files before making a PR. You can add new rules to .eslintrc.js. 
 
 
 ## Contact Information
