@@ -19,6 +19,7 @@ To preview, run these commands in your terminal (as long as you’ve previously 
 4. `npm install`
 5. `npm install -g @angular/cli`
 6.  Run the command `npm run dev` to run the client side and server side simultaneously. 
+7.  Run the command `npm run watch` to run the server side code in development mode (The node instance restarts whenver you edit any javascript file). 
 
 
 ## Contact Information
