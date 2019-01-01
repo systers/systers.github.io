@@ -7,3 +7,9 @@
     background-color:white;
     color:black; 
 }
+.card-header{
+    cursor:pointer;
+}
+.card-header:hover{
+    box-shadow:2px 2px 10px #54bcebba
+}
