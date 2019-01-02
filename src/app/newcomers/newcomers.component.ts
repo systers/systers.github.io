@@ -26,7 +26,7 @@ export class NewcomersComponent implements OnInit {
   public sysbot_issues = [];
   public portal_issues = [];
   public vms_issues = [];
-  public msb_issues_issues = [];
+  public msb_issues = [];
   public conf_and_issues = [];
   public firstaide_and_issues = [];
   public powerup_and_issues = [];
@@ -57,7 +57,7 @@ export class NewcomersComponent implements OnInit {
       .subscribe(data  => this.vms_issues = data); 
 
     this._issueService.getmsb_issues_issues()
-      .subscribe(data  => this.msb_issues_issues = data);
+      .subscribe(data  => this.msb_issues = data);
 
     this._issueService.getconf_and_issues()
       .subscribe(data  => this.conf_and_issues = data);
@@ -79,6 +79,9 @@ export class NewcomersComponent implements OnInit {
 
       this._issueService.getvolunteers_and_issues()
       .subscribe(data  => this.volunteers_and_issues = data);
+
+      this._issueService.getsysters_os_issues()
+      .subscribe(data  => this.systers_os_issues = data);
 
       this._issueService.getcommunities_issues()
       .subscribe(data  => this.communities_issues = data);
