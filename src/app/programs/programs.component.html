@@ -28,13 +28,13 @@
                 <th>Project Manager & Mentor</th>
                 <th>Mentors</th>
               </tr>
-              <ng-container *ngFor="let kk of Repdata">
+              <ng-container *ngFor="let i of gsoc17list">
                 
-                <tr *ngIf="kk.YEAR==='2017' && kk.PROGRAM==='Google Summer of Code'">
-                  <td>{{kk.PROJECT}}</td>
-                  <td>{{kk.STUDENT}}</td>
-                  <td>{{kk.PROJECTMANAGERANDMENTOR}}</td>
-                  <td>{{kk.MENTORS}}</td>
+                <tr>
+                  <td>{{i.PROJECT}}</td>
+                  <td>{{i.STUDENT}}</td>
+                  <td>{{i.PROJECTMANAGERANDMENTOR}}</td>
+                  <td>{{i.MENTORS}}</td>
                 </tr>
               </ng-container>
             </table>
@@ -48,12 +48,12 @@
                 <th>Project Manager & Mentor</th>
                 <th>Mentors</th>
               </tr>
-              <ng-container *ngFor="let kk of Repdata">
-                <tr *ngIf="kk.YEAR==='2016' && kk.PROGRAM==='Google Summer of Code'">
-                  <td>{{kk.PROJECT}}</td>
-                  <td>{{kk.STUDENT}}</td>
-                  <td>{{kk.PROJECTMANAGERANDMENTOR}}</td>
-                  <td>{{kk.MENTORS}}</td>
+              <ng-container *ngFor="let i of gsoc16list">
+                <tr>
+                  <td>{{i.PROJECT}}</td>
+                  <td>{{i.STUDENT}}</td>
+                  <td>{{i.PROJECTMANAGERANDMENTOR}}</td>
+                  <td>{{i.MENTORS}}</td>
                 </tr>
               </ng-container>
             </table>
@@ -67,12 +67,12 @@
                 <th>Project Manager & Mentor</th>
                 <th>Mentors</th>
               </tr>
-              <ng-container *ngFor="let kk of Repdata">
-                <tr *ngIf="kk.YEAR==='2015' && kk.PROGRAM==='Google Summer of Code'">
-                  <td>{{kk.PROJECT}}</td>
-                  <td>{{kk.STUDENT}}</td>
-                  <td>{{kk.PROJECTMANAGERANDMENTOR}}</td>
-                  <td>{{kk.MENTORS}}</td>
+              <ng-container *ngFor="let i of gsoc15list">
+                <tr>
+                  <td>{{i.PROJECT}}</td>
+                  <td>{{i.STUDENT}}</td>
+                  <td>{{i.PROJECTMANAGERANDMENTOR}}</td>
+                  <td>{{i.MENTORS}}</td>
                 </tr>
               </ng-container>
             </table>
@@ -300,12 +300,12 @@
                 <th>Project Manager & Mentor</th>
                 <th>Mentors</th>
               </tr>
-              <ng-container *ngFor="let kk of Repdata">
-                <tr *ngIf="kk.YEAR==='2017' && kk.PROGRAM==='Outreachy'">
-                  <td>{{kk.PROJECT}}</td>
-                  <td>{{kk.STUDENT}}</td>
-                  <td>{{kk.PROJECTMANAGERANDMENTOR}}</td>
-                  <td>{{kk.MENTORS}}</td>
+              <ng-container *ngFor="let i of outreachy17list">
+                <tr>
+                  <td>{{i.PROJECT}}</td>
+                  <td>{{i.STUDENT}}</td>
+                  <td>{{i.PROJECTMANAGERANDMENTOR}}</td>
+                  <td>{{i.MENTORS}}</td>
                 </tr>
               </ng-container>
             </table>

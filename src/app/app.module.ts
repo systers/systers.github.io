@@ -22,6 +22,7 @@ import { ProgramsComponent } from './programs/programs.component';
 import { HttpModule } from '@angular/http';
 import {CommonService} from './common.service';
 import {IssueService} from './issue.service';
+import { ProgramService } from './program.service';
 import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
@@ -52,7 +53,7 @@ import {HttpClientModule} from '@angular/common/http';
       apiKey: 'Your_api_key'
     })
   ],
-  providers: [CommonService, IssueService],
+  providers: [CommonService, IssueService , ProgramService],
   bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA ]
 })
