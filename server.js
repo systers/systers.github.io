@@ -1,12 +1,13 @@
+require('./config/keys')
+
 var express = require('express')
 var path = require('path')
 var bodyParser = require('body-parser')
 var mongo = require('mongoose')
-const { mongoURI } = require('./config/keys')
 const { connectToDb } = require('./db/connection')
 const { handleUserGet, handleUserDelete, handleUserSave } = require('./controllers/User')
 
-connectToDb(mongo, mongoURI)
+connectToDb(mongo, process.env.MONGODB_URI)
   .then((res) => {
     console.log('Database connection details:-')
     console.log(JSON.stringify(res, undefined, 2))
@@ -34,6 +35,8 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/index.html'))
 })
 
-app.listen(process.env.PORT || 8080, () => {
+app.listen(process.env.PORT, () => {
   console.log('App listening on port 8080!\n')
 })
+
+module.exports = { app }
