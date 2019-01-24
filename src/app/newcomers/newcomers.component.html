@@ -228,7 +228,7 @@
               <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>VMS</h1><span class = "findRepo"><a href = "https://github.com/systers/vms">(Find vms on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of vms_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -241,7 +241,7 @@
                <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>Mentorship Backend System</h1><span class = "findRepo"><a href = "https://github.com/systers/mentorship-backend">(Find Mentorship Backend on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of msb_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -260,7 +260,7 @@
               <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>Conference Android</h1><span class = "findRepo"><a href = "https://github.com/systers/conference-android">(Find Conference Android on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of conf_and_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline" href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -273,7 +273,7 @@
                <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>FirstAide Android</h1><span class = "findRepo"><a href = "https://github.com/systers/FirstAide-Android">(Find FirstAide Android on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of firstaide_and_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -286,7 +286,7 @@
                <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>Powerup Android</h1><span class = "findRepo"><a href = "https://github.com/systers/powerup-android">(Find Powerup Android on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of powerup_and_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -299,7 +299,7 @@
                <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>Malaria App Android</h1><span class = "findRepo"><a href = "https://github.com/systers/malaria-app-android">(Find Malaria App Android on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of malaria_and_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -312,7 +312,7 @@
                <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>Mentorship Android</h1><span class = "findRepo"><a href = "https://github.com/systers/mentorship-android">(Find Mentorship Android on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of mentor_and_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -325,7 +325,7 @@
                <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>Peacetrack Android</h1><span class = "findRepo"><a href = "https://github.com/systers/peacetrack-android">(Find Peacetrack Android on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of peacetrack_and_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -338,7 +338,7 @@
                <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>Volunteers Android</h1><span class = "findRepo"><a href = "https://github.com/systers/volunteers-android">(Find Volunteers Android on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of volunteers_and_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -357,7 +357,7 @@
               <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>Systers Open Source</h1><span class = "findRepo"><a href = "https://github.com/systers/systers.github.io">(Find Systers Open Source on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of systers_os_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -370,7 +370,7 @@
                <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>Systers Community</h1><span class = "findRepo"><a href = "https://github.com/systers/communities">(Find Systers Community on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of communities_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -383,7 +383,7 @@
                <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>Systers Open Source Slack Inviter</h1><span class = "findRepo"><a href = "https://github.com/systers/slack-systers-opensource">(Find Open Source Slack Inviter on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of os_slack_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -396,7 +396,7 @@
                <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>GHC Slack Inviter</h1><span class = "findRepo"><a href = "https://github.com/systers/slack-ghc">(Find GHC Slack Inviter on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of ghc_slack_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -415,7 +415,7 @@
               <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>Malaria App iOS</h1><span class = "findRepo"><a href = "https://github.com/systers/malaria-app-ios">(Find Malaria App iOS on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of malaria_ios_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -426,9 +426,9 @@
                   </div> 
                </div>
                <div class="row mx-auto">
-                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Powerup iOS</h1><span class = "findRepo"><a href = "https://github.com/systers/powerup-iOS">(Find Sysbot on Github)</a></span></div>
+                  <div class = "mx-auto mt-5 mb-5 reponame"><h1>Powerup iOS</h1><span class = "findRepo"><a href = "https://github.com/systers/powerup-iOS">(Find Powerup iOS on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of powerup_ios_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -441,7 +441,7 @@
                <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>Peacetrack iOS</h1><span class = "findRepo"><a href = "https://github.com/systers/peacetrack-ios">(Find Peacetrack iOS on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of peacetrack_ios_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -454,7 +454,7 @@
                <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>FirstAide iOS</h1><span class = "findRepo"><a href = "https://github.com/systers/FirstAide-iOS">(Find FirstAide iOS on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of firstaide_ios_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
@@ -467,7 +467,7 @@
                <div class="row mx-auto">
                   <div class = "mx-auto mt-5 mb-5 reponame"><h1>Vola iOS</h1><span class = "findRepo"><a href = "https://github.com/systers/volunteers-iOS">(Find Vola iOS on Github)</a></span></div>
                   <div class = "issueFrame">
-                    <div *ngFor = "let i of portal_issues">
+                    <div *ngFor = "let i of vola_ios_issues">
                       <div *ngIf = "!i.pull_request"  class= "myrow" >
                         <a  href = "{{i.html_url}}">{{"#"+ i.number}}&nbsp;&nbsp;&nbsp;&nbsp;<span class = "issueTitle">{{i.title}}</span></a><br>
                         opened by <a class = "underline"href = "{{i.user.html_url}}">{{i.user.login}}</a>
