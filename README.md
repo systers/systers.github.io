@@ -62,7 +62,7 @@ If you have any questions or want to discuss something about this repo, please s
 
 ## Travis Integration
 
-![Travis (.org)](https://img.shields.io/travis/systers/systers.github.io?logo=travis)
+![Travis (.org) branch](https://img.shields.io/travis/systers/systers.github.io/develop)
 
 - Tests are automatically run through Travis-CI for PR's.
 - Currently the gsoc18-code branch is setup to deploy to heroku after a successful build, will be changed to the master branch in the future.
