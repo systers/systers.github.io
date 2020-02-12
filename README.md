@@ -7,9 +7,6 @@ In the future, we hope to add Google Calendar integration and additional orienta
 ## Documentation
 Link: https://docs.google.com/document/d/18X83wQjltI2PyWmYqNx4cHvGdTBTu2NaWnlIizdsLO8/edit#
 
-## Live Heroku App
-Link to the App: https://systers-github-io.herokuapp.com/
-
 ## Installation
 To preview, run these commands in your terminal (as long as you’ve previously installed [node](https://nodejs.org/en/download/)):
 
@@ -23,7 +20,7 @@ To preview, run these commands in your terminal (as long as you’ve previously 
 
 
 ## Contact Information
-If you have any questions or want to discuss something about this repo, please sign up for the [Systers Slack Channel](http://systers.io/slack-systers-opensource/) and join the the #gh-pages channel.
+If you have any questions or want to discuss something about this repo, please sign up for the [AnitaB.org Open Source Zulip](http://anitab-org.zulipchat.com/).
 
 ## Travis Integration
 - Tests are automatically run through Travis-CI for PR's.
