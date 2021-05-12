@@ -31,7 +31,7 @@
     "@ng-bootstrap/ng-bootstrap": "^2.2.0",
     "angular-bootstrap-md": "^6.1.4",
     "body-parser": "^1.18.3",
-    "chart.js": "^2.5.0",
+    "chart.js": "^2.9.4",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.4.1",
     "dataservice": "0.0.0",
